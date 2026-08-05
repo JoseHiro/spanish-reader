@@ -495,6 +495,375 @@
       "tags": [
         "tapped"
       ]
+    },
+    {
+      "lemma": "bajo el brazo",
+      "state": "unknown",
+      "pos": "loc.",
+      "meaning_ja": "「〜という約束を掲げて」の比喩。con la promesa bajo el brazo = 公約を旗印に",
+      "example": "llegaron al poder con la promesa bajo el brazo de poner fin al extractivismo",
+      "source_text_id": "text_02",
+      "tags": ["cloze_answer", "expression", "C1_key"]
+    },
+    {
+      "lemma": "protagonismo",
+      "state": "probably_known",
+      "pos": "sust. m.",
+      "meaning_ja": "主役性、存在感、目立つ役割（抽象名詞・不可算）",
+      "example": "los proyectos siguen teniendo mucho protagonismo",
+      "source_text_id": "text_02",
+      "tags": ["cloze_answer"]
+    },
+    {
+      "lemma": "cronista",
+      "state": "probably_known",
+      "pos": "sust. m./f.",
+      "meaning_ja": "年代記作者、記者",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": ["cloze_distractor"]
+    },
+    {
+      "lemma": "apostar por",
+      "state": "unknown",
+      "pos": "verbo intr.",
+      "meaning_ja": "〜に賭ける、〜に重点的に取り組む（C1頻出）",
+      "example": "México y Ecuador han seguido apostando por una industria",
+      "source_text_id": "text_02",
+      "tags": ["cloze_answer", "expression", "C1_key"]
+    },
+    {
+      "lemma": "retar",
+      "state": "probably_known",
+      "pos": "verbo tr.",
+      "meaning_ja": "挑む、挑戦する",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": ["cloze_distractor"]
+    },
+    {
+      "lemma": "postura",
+      "state": "probably_known",
+      "pos": "sust. f.",
+      "meaning_ja": "姿勢、立場、スタンス（definir su postura = 立場を明確にする）",
+      "example": "el gobierno de Brasil no acaba de definir su postura",
+      "source_text_id": "text_02",
+      "tags": ["cloze_answer", "expression"]
+    },
+    {
+      "lemma": "fiebre",
+      "state": "probably_known",
+      "pos": "sust. f.",
+      "meaning_ja": "熱、熱狂。la fiebre del oro = ゴールドラッシュ",
+      "example": "una nueva fiebre del oro negro",
+      "source_text_id": "text_02",
+      "tags": ["cloze_answer", "expression"]
+    },
+    {
+      "lemma": "viveza",
+      "state": "unknown",
+      "pos": "sust. f.",
+      "meaning_ja": "活発さ、機敏さ、生き生きした様子",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": ["cloze_distractor", "C1_key"]
+    },
+    {
+      "lemma": "molino",
+      "state": "mastered",
+      "pos": "sust. m.",
+      "meaning_ja": "水車、風車。molino eólico = 風力発電機",
+      "example": "los molinos eólicos, los paneles fotovoltaicos",
+      "source_text_id": "text_02",
+      "tags": ["cloze_answer"]
+    },
+    {
+      "lemma": "molinero",
+      "state": "unknown",
+      "pos": "sust. m./f.",
+      "meaning_ja": "粉屋、製粉業者",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": ["cloze_distractor"]
+    },
+    {
+      "lemma": "molinete",
+      "state": "unknown",
+      "pos": "sust. m.",
+      "meaning_ja": "小さな回転車、風車のおもちゃ、入場ゲート",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": ["cloze_distractor"]
+    },
+    {
+      "lemma": "sed",
+      "state": "mastered",
+      "pos": "sust. f.",
+      "meaning_ja": "喉の渇き。比喩：〜への渇望（sed de + 名詞）",
+      "example": "una sed inagotable de metales",
+      "source_text_id": "text_02",
+      "tags": ["cloze_answer", "metaphor"]
+    },
+    {
+      "lemma": "inapetencia",
+      "state": "unknown",
+      "pos": "sust. f.",
+      "meaning_ja": "食欲不振、意欲のなさ",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": ["cloze_distractor", "C1_key"]
+    },
+    {
+      "lemma": "desgana",
+      "state": "unknown",
+      "pos": "sust. f.",
+      "meaning_ja": "気乗り薄、無気力、しぶしぶ",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": ["cloze_distractor", "C1_key"]
+    },
+    {
+      "lemma": "alrededor de",
+      "state": "mastered",
+      "pos": "loc. prep.",
+      "meaning_ja": "〜の周りに、約〜（数値の概算）",
+      "example": "alrededor del 60% de los recursos",
+      "source_text_id": "text_02",
+      "tags": ["cloze_answer"]
+    },
+    {
+      "lemma": "en torno a",
+      "state": "probably_known",
+      "pos": "loc. prep.",
+      "meaning_ja": "〜の周辺に、〜について（a が必須）",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": ["cloze_distractor"]
+    },
+    {
+      "lemma": "a costa de",
+      "state": "unknown",
+      "pos": "loc. prep.",
+      "meaning_ja": "〜を犠牲にして、〜と引き換えに（負の代償）",
+      "example": "a costa de poner en peligro ecosistemas delicados",
+      "source_text_id": "text_02",
+      "tags": ["cloze_answer", "expression", "C1_key"]
+    },
+    {
+      "lemma": "debido a",
+      "state": "mastered",
+      "pos": "loc. prep.",
+      "meaning_ja": "〜のために、〜が原因で",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": ["cloze_distractor"]
+    },
+    {
+      "lemma": "defender",
+      "state": "mastered",
+      "pos": "verbo tr.",
+      "meaning_ja": "守る、擁護する",
+      "example": "asesinadas por defender los derechos humanos",
+      "source_text_id": "text_02",
+      "tags": ["cloze_answer"]
+    },
+    {
+      "lemma": "acusar",
+      "state": "mastered",
+      "pos": "verbo tr.",
+      "meaning_ja": "告発する、非難する",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": ["cloze_distractor"]
+    },
+    {
+      "lemma": "absolver",
+      "state": "probably_known",
+      "pos": "verbo tr.",
+      "meaning_ja": "無罪放免にする、罪を赦す",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": ["cloze_distractor", "C1_key"]
+    },
+    {
+      "lemma": "víctima",
+      "state": "mastered",
+      "pos": "sust. f.",
+      "meaning_ja": "被害者。víctimas mortales = 死者",
+      "example": "más de la mitad de las víctimas mortales",
+      "source_text_id": "text_02",
+      "tags": ["cloze_answer", "expression"]
+    },
+    {
+      "lemma": "difunto",
+      "state": "probably_known",
+      "pos": "adj./sust.",
+      "meaning_ja": "亡くなった、故人",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": ["cloze_distractor"]
+    },
+    {
+      "lemma": "amenaza",
+      "state": "mastered",
+      "pos": "sust. f.",
+      "meaning_ja": "脅威、脅迫",
+      "example": "amenazas directas a los líderes ambientales",
+      "source_text_id": "text_02",
+      "tags": ["cloze_answer"]
+    },
+    {
+      "lemma": "alabanza",
+      "state": "unknown",
+      "pos": "sust. f.",
+      "meaning_ja": "賞賛、称賛",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": ["cloze_distractor", "C1_key"]
+    },
+    {
+      "lemma": "ganancia",
+      "state": "mastered",
+      "pos": "sust. f.",
+      "meaning_ja": "利益、収益",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": ["cloze_distractor"]
+    },
+    {
+      "lemma": "estar detrás de",
+      "state": "unknown",
+      "pos": "loc. verb.",
+      "meaning_ja": "〜の背後にいる／原因である（位置・状態は estar）",
+      "example": "los conflictos están detrás de uno de cada cuatro asesinatos",
+      "source_text_id": "text_02",
+      "tags": ["cloze_answer", "expression"]
+    },
+    {
+      "lemma": "extractivismo",
+      "state": "unknown",
+      "pos": "sust. m.",
+      "meaning_ja": "資源採取主義（採掘産業に依存する経済モデル）",
+      "example": "poner fin al extractivismo",
+      "source_text_id": "text_02",
+      "tags": ["C1_key", "topic_ecology"]
+    },
+    {
+      "lemma": "prospección",
+      "state": "unknown",
+      "pos": "sust. f.",
+      "meaning_ja": "探査、試掘（地下資源）",
+      "example": "proyectos de prospección y extracción de petróleo",
+      "source_text_id": "text_02",
+      "tags": ["C1_key"]
+    },
+    {
+      "lemma": "agotamiento",
+      "state": "probably_known",
+      "pos": "sust. m.",
+      "meaning_ja": "枯渇、疲弊",
+      "example": "da muestras de agotamiento",
+      "source_text_id": "text_02",
+      "tags": []
+    },
+    {
+      "lemma": "agarrarse a",
+      "state": "probably_known",
+      "pos": "verbo pron.",
+      "meaning_ja": "〜にしがみつく、必死に頼る",
+      "example": "Venezuela se agarra a un sector nacional en crisis",
+      "source_text_id": "text_02",
+      "tags": ["C1_key"]
+    },
+    {
+      "lemma": "entregarse a",
+      "state": "probably_known",
+      "pos": "verbo pron.",
+      "meaning_ja": "〜に身を投じる、没頭する",
+      "example": "Surinam y Guyana se entregan a una nueva fiebre del oro",
+      "source_text_id": "text_02",
+      "tags": []
+    },
+    {
+      "lemma": "oro negro",
+      "state": "probably_known",
+      "pos": "loc. sust.",
+      "meaning_ja": "黒い金＝石油の別称",
+      "example": "una nueva fiebre del oro negro",
+      "source_text_id": "text_02",
+      "tags": ["metaphor"]
+    },
+    {
+      "lemma": "denominador común",
+      "state": "probably_known",
+      "pos": "loc. sust.",
+      "meaning_ja": "共通項、共通分母",
+      "example": "comparten un denominador común",
+      "source_text_id": "text_02",
+      "tags": ["expression"]
+    },
+    {
+      "lemma": "inagotable",
+      "state": "probably_known",
+      "pos": "adj.",
+      "meaning_ja": "尽きることのない、無尽蔵の",
+      "example": "una sed inagotable de metales",
+      "source_text_id": "text_02",
+      "tags": ["C1_key"]
+    },
+    {
+      "lemma": "dispararse",
+      "state": "probably_known",
+      "pos": "verbo pron.",
+      "meaning_ja": "急激に増える、跳ね上がる",
+      "example": "su extracción se ha disparado",
+      "source_text_id": "text_02",
+      "tags": ["C1_key"]
+    },
+    {
+      "lemma": "salar",
+      "state": "unknown",
+      "pos": "sust. m.",
+      "meaning_ja": "塩湖、塩原（アンデスの塩湖）",
+      "example": "los salares andinos",
+      "source_text_id": "text_02",
+      "tags": ["topic_geography"]
+    },
+    {
+      "lemma": "asesinato",
+      "state": "mastered",
+      "pos": "sust. m.",
+      "meaning_ja": "殺人、暗殺",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": []
+    },
+    {
+      "lemma": "desplazamiento forzoso",
+      "state": "probably_known",
+      "pos": "loc. sust.",
+      "meaning_ja": "強制移住・避難",
+      "example": null,
+      "source_text_id": "text_02",
+      "tags": ["expression"]
+    },
+    {
+      "lemma": "reto",
+      "state": "mastered",
+      "pos": "sust. m.",
+      "meaning_ja": "課題、挑戦",
+      "example": "uno de los grandes retos ambientales",
+      "source_text_id": "text_02",
+      "tags": []
+    },
+    {
+      "lemma": "de la mano de",
+      "state": "probably_known",
+      "pos": "loc. prep.",
+      "meaning_ja": "〜と手を携えて、〜の助けを借りて",
+      "example": "de la mano de instrumentos como el Acuerdo de Escazú",
+      "source_text_id": "text_02",
+      "tags": ["expression", "C1_key"]
     }
   ]
 }
