@@ -41,7 +41,6 @@ export function WordPopup({
       if (ref.current && !ref.current.contains(e.target as Node)) onClose()
     }
     document.addEventListener('keydown', onKey)
-    // Use timeout so the same click that opened it doesn't immediately close it.
     const t = setTimeout(() => {
       document.addEventListener('mousedown', onDown)
     }, 0)
@@ -52,7 +51,6 @@ export function WordPopup({
     }
   }, [onClose, onSetState])
 
-  // Position: prefer below the word, flip above if not enough room.
   const gap = 6
   const spaceBelow = window.innerHeight - anchor.bottom
   const above = spaceBelow < 200
@@ -80,22 +78,20 @@ export function WordPopup({
       {existing?.meaning_ja ? (
         <div className="meaning">{existing.meaning_ja}</div>
       ) : (
-        <div className="meaning muted">意味データなし</div>
+        <div className="meaning muted">Sin datos de significado</div>
       )}
-      {existing?.example && (
-        <div className="example">{existing.example}</div>
-      )}
+      {existing?.example && <div className="example">{existing.example}</div>}
       <div className="action-row">
         <button className="primary" onClick={() => onSetState('unknown')}>
-          知らない
+          No lo sé
           <span className="kbd">U</span>
         </button>
         <button onClick={() => onSetState('mastered')}>
-          知ってる
+          Lo sé
           <span className="kbd">K</span>
         </button>
       </div>
-      <div className="hint">Enter で確定 · Esc で閉じる</div>
+      <div className="hint">Enter para confirmar · Esc para cerrar</div>
     </div>
   )
 }

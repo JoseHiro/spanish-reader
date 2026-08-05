@@ -20,7 +20,6 @@ export function TextReader({
   onWordUpdate: (w: Word) => void
   onEncounter: (e: Encounter) => void
 }) {
-  // Default: answers hidden. User can reveal explicitly.
   const [revealed, setRevealed] = useState(false)
   const [popup, setPopup] = useState<{
     surface: string
@@ -45,7 +44,6 @@ export function TextReader({
     setPopup({ surface, sentence, anchor: rect })
   }
 
-  // Fire-and-forget: update UI + storage without blocking popover close.
   function handleSetState(state: WordState) {
     if (!popup) return
     const existing = findWord(popup.surface)
@@ -78,8 +76,8 @@ export function TextReader({
   return (
     <>
       <div className="back-link" onClick={onBack}>
-        <IconArrowLeft />
-        戻る
+        <IconArrowLeft size={14} strokeWidth={1.8} />
+        Volver
       </div>
       <h1>{text.title}</h1>
       <div className="subtitle">
@@ -100,15 +98,19 @@ export function TextReader({
 
       <div className="reader-head">
         <button onClick={() => setRevealed((r) => !r)}>
-          {revealed ? <IconEyeOff /> : <IconEye />}
+          {revealed ? (
+            <IconEyeOff size={14} strokeWidth={1.8} />
+          ) : (
+            <IconEye size={14} strokeWidth={1.8} />
+          )}
           <span style={{ marginLeft: 6 }}>
-            {revealed ? '答えを隠す' : '答えを表示'}
+            {revealed ? 'Ocultar respuestas' : 'Mostrar respuestas'}
           </span>
         </button>
         <div className="spacer" />
         {text.type === 'cloze' && (
           <button className="primary" onClick={onOpenQuiz}>
-            クイズを解く →
+            Hacer el test →
           </button>
         )}
       </div>
@@ -169,14 +171,14 @@ function renderParagraph(
           <span
             key={i}
             className="tok-cloze revealed"
-            title={`空欄${tok.n} - 正解`}
+            title={`hueco ${tok.n} — respuesta`}
           >
             {c.options[c.answer]}
           </span>
         )
       }
       return (
-        <span key={i} className="tok-cloze" title={`空欄${tok.n}`}>
+        <span key={i} className="tok-cloze" title={`hueco ${tok.n}`}>
           ({tok.n})
         </span>
       )

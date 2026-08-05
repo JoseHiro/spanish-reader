@@ -21,7 +21,6 @@ export function Dashboard({
       : quizResults.reduce((s, r) => s + r.score / r.total, 0) /
         quizResults.length
 
-  // Coverage per text: known words / total unique tokens (rough)
   const coverage = texts.map((t) => {
     const uniq = new Set<string>()
     const full = t.paragraphs.join(' ')
@@ -38,25 +37,27 @@ export function Dashboard({
 
   return (
     <>
-      <h1>進捗</h1>
+      <h1>Progreso</h1>
 
       <div className="stat-grid">
-        <Stat label="マスター単語" value={mastered} />
-        <Stat label="要復習" value={unknown} />
-        <Stat label="たぶん既知" value={probably} />
-        <Stat label="読解テキスト" value={texts.length} />
+        <Stat label="Dominadas" value={mastered} />
+        <Stat label="Por repasar" value={unknown} />
+        <Stat label="Probables" value={probably} />
+        <Stat label="Textos" value={texts.length} />
       </div>
 
-      <h2>クイズ成績</h2>
+      <h2>Resultados de tests</h2>
       {quizResults.length === 0 ? (
-        <div className="empty">まだクイズを解いていません</div>
+        <div className="empty">Aún no has hecho ningún test</div>
       ) : (
         <>
           <div className="stat-grid">
-            <Stat label="受験回数" value={quizResults.length} />
+            <Stat label="Tests realizados" value={quizResults.length} />
             <Stat
-              label="平均正答率"
-              value={avgScore !== null ? Math.round(avgScore * 100) + '%' : '-'}
+              label="Puntuación media"
+              value={
+                avgScore !== null ? Math.round(avgScore * 100) + '%' : '—'
+              }
             />
           </div>
           {quizResults
@@ -69,13 +70,13 @@ export function Dashboard({
                 <div key={r.id} className="word-row">
                   <div>
                     <div className="lemma">{t?.title ?? r.text_id}</div>
-                    <div style={{ color: 'var(--nt-text-mute)', fontSize: 12 }}>
-                      {new Date(r.taken_at).toLocaleString('ja-JP')}
+                    <div style={{ color: 'var(--text-mute)', fontSize: 12 }}>
+                      {new Date(r.taken_at).toLocaleString('es-ES')}
                     </div>
                   </div>
                   <div>
                     <div className="meaning">
-                      {r.score} / {r.total} 正解
+                      {r.score} / {r.total} correctas
                     </div>
                   </div>
                   <div />
@@ -85,26 +86,30 @@ export function Dashboard({
         </>
       )}
 
-      <h2>テキストごとのカバー率</h2>
+      <h2>Cobertura por texto</h2>
       {coverage.length === 0 ? (
-        <div className="empty">テキストがありません</div>
+        <div className="empty">Sin textos</div>
       ) : (
         coverage.map((c) => (
           <div key={c.title} className="word-row">
             <div className="lemma">{c.title}</div>
             <div>
-              <div style={{ height: 8, background: 'var(--nt-hover)', borderRadius: 4 }}>
+              <div className="bar">
                 <div
+                  className="bar-fill"
                   style={{
                     width: `${c.total === 0 ? 0 : (c.known / c.total) * 100}%`,
-                    height: '100%',
-                    background: 'var(--nt-text)',
-                    borderRadius: 4,
                   }}
                 />
               </div>
-              <div style={{ fontSize: 12, color: 'var(--nt-text-mute)', marginTop: 4 }}>
-                {c.known} / {c.total} 語 ·{' '}
+              <div
+                style={{
+                  fontSize: 12,
+                  color: 'var(--text-mute)',
+                  marginTop: 4,
+                }}
+              >
+                {c.known} / {c.total} palabras ·{' '}
                 {c.total === 0 ? 0 : Math.round((c.known / c.total) * 100)}%
               </div>
             </div>
@@ -113,9 +118,9 @@ export function Dashboard({
         ))
       )}
 
-      <h2>タップ履歴（直近）</h2>
+      <h2>Palabras recientes</h2>
       {encounters.length === 0 ? (
-        <div className="empty">まだタップされた単語はありません</div>
+        <div className="empty">Aún no has tocado ninguna palabra</div>
       ) : (
         encounters
           .slice()
@@ -128,8 +133,8 @@ export function Dashboard({
                 {e.sentence.slice(0, 80)}
                 {e.sentence.length > 80 ? '…' : ''}
               </div>
-              <div style={{ fontSize: 12, color: 'var(--nt-text-mute)' }}>
-                {new Date(e.tapped_at).toLocaleDateString('ja-JP')}
+              <div style={{ fontSize: 12, color: 'var(--text-mute)' }}>
+                {new Date(e.tapped_at).toLocaleDateString('es-ES')}
               </div>
             </div>
           ))

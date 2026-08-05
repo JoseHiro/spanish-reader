@@ -1,4 +1,5 @@
 import type { Text } from '../types'
+import { IconChevronRight } from './Icons'
 
 export function Home({
   texts,
@@ -11,34 +12,42 @@ export function Home({
 }) {
   return (
     <>
-      <h1>読解教材</h1>
-      <div style={{ color: 'var(--nt-text-soft)', marginBottom: 24 }}>
-        {texts.length} 本 · 単語をタップして意味・記憶ステートを管理
+      <h1>Textos</h1>
+      <div className="subtitle">
+        {texts.length} {texts.length === 1 ? 'texto' : 'textos'} · Toca las
+        palabras para gestionar su estado
       </div>
       {texts.length === 0 && (
         <div className="empty">
-          まだテキストがありません。Claudeに追加してもらってください。
+          Aún no hay textos. Pídele a Claude que añada uno.
         </div>
       )}
       {texts.map((t) => (
-        <div key={t.id} className="card" onClick={() => onOpenRead(t.id)}>
-          <div style={{ fontWeight: 600, fontSize: 17 }}>{t.title}</div>
+        <div
+          key={t.id}
+          className="card clickable"
+          onClick={() => onOpenRead(t.id)}
+        >
+          <div className="title">{t.title}</div>
           <div className="meta">
-            {t.author && <>{t.author} · </>}
-            {t.source && <>{t.source} · </>}
+            {t.author && <span>{t.author}</span>}
+            {t.source && <span>· {t.source}</span>}
             {t.level && <span className="badge">{t.level}</span>}
             {t.type === 'cloze' && (
-              <span className="badge">クローズ {t.clozes?.length ?? 0}問</span>
+              <span className="badge">
+                {t.clozes?.length ?? 0} huecos
+              </span>
             )}
           </div>
-          <div style={{ marginTop: 10, display: 'flex', gap: 8 }}>
+          <div className="actions">
             <button
               onClick={(e) => {
                 e.stopPropagation()
                 onOpenRead(t.id)
               }}
             >
-              読む
+              Leer
+              <IconChevronRight size={14} strokeWidth={1.8} />
             </button>
             {t.type === 'cloze' && (
               <button
@@ -47,7 +56,7 @@ export function Home({
                   onOpenQuiz(t.id)
                 }}
               >
-                クイズ
+                Test
               </button>
             )}
           </div>

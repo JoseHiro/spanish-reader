@@ -91,22 +91,23 @@ export function App() {
   }[] = [
     {
       key: 'home',
-      label: '読む',
-      icon: <IconRead />,
-      active: view.name === 'home' || view.name === 'read' || view.name === 'quiz',
+      label: 'Leer',
+      icon: <IconRead size={18} strokeWidth={1.8} />,
+      active:
+        view.name === 'home' || view.name === 'read' || view.name === 'quiz',
       onClick: () => setView({ name: 'home' }),
     },
     {
       key: 'vocab',
-      label: '単語',
-      icon: <IconVocab />,
+      label: 'Vocabulario',
+      icon: <IconVocab size={18} strokeWidth={1.8} />,
       active: view.name === 'vocab',
       onClick: () => setView({ name: 'vocab' }),
     },
     {
       key: 'dashboard',
-      label: '進捗',
-      icon: <IconChart />,
+      label: 'Progreso',
+      icon: <IconChart size={18} strokeWidth={1.8} />,
       active: view.name === 'dashboard',
       onClick: () => setView({ name: 'dashboard' }),
     },
@@ -120,7 +121,7 @@ export function App() {
           <div>Spanish Reader</div>
         </div>
 
-        <div className="nav-section">Study</div>
+        <div className="nav-section">Estudio</div>
         <div className="nav">
           {navItems.map((n) => (
             <button
@@ -136,7 +137,7 @@ export function App() {
 
         <div className="sidebar-foot">
           <div className="nav-section" style={{ padding: '0 4px 6px' }}>
-            Theme
+            Tema
           </div>
           <ThemeControl mode={mode} setMode={setMode} />
         </div>
@@ -149,7 +150,7 @@ export function App() {
               {err}
             </div>
           )}
-          {loading && <div className="empty">読み込み中…</div>}
+          {loading && <div className="empty">Cargando…</div>}
 
           {!loading && !err && (
             <>
@@ -175,7 +176,9 @@ export function App() {
               {view.name === 'quiz' && currentText && (
                 <ClozeQuiz
                   text={currentText}
-                  onBack={() => setView({ name: 'read', textId: currentText.id })}
+                  onBack={() =>
+                    setView({ name: 'read', textId: currentText.id })
+                  }
                   onSaveResult={saveQuizResult}
                   onWordUpdate={updateWord}
                   words={words}
@@ -208,30 +211,30 @@ function ThemeControl({
   setMode: (m: ThemeMode) => void
 }) {
   return (
-    <div className="theme-toggle" role="radiogroup" aria-label="Theme">
+    <div className="theme-toggle" role="radiogroup" aria-label="Tema">
       <button
         className={mode === 'light' ? 'active' : ''}
         onClick={() => setMode('light')}
-        aria-label="Light"
-        title="Light"
+        aria-label="Claro"
+        title="Claro"
       >
-        <IconSun />
+        <IconSun size={14} strokeWidth={1.8} />
       </button>
       <button
         className={mode === 'system' ? 'active' : ''}
         onClick={() => setMode('system')}
-        aria-label="System"
-        title="System"
+        aria-label="Sistema"
+        title="Sistema"
       >
-        <IconMonitor />
+        <IconMonitor size={14} strokeWidth={1.8} />
       </button>
       <button
         className={mode === 'dark' ? 'active' : ''}
         onClick={() => setMode('dark')}
-        aria-label="Dark"
-        title="Dark"
+        aria-label="Oscuro"
+        title="Oscuro"
       >
-        <IconMoon />
+        <IconMoon size={14} strokeWidth={1.8} />
       </button>
     </div>
   )

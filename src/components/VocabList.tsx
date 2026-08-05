@@ -29,19 +29,19 @@ export function VocabList({
 
   return (
     <>
-      <h1>単語帳</h1>
-      <div style={{ color: 'var(--nt-text-soft)', marginBottom: 16 }}>
-        合計 {counts.all} 語 · 要復習 {counts.unknown} · たぶん既知{' '}
-        {counts.probably_known} · マスター {counts.mastered}
+      <h1>Vocabulario</h1>
+      <div className="subtitle">
+        {counts.all} palabras · {counts.unknown} por repasar ·{' '}
+        {counts.probably_known} probables · {counts.mastered} dominadas
       </div>
 
       <div className="filter-bar">
         {(
           [
-            ['unknown', `要復習 (${counts.unknown})`],
-            ['probably_known', `たぶん (${counts.probably_known})`],
-            ['mastered', `マスター (${counts.mastered})`],
-            ['all', `すべて (${counts.all})`],
+            ['unknown', `Por repasar (${counts.unknown})`],
+            ['probably_known', `Probable (${counts.probably_known})`],
+            ['mastered', `Dominadas (${counts.mastered})`],
+            ['all', `Todas (${counts.all})`],
           ] as [Filter, string][]
         ).map(([k, label]) => (
           <button
@@ -55,23 +55,23 @@ export function VocabList({
       </div>
 
       {filtered.length === 0 && (
-        <div className="empty">該当する単語がありません</div>
+        <div className="empty">No hay palabras que coincidan</div>
       )}
 
       {filtered.map((w) => (
         <div key={w.lemma} className="word-row">
           <div>
             <div className="lemma">{w.lemma}</div>
-            <div style={{ color: 'var(--nt-text-mute)', fontSize: 12 }}>
+            <div style={{ color: 'var(--text-mute)', fontSize: 12 }}>
               {w.pos}
             </div>
           </div>
           <div>
-            <div className="meaning">{w.meaning_ja ?? '意味未登録'}</div>
+            <div className="meaning">{w.meaning_ja ?? 'Sin significado'}</div>
             {w.example && (
               <div
                 style={{
-                  color: 'var(--nt-text-mute)',
+                  color: 'var(--text-mute)',
                   fontSize: 13,
                   fontStyle: 'italic',
                   marginTop: 2,
@@ -82,7 +82,10 @@ export function VocabList({
             )}
           </div>
           <div style={{ display: 'flex', gap: 4 }}>
-            <StatePicker state={w.state} onChange={(s) => onWordUpdate({ ...w, state: s })} />
+            <StatePicker
+              state={w.state}
+              onChange={(s) => onWordUpdate({ ...w, state: s })}
+            />
           </div>
         </div>
       ))}
@@ -101,18 +104,10 @@ function StatePicker({
     <select
       value={state}
       onChange={(e) => onChange(e.target.value as WordState)}
-      style={{
-        border: '1px solid var(--nt-border)',
-        borderRadius: 4,
-        padding: '4px 8px',
-        background: 'var(--nt-bg)',
-        color: 'var(--nt-text)',
-        fontSize: 13,
-      }}
     >
-      <option value="unknown">要復習</option>
-      <option value="probably_known">たぶん既知</option>
-      <option value="mastered">マスター</option>
+      <option value="unknown">Por repasar</option>
+      <option value="probably_known">Probable</option>
+      <option value="mastered">Dominada</option>
     </select>
   )
 }

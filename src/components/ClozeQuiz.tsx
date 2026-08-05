@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import type { Text, Word, QuizResult } from '../types'
 import { normalize } from '../lib/tokenize'
+import { IconArrowLeft, IconCheck, IconX } from './Icons'
 
 export function ClozeQuiz({
   text,
@@ -16,8 +17,8 @@ export function ClozeQuiz({
   words: Word[]
 }) {
   const clozes = text.clozes ?? []
-  const [answers, setAnswers] = useState<(number | null)[]>(
-    () => clozes.map(() => null),
+  const [answers, setAnswers] = useState<(number | null)[]>(() =>
+    clozes.map(() => null),
   )
   const [submitted, setSubmitted] = useState(false)
 
@@ -42,7 +43,6 @@ export function ClozeQuiz({
         wrongWords.push(c.options[c.answer])
       }
     }
-    // demote all "wrong" words to unknown so they enter review
     for (const w of wrongWords) {
       const existing = words.find(
         (x) => normalize(x.lemma) === normalize(w),
@@ -73,11 +73,12 @@ export function ClozeQuiz({
   return (
     <>
       <div className="back-link" onClick={onBack}>
-        ← 戻る
+        <IconArrowLeft size={14} strokeWidth={1.8} />
+        Volver
       </div>
-      <h1>{text.title} — クイズ</h1>
-      <div style={{ color: 'var(--nt-text-soft)', marginBottom: 20 }}>
-        空欄に入る語を a / b / c から選んでください
+      <h1>{text.title} — Test</h1>
+      <div className="subtitle">
+        Rellena los huecos eligiendo a / b / c
       </div>
 
       <div className="reader">
@@ -103,31 +104,53 @@ export function ClozeQuiz({
           onClick={handleSubmit}
           disabled={!allAnswered}
         >
-          採点する（{answers.filter((a) => a !== null).length}/{clozes.length}）
+          Calificar ({answers.filter((a) => a !== null).length}/{clozes.length})
         </button>
       )}
 
       {submitted && (
         <>
           <h2>
-            結果: {score} / {clozes.length}
+            Resultado: {score} / {clozes.length}
           </h2>
-          <div style={{ color: 'var(--nt-text-soft)', marginBottom: 20 }}>
-            間違えた設問の選択肢は自動的に「要復習」に登録しました。
+          <div className="subtitle">
+            Las opciones de los huecos incorrectos se han marcado como
+            「要復習」automáticamente.
           </div>
           {clozes.map((c, i) => {
             const chosen = answers[i]
             const isCorrect = chosen === c.answer
             return (
               <div key={c.n} style={{ marginBottom: 20 }}>
-                <div style={{ fontWeight: 600 }}>
-                  {c.n}. {isCorrect ? '✅' : '❌'}{' '}
-                  <span style={{ color: 'var(--nt-text-soft)' }}>
-                    正解: {['a', 'b', 'c'][c.answer]}) {c.options[c.answer]}
+                <div
+                  style={{
+                    fontWeight: 600,
+                    display: 'flex',
+                    gap: 6,
+                    alignItems: 'center',
+                  }}
+                >
+                  <span>{c.n}.</span>
+                  {isCorrect ? (
+                    <IconCheck
+                      size={16}
+                      strokeWidth={2.4}
+                      color="var(--green-fg)"
+                    />
+                  ) : (
+                    <IconX
+                      size={16}
+                      strokeWidth={2.4}
+                      color="var(--red-fg)"
+                    />
+                  )}
+                  <span style={{ color: 'var(--text-soft)', fontWeight: 400 }}>
+                    Respuesta: {['a', 'b', 'c'][c.answer]}){' '}
+                    {c.options[c.answer]}
                     {chosen !== null && !isCorrect && (
                       <>
-                        {' '}
-                        · あなたの回答: {['a', 'b', 'c'][chosen]}){' '}
+                        {' · '}
+                        Tu respuesta: {['a', 'b', 'c'][chosen]}){' '}
                         {c.options[chosen]}
                       </>
                     )}
