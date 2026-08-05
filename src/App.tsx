@@ -1,6 +1,12 @@
 import { useEffect, useState } from 'react'
 import { api } from './lib/api'
-import type { Text, Word, Encounter, QuizResult } from './types'
+import type {
+  Text,
+  Word,
+  Encounter,
+  QuizResult,
+  ProgressMap,
+} from './types'
 import { Home } from './components/Home'
 import { TextReader } from './components/TextReader'
 import { ClozeQuiz } from './components/ClozeQuiz'
@@ -30,22 +36,25 @@ export function App() {
   const [words, setWords] = useState<Word[]>([])
   const [encounters, setEncounters] = useState<Encounter[]>([])
   const [quizResults, setQuizResults] = useState<QuizResult[]>([])
+  const [progress, setProgress] = useState<ProgressMap>({})
   const [loading, setLoading] = useState(true)
   const [err, setErr] = useState<string | null>(null)
   const { mode, setMode } = useTheme()
 
   async function reloadAll() {
     try {
-      const [t, w, e, q] = await Promise.all([
+      const [t, w, e, q, p] = await Promise.all([
         api.getTexts(),
         api.getWords(),
         api.getEncounters(),
         api.getQuizResults(),
+        api.getProgress(),
       ])
       setTexts(t.texts)
       setWords(w.words)
       setEncounters(e.encounters)
       setQuizResults(q.results)
+      setProgress(p.progress ?? {})
       setLoading(false)
     } catch (e: any) {
       setErr(e.message)
@@ -76,6 +85,18 @@ export function App() {
     const next = [...quizResults, r]
     setQuizResults(next)
     await api.putQuizResults({ results: next })
+  }
+
+  async function toggleCompleted(textId: string) {
+    const cur = progress[textId]
+    const next: ProgressMap = {
+      ...progress,
+      [textId]: cur?.completed
+        ? { completed: false }
+        : { completed: true, completed_at: new Date().toISOString() },
+    }
+    setProgress(next)
+    await api.putProgress({ progress: next })
   }
 
   const currentText =
@@ -161,6 +182,7 @@ export function App() {
               {view.name === 'home' && (
                 <Home
                   texts={texts}
+                  progress={progress}
                   onOpenRead={(id) => setView({ name: 'read', textId: id })}
                   onOpenQuiz={(id) => setView({ name: 'quiz', textId: id })}
                 />
@@ -169,22 +191,26 @@ export function App() {
                 <TextReader
                   text={currentText}
                   words={words}
+                  completed={!!progress[currentText.id]?.completed}
                   onBack={() => setView({ name: 'home' })}
                   onOpenQuiz={() =>
                     setView({ name: 'quiz', textId: currentText.id })
                   }
                   onWordUpdate={updateWord}
                   onEncounter={addEncounter}
+                  onToggleCompleted={() => toggleCompleted(currentText.id)}
                 />
               )}
               {view.name === 'quiz' && currentText && (
                 <ClozeQuiz
                   text={currentText}
+                  completed={!!progress[currentText.id]?.completed}
                   onBack={() =>
                     setView({ name: 'read', textId: currentText.id })
                   }
                   onSaveResult={saveQuizResult}
                   onWordUpdate={updateWord}
+                  onMarkCompleted={() => toggleCompleted(currentText.id)}
                   words={words}
                 />
               )}

@@ -1,4 +1,4 @@
-import type { Text, Word, Encounter, QuizResult } from '../types'
+import type { Text, Word, Encounter, QuizResult, ProgressMap } from '../types'
 
 /**
  * Storage layer.
@@ -69,6 +69,9 @@ export const api = {
   putQuizResults: (data: { results: QuizResult[] }) =>
     writeFile('quiz_results', data),
 
+  getProgress: () => readFile<{ progress: ProgressMap }>('progress'),
+  putProgress: (data: { progress: ProgressMap }) => writeFile('progress', data),
+
   /** Prod-only: wipe local user state, re-seed from bundle on next load. */
   resetLocalData(): void {
     for (const name of [
@@ -77,6 +80,7 @@ export const api = {
       'encounters',
       'quiz_results',
       'vocab_baseline',
+      'progress',
     ]) {
       localStorage.removeItem(LS_PREFIX + name)
     }

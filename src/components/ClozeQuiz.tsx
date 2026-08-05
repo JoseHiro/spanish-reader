@@ -5,15 +5,19 @@ import { IconArrowLeft, IconCheck, IconX } from './Icons'
 
 export function ClozeQuiz({
   text,
+  completed,
   onBack,
   onSaveResult,
   onWordUpdate,
+  onMarkCompleted,
   words,
 }: {
   text: Text
+  completed: boolean
   onBack: () => void
   onSaveResult: (r: QuizResult) => void
   onWordUpdate: (w: Word) => void
+  onMarkCompleted: () => void
   words: Word[]
 }) {
   const clozes = text.clozes ?? []
@@ -116,6 +120,32 @@ export function ClozeQuiz({
           <div className="subtitle">
             Las opciones de los huecos incorrectos se han marcado como
             「要復習」automáticamente.
+          </div>
+          <div style={{ marginBottom: 24 }}>
+            {score === clozes.length && !completed && (
+              <button
+                className="primary"
+                onClick={onMarkCompleted}
+                style={{ marginRight: 8 }}
+              >
+                <IconCheck size={14} strokeWidth={2.2} />
+                <span style={{ marginLeft: 4 }}>
+                  ¡Perfecto! Marcar como completado
+                </span>
+              </button>
+            )}
+            {score < clozes.length && !completed && (
+              <button onClick={onMarkCompleted}>
+                <IconCheck size={14} strokeWidth={2.2} />
+                <span style={{ marginLeft: 4 }}>Marcar como completado</span>
+              </button>
+            )}
+            {completed && (
+              <button className="done-btn" onClick={onMarkCompleted}>
+                <IconCheck size={14} strokeWidth={2.2} />
+                <span style={{ marginLeft: 4 }}>Completado</span>
+              </button>
+            )}
           </div>
           {clozes.map((c, i) => {
             const chosen = answers[i]

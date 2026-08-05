@@ -96,6 +96,103 @@
           "explanation": "consistir en + inf. = 〜にある（固定構文）。前置詞 en 必須。"
         }
       ]
+    },
+    {
+      "id": "text_02",
+      "title": "La relación rota del ser humano y la naturaleza (2ª parte)",
+      "author": "Juan F. Samaniego",
+      "source": "SIELE C1 / DELE C1 - Texto Nº6",
+      "source_url": "https://www.lamarea.com/2023/08/16/la-relacion-rota-del-ser-humano-y-la-naturaleza-amenazas-medioambientales-america-latina/",
+      "type": "cloze",
+      "level": "C1",
+      "added_at": "2026-08-05",
+      "paragraphs": [
+        "Algunos de los nuevos gobiernos de América Latina llegaron al poder con la promesa {{1}} el brazo de poner fin al extractivismo y frenar la destrucción del medioambiente. Sin embargo, a nivel regional, los proyectos de prospección y extracción de petróleo y gas siguen teniendo mucho {{2}}. En los últimos años, México y Ecuador han seguido {{3}} por una industria que supone una importante fuente de ingresos, pero que ya da muestras de agotamiento y es origen de multitud de conflictos ambientales. Y, mientras el gobierno de Brasil no acaba de definir su {{4}} con la extracción petrolera, Venezuela se agarra a un sector nacional en crisis profunda, Argentina intenta impulsar la construcción de plataformas offshore en el océano y Surinam y Guyana se entregan a una nueva {{5}} del oro negro.",
+        "Minería para la transición energética",
+        "Los {{6}} eólicos, los paneles fotovoltaicos y los coches eléctricos, pero también los smartphones, los centros de datos o las tecnologías de realidad virtual, comparten un denominador común: una {{7}} inagotable de metales. Según la Agencia Internacional de la Energía, la demanda mundial de minerales se multiplicará por seis de aquí a mediados de siglo. Los protagonistas serán, sobre todo, el cobre, el níquel, el cobalto y el litio. Sudamérica tiene reservas importantes de todos ellos y, en particular, de litio ({{8}} del 60% de todos los recursos identificados en el mundo). Su extracción se ha disparado en Bolivia, Argentina y Chile en los últimos años {{9}} poner en peligro ecosistemas delicados, como pueden ser los salares andinos, y contaminar y alterar las fuentes de agua potable de las que dependen millones de personas en la región.",
+        "El riesgo de defender la tierra",
+        "En 2021, 200 personas fueron asesinadas en todo el mundo por {{10}} los derechos humanos, la tierra y el medioambiente. México, Colombia y Brasil lideran esta triste estadística, concentrando más de la mitad de las {{11}} mortales, según los datos de la organización Global Witness. Pero el asesinato es solamente el final de un duro camino, en el que antes hay {{12}} directas a los líderes ambientales y sus familias, ataques y desplazamientos forzosos. Oficialmente, los conflictos por el territorio con empresas extractivas (petroleras, mineras, agrícolas, etc.) {{13}} detrás de uno de cada cuatro asesinatos, si bien las causas de la mayoría de ellos casi nunca se investigan en profundidad. Proteger a los defensores de la tierra y el medioambiente, de la mano de instrumentos como el Acuerdo de Escazú aprobado en 2021, es uno de los grandes retos ambientales de la región."
+      ],
+      "clozes": [
+        {
+          "n": 1,
+          "options": ["bajo", "sobre", "en"],
+          "answer": 0,
+          "explanation": "con la promesa bajo el brazo = 掲げて（比喩：抱えて／看板にして）。定型的な言い回しで「〜という約束を旗印に」。"
+        },
+        {
+          "n": 2,
+          "options": ["cronista", "protagonista", "protagonismo"],
+          "answer": 2,
+          "explanation": "tener mucho + 抽象名詞（不可算）が必要。protagonismo = 主役性・存在感（抽象名詞）。protagonista/cronista は人。"
+        },
+        {
+          "n": 3,
+          "options": ["apostando", "cortando", "retando"],
+          "answer": 0,
+          "explanation": "apostar por = 〜に賭ける・重点的に取り組む（C1頻出）。他は前置詞 por と共起しない or 意味不成立。"
+        },
+        {
+          "n": 4,
+          "options": ["forma", "postura", "manera"],
+          "answer": 1,
+          "explanation": "definir su postura (con/ante/sobre) = 立場を明確にする（政治的スタンス）。forma・manera は「方法」で文脈に合わない。"
+        },
+        {
+          "n": 5,
+          "options": ["viveza", "fiebre", "temperatura"],
+          "answer": 1,
+          "explanation": "la fiebre del oro = ゴールドラッシュ（歴史的な決まり文句）。ここでは「石油ラッシュ」の比喩。"
+        },
+        {
+          "n": 6,
+          "options": ["molineros", "molinetes", "molinos"],
+          "answer": 2,
+          "explanation": "molinos eólicos = 風車（風力発電機）。molineros = 粉屋（人）、molinetes = 回転棒/入場ゲート。"
+        },
+        {
+          "n": 7,
+          "options": ["sed", "inapetencia", "desgana"],
+          "answer": 0,
+          "explanation": "sed de + 名詞 = 〜への渇望（比喩）。inapetencia/desgana は逆の意味（食欲不振・気乗り薄）。"
+        },
+        {
+          "n": 8,
+          "options": ["en torno", "alrededor", "sobre"],
+          "answer": 1,
+          "explanation": "alrededor del 60% = 約60%（数値の概算）。en torno は「a」が必要（en torno a）。"
+        },
+        {
+          "n": 9,
+          "options": ["para", "debido a", "a costa de"],
+          "answer": 2,
+          "explanation": "a costa de + inf. = 〜を犠牲にして（負の代償）。para は目的、debido a は原因で文脈に合わない。"
+        },
+        {
+          "n": 10,
+          "options": ["defender", "acusar", "absolver"],
+          "answer": 0,
+          "explanation": "文脈：環境活動家が殺されたのは「defender = 守ろうとしたため」。acusar（告発）・absolver（無罪放免）は不成立。"
+        },
+        {
+          "n": 11,
+          "options": ["personas", "víctimas", "difuntas"],
+          "answer": 1,
+          "explanation": "víctimas mortales = 死者（決まり文句）。personas mortales は不自然、difuntas は形容詞用法で文法崩れ。"
+        },
+        {
+          "n": 12,
+          "options": ["amenazas", "alabanzas", "ganancias"],
+          "answer": 0,
+          "explanation": "amenazas directas a = 〜に対する直接の脅迫。alabanzas（賞賛）・ganancias（利益）は文脈と正反対。"
+        },
+        {
+          "n": 13,
+          "options": ["son", "están", "---"],
+          "answer": 1,
+          "explanation": "estar detrás de = 〜の背後にいる／原因である。位置・状態は estar。ser では意味が成立しない。"
+        }
+      ]
     }
   ]
 }

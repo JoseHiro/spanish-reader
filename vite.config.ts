@@ -10,6 +10,7 @@ const ALLOWED = new Set([
   'encounters',
   'quiz_results',
   'vocab_baseline',
+  'progress',
 ])
 
 function dataApi() {

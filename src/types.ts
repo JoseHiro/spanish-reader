@@ -54,3 +54,10 @@ export type QuizResult = {
   wrong_words: string[]
   taken_at: string
 }
+
+export type TextProgress = {
+  completed: boolean
+  completed_at?: string
+}
+
+export type ProgressMap = { [text_id: string]: TextProgress }

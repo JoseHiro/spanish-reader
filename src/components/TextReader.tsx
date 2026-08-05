@@ -3,22 +3,26 @@ import type * as React from 'react'
 import type { Text, Word, WordState, Encounter } from '../types'
 import { tokenize, normalize } from '../lib/tokenize'
 import { WordPopup } from './WordPopup'
-import { IconArrowLeft, IconEye, IconEyeOff } from './Icons'
+import { IconArrowLeft, IconEye, IconEyeOff, IconCheck } from './Icons'
 
 export function TextReader({
   text,
   words,
+  completed,
   onBack,
   onOpenQuiz,
   onWordUpdate,
   onEncounter,
+  onToggleCompleted,
 }: {
   text: Text
   words: Word[]
+  completed: boolean
   onBack: () => void
   onOpenQuiz: () => void
   onWordUpdate: (w: Word) => void
   onEncounter: (e: Encounter) => void
+  onToggleCompleted: () => void
 }) {
   const [revealed, setRevealed] = useState(false)
   const [popup, setPopup] = useState<{
@@ -105,6 +109,16 @@ export function TextReader({
           )}
           <span style={{ marginLeft: 6 }}>
             {revealed ? 'Ocultar respuestas' : 'Mostrar respuestas'}
+          </span>
+        </button>
+        <button
+          onClick={onToggleCompleted}
+          className={completed ? 'done-btn' : ''}
+          title={completed ? 'Desmarcar como completado' : 'Marcar como completado'}
+        >
+          <IconCheck size={14} strokeWidth={2.2} />
+          <span style={{ marginLeft: 4 }}>
+            {completed ? 'Completado' : 'Marcar completado'}
           </span>
         </button>
         <div className="spacer" />
