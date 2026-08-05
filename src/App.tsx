@@ -6,6 +6,7 @@ import { TextReader } from './components/TextReader'
 import { ClozeQuiz } from './components/ClozeQuiz'
 import { VocabList } from './components/VocabList'
 import { Dashboard } from './components/Dashboard'
+import { Header } from './components/Header'
 import {
   IconRead,
   IconVocab,
@@ -144,6 +145,9 @@ export function App() {
       </aside>
 
       <main className="main">
+        {!loading && !err && (
+          <Header crumbs={buildCrumbs(view, currentText, setView)} words={words} />
+        )}
         <div className="container">
           {err && (
             <div className="empty" style={{ color: 'var(--red-fg)' }}>
@@ -201,6 +205,36 @@ export function App() {
       </main>
     </div>
   )
+}
+
+function buildCrumbs(
+  view: View,
+  currentText: Text | undefined,
+  setView: (v: View) => void,
+): { label: string; onClick?: () => void }[] {
+  switch (view.name) {
+    case 'home':
+      return [{ label: 'Leer' }]
+    case 'read':
+      return [
+        { label: 'Leer', onClick: () => setView({ name: 'home' }) },
+        { label: currentText?.title ?? '—' },
+      ]
+    case 'quiz':
+      return [
+        { label: 'Leer', onClick: () => setView({ name: 'home' }) },
+        {
+          label: currentText?.title ?? '—',
+          onClick: () =>
+            currentText && setView({ name: 'read', textId: currentText.id }),
+        },
+        { label: 'Test' },
+      ]
+    case 'vocab':
+      return [{ label: 'Vocabulario' }]
+    case 'dashboard':
+      return [{ label: 'Progreso' }]
+  }
 }
 
 function ThemeControl({
