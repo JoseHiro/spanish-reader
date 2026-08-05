@@ -1,0 +1,500 @@
+{
+  "words": [
+    {
+      "lemma": "embarcarse",
+      "state": "probably_known",
+      "pos": "verbo pron.",
+      "meaning_ja": "(en algo) 〜に乗り出す、深く関わる（比喩）",
+      "example": "vivimos embarcados en la obsesión de mejorar",
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_answer",
+        "expression"
+      ]
+    },
+    {
+      "lemma": "acometer",
+      "state": "probably_known",
+      "pos": "verbo tr.",
+      "meaning_ja": "襲う、着手する",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor"
+      ]
+    },
+    {
+      "lemma": "emprender",
+      "state": "probably_known",
+      "pos": "verbo tr.",
+      "meaning_ja": "(事業などを)始める、企てる",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor"
+      ]
+    },
+    {
+      "lemma": "orden",
+      "state": "probably_known",
+      "pos": "sust.",
+      "meaning_ja": "el orden = 秩序・領域 / la orden = 命令（性で意味変化）",
+      "example": "en todos los órdenes de nuestra vida",
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_answer",
+        "gender_variation"
+      ]
+    },
+    {
+      "lemma": "a tenor de",
+      "state": "unknown",
+      "pos": "loc. prep.",
+      "meaning_ja": "〜から判断すると、〜を鑑みて",
+      "example": "a tenor de la cantidad de horas de psiquiatra que consumimos",
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_answer",
+        "expression",
+        "C1_key"
+      ]
+    },
+    {
+      "lemma": "a causa de",
+      "state": "mastered",
+      "pos": "loc. prep.",
+      "meaning_ja": "〜のせいで（原因）",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor"
+      ]
+    },
+    {
+      "lemma": "a consecuencia de",
+      "state": "probably_known",
+      "pos": "loc. prep.",
+      "meaning_ja": "〜の結果として",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor"
+      ]
+    },
+    {
+      "lemma": "interminable",
+      "state": "probably_known",
+      "pos": "adj.",
+      "meaning_ja": "終わりのない、果てしない",
+      "example": "son interminables los cambios que producimos",
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_answer"
+      ]
+    },
+    {
+      "lemma": "finito",
+      "state": "probably_known",
+      "pos": "adj.",
+      "meaning_ja": "有限の",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor"
+      ]
+    },
+    {
+      "lemma": "limitado",
+      "state": "mastered",
+      "pos": "adj.",
+      "meaning_ja": "限られた",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor"
+      ]
+    },
+    {
+      "lemma": "atrincherarse",
+      "state": "unknown",
+      "pos": "verbo pron.",
+      "meaning_ja": "塹壕に隠れる、立てこもる、頑固に固守する",
+      "example": "atrincherarnos en sus rincones",
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_answer",
+        "C1_key"
+      ]
+    },
+    {
+      "lemma": "refugiarse",
+      "state": "mastered",
+      "pos": "verbo pron.",
+      "meaning_ja": "避難する、身を寄せる",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor"
+      ]
+    },
+    {
+      "lemma": "profecía",
+      "state": "probably_known",
+      "pos": "sust. f.",
+      "meaning_ja": "預言、予言",
+      "example": "Matrix ha actuado como profecías",
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_answer"
+      ]
+    },
+    {
+      "lemma": "fusionarse",
+      "state": "unknown",
+      "pos": "verbo pron.",
+      "meaning_ja": "融合する、合併する【fisión=核分裂と混同注意】",
+      "example": "nuestros cuerpos tienen que fusionarse con la máquina",
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_answer",
+        "false_friend_trap",
+        "C1_key"
+      ]
+    },
+    {
+      "lemma": "fundir",
+      "state": "probably_known",
+      "pos": "verbo tr.",
+      "meaning_ja": "溶かす、鋳造する",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor"
+      ]
+    },
+    {
+      "lemma": "fisionar",
+      "state": "unknown",
+      "pos": "verbo tr.",
+      "meaning_ja": "核分裂させる（≠ fusionar）",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor",
+        "false_friend_trap"
+      ]
+    },
+    {
+      "lemma": "crónica",
+      "state": "probably_known",
+      "pos": "sust. f.",
+      "meaning_ja": "年代記、ルポルタージュ、報道記事",
+      "example": "puede convertirse en la crónica del gran fracaso",
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_answer",
+        "gender_variation"
+      ]
+    },
+    {
+      "lemma": "crónico",
+      "state": "mastered",
+      "pos": "adj.",
+      "meaning_ja": "慢性の（形容詞）",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor"
+      ]
+    },
+    {
+      "lemma": "crono",
+      "state": "unknown",
+      "pos": "sust. m.",
+      "meaning_ja": "ストップウォッチ、タイム（口語）",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor"
+      ]
+    },
+    {
+      "lemma": "pinta",
+      "state": "unknown",
+      "pos": "sust. f.",
+      "meaning_ja": "見た目、様子。tener (toda) la pinta de = いかにも〜しそう",
+      "example": "tienen toda la pinta de adentrarnos por los derroteros",
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_answer",
+        "expression",
+        "C1_key"
+      ]
+    },
+    {
+      "lemma": "punta",
+      "state": "mastered",
+      "pos": "sust. f.",
+      "meaning_ja": "先端、とがった先",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor"
+      ]
+    },
+    {
+      "lemma": "puntada",
+      "state": "unknown",
+      "pos": "sust. f.",
+      "meaning_ja": "一針、縫い目、鋭い痛み",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor"
+      ]
+    },
+    {
+      "lemma": "turbio",
+      "state": "unknown",
+      "pos": "adj.",
+      "meaning_ja": "濁った、うさんくさい、後ろ暗い",
+      "example": "derroteros más tortuosos y turbios",
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_answer",
+        "C1_key"
+      ]
+    },
+    {
+      "lemma": "disturbio",
+      "state": "probably_known",
+      "pos": "sust. m.",
+      "meaning_ja": "騒乱、暴動",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor"
+      ]
+    },
+    {
+      "lemma": "juicio",
+      "state": "probably_known",
+      "pos": "sust. m.",
+      "meaning_ja": "判断、分別、裁判。en su sano juicio = 正気で",
+      "example": "Lo que nadie en su sano juicio se atreverá a negar",
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_answer",
+        "expression"
+      ]
+    },
+    {
+      "lemma": "dictamen",
+      "state": "unknown",
+      "pos": "sust. m.",
+      "meaning_ja": "鑑定、裁定、意見書",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor",
+        "C1_key"
+      ]
+    },
+    {
+      "lemma": "litigio",
+      "state": "unknown",
+      "pos": "sust. m.",
+      "meaning_ja": "訴訟、法的紛争",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_distractor",
+        "C1_key"
+      ]
+    },
+    {
+      "lemma": "consistir en",
+      "state": "probably_known",
+      "pos": "verbo intr.",
+      "meaning_ja": "〜にある、〜から成る（前置詞 en 必須）",
+      "example": "El caramelo consiste en hacernos creer...",
+      "source_text_id": "text_01",
+      "tags": [
+        "cloze_answer",
+        "expression"
+      ]
+    },
+    {
+      "lemma": "libre albedrío",
+      "state": "probably_known",
+      "pos": "loc. sust.",
+      "meaning_ja": "自由意志",
+      "example": "a nuestro libre albedrío",
+      "source_text_id": "text_01",
+      "tags": [
+        "expression",
+        "C1_key"
+      ]
+    },
+    {
+      "lemma": "escaso",
+      "state": "mastered",
+      "pos": "adj.",
+      "meaning_ja": "乏しい、僅かな",
+      "example": "con escaso éxito",
+      "source_text_id": "text_01",
+      "tags": []
+    },
+    {
+      "lemma": "híbrido",
+      "state": "probably_known",
+      "pos": "sust./adj.",
+      "meaning_ja": "ハイブリッド、混成の",
+      "example": "híbridos de la carne y los huesos",
+      "source_text_id": "text_01",
+      "tags": []
+    },
+    {
+      "lemma": "insospechado",
+      "state": "mastered",
+      "pos": "adj.",
+      "meaning_ja": "予想もしなかった、思いもよらない",
+      "example": "hasta límites insospechados",
+      "source_text_id": "text_01",
+      "tags": [
+        "C1_key"
+      ]
+    },
+    {
+      "lemma": "rincón",
+      "state": "mastered",
+      "pos": "sust. m.",
+      "meaning_ja": "隅、片隅",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": []
+    },
+    {
+      "lemma": "convivencia",
+      "state": "probably_known",
+      "pos": "sust. f.",
+      "meaning_ja": "共生、共同生活",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": []
+    },
+    {
+      "lemma": "fracaso",
+      "state": "mastered",
+      "pos": "sust. m.",
+      "meaning_ja": "失敗（↔ éxito）",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": []
+    },
+    {
+      "lemma": "distopía",
+      "state": "probably_known",
+      "pos": "sust. f.",
+      "meaning_ja": "ディストピア",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": []
+    },
+    {
+      "lemma": "a los mandos",
+      "state": "unknown",
+      "pos": "loc.",
+      "meaning_ja": "実権を握って、操縦席にいる（比喩）",
+      "example": "los personajes a los mandos",
+      "source_text_id": "text_01",
+      "tags": [
+        "expression",
+        "C1_key"
+      ]
+    },
+    {
+      "lemma": "derrotero",
+      "state": "unknown",
+      "pos": "sust. m.",
+      "meaning_ja": "進路、行く末（比喩でよく使う）",
+      "example": "adentrarnos por los derroteros más tortuosos",
+      "source_text_id": "text_01",
+      "tags": [
+        "C1_key"
+      ]
+    },
+    {
+      "lemma": "tortuoso",
+      "state": "probably_known",
+      "pos": "adj.",
+      "meaning_ja": "曲がりくねった、複雑な",
+      "example": null,
+      "source_text_id": "text_01",
+      "tags": []
+    },
+    {
+      "lemma": "atreverse a",
+      "state": "mastered",
+      "pos": "verbo pron.",
+      "meaning_ja": "あえて〜する",
+      "example": "nadie se atreverá a negar",
+      "source_text_id": "text_01",
+      "tags": [
+        "expression"
+      ]
+    },
+    {
+      "lemma": "adentrarse",
+      "state": "probably_known",
+      "pos": "verbo pron.",
+      "meaning_ja": "(en) 〜の中に入り込む、深く進む",
+      "example": "adentrarnos por los derroteros",
+      "source_text_id": "text_01",
+      "tags": []
+    },
+    {
+      "lemma": "caramelo",
+      "state": "probably_known",
+      "pos": "sust. m.",
+      "meaning_ja": "キャンディー。比喩：うまい話・餌",
+      "example": "El caramelo consiste en hacernos creer...",
+      "source_text_id": "text_01",
+      "tags": [
+        "metaphor"
+      ]
+    },
+    {
+      "lemma": "vivimos",
+      "state": "probably_known",
+      "source_text_id": "text_01",
+      "tags": [
+        "tapped"
+      ]
+    },
+    {
+      "lemma": "bueno",
+      "state": "mastered",
+      "source_text_id": "text_01",
+      "tags": [
+        "tapped"
+      ]
+    },
+    {
+      "lemma": "mejoras",
+      "state": "mastered",
+      "source_text_id": "text_01",
+      "tags": [
+        "tapped"
+      ]
+    },
+    {
+      "lemma": "mejorar",
+      "state": "unknown",
+      "source_text_id": "text_01",
+      "tags": [
+        "tapped"
+      ]
+    }
+  ]
+}

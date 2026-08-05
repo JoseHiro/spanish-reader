@@ -1,0 +1,101 @@
+{
+  "texts": [
+    {
+      "id": "text_01",
+      "title": "Los Mejorados",
+      "author": "Francisco Javier López Martín",
+      "source": "SIELE C1 / DELE C1 - Texto Nº5",
+      "source_url": "https://www.elsaltodiario.com/el-blog-de-el-salto/mejorados",
+      "type": "cloze",
+      "level": "C1",
+      "added_at": "2026-08-04",
+      "paragraphs": [
+        "Desde que nacemos, vivimos {{1}} en la obsesión de mejorar. No sabemos muy bien qué mejoras, ni hasta qué punto será bueno que lleguen, pero las queremos, a nuestro libre albedrío, en todos {{2}} de nuestra vida. Lo hacemos con escaso éxito, {{3}} la cantidad de horas de psiquiatra, psicólogo, entrenador y fisio que consumimos. Pero las queremos.",
+        "Podríamos creer que estamos en el buen camino, en la buena dirección. De hecho, es inmenso el esfuerzo que realizamos y son {{4}} los cambios que producimos, utilizando la explosión de las nuevas tecnologías. Todo tan deprisa, tan aceleradamente. Vamos de cabeza, directos, hacia unas mayores capacidades físicas y mentales. Seremos mejores, produciremos más y mejor. {{5}} híbridos de la carne y los huesos que hoy somos y de las máquinas que compartirán nuestros cuerpos, nuestra especie, la humanidad. El movimiento transhumanista no define claramente si se trata de ser mejores personas, o tan solo de hacer crecer hasta límites insospechados la ideología de la mejora humana.",
+        "Unas gafas nos permitirán entrar en otros mundos, vivir en ellos, {{6}} en sus rincones, vivir otros valores, otra ética, otras maneras de entender la convivencia. Películas como Matrix, o Blade Runner, han actuado como {{7}} hacia las que caminamos decididamente.",
+        "Pero todo tiene un precio. Para ser como dioses, nuestros cuerpos y nuestras mentes tienen que {{8}} con la máquina. Transformar nuestra inteligencia en artificial. Nos cuentan el cuento de la gran oportunidad, pero puede convertirse en {{9}} del gran fracaso, en el nacimiento de la gran distopía. De hecho, los personajes a los mandos tienen toda la {{10}} de adentrarnos por los derroteros más tortuosos y {{11}}.",
+        "Lo que nadie en su sano {{12}} se atreverá a negar es que nos encontramos en un momento crucial. Llevan tiempo diseñando el futuro de la humanidad y el de cada uno de nosotros. Para ellos somos poco más que ratones de laboratorio. Nos encontramos en los inicios de un largo camino que, según ellos, nos mejorará físicamente y proyectará nuestro pensamiento. El caramelo {{13}} en hacernos creer que ya no sufriremos, no nos haremos viejos, no enfermaremos y no moriremos. Es mentira, pero suena bien. Los transhumanistas serían tan sólo una evolución modernizadora del humanismo, o eso quieren que creamos."
+      ],
+      "clozes": [
+        {
+          "n": 1,
+          "options": ["embarcados", "acometidos", "emprendidos"],
+          "answer": 0,
+          "explanation": "estar embarcado en = 〜に深く関わっている（比喩）。acometer は他動詞、emprender は事業に使う。"
+        },
+        {
+          "n": 2,
+          "options": ["las órdenes", "los órdenes", "los ordenes"],
+          "answer": 1,
+          "explanation": "el orden = 秩序・領域（男性名詞）／la orden = 命令。en todos los órdenes de la vida は定型表現。"
+        },
+        {
+          "n": 3,
+          "options": ["a causa", "a consecuencia", "a tenor de"],
+          "answer": 2,
+          "explanation": "a tenor de = 〜から判断すると（証拠に基づく推論）。他は de が必要 & 因果関係の主張になる。"
+        },
+        {
+          "n": 4,
+          "options": ["finitos", "limitados", "interminables"],
+          "answer": 2,
+          "explanation": "前文の「es inmenso el esfuerzo」との論理的整合。莫大な努力→終わりない変化。"
+        },
+        {
+          "n": 5,
+          "options": ["Seremos", "Estaremos", "---"],
+          "answer": 0,
+          "explanation": "アイデンティティ・本質は ser。ハイブリッド「である」ものになる、という文脈。"
+        },
+        {
+          "n": 6,
+          "options": ["atrincherar", "atrincherarnos", "refugiar"],
+          "answer": 1,
+          "explanation": "並列動詞（vivir, vivir）に合わせ、主語 nosotros に対する再帰形が必要。"
+        },
+        {
+          "n": 7,
+          "options": ["profecías", "productos", "orígenes"],
+          "answer": 0,
+          "explanation": "映画が未来を予言した、という比喩。productos・orígenes では因果が逆または意味不明。"
+        },
+        {
+          "n": 8,
+          "options": ["fundir", "fisionar", "fusionarse"],
+          "answer": 2,
+          "explanation": "【偽友注意】fusión（融合）≠ fisión（核分裂）。再帰形 fusionarse が必要。"
+        },
+        {
+          "n": 9,
+          "options": ["la crónica", "el crónico", "el crono"],
+          "answer": 0,
+          "explanation": "la crónica = 年代記・ルポ（女性名詞）。crónico は形容詞、crono はストップウォッチ。"
+        },
+        {
+          "n": 10,
+          "options": ["punta", "pinta", "puntada"],
+          "answer": 1,
+          "explanation": "tener toda la pinta de + inf. = いかにも〜しそうだ（C1超頻出の口語）。"
+        },
+        {
+          "n": 11,
+          "options": ["rubios", "turbios", "disturbios"],
+          "answer": 1,
+          "explanation": "turbio（形容詞・濁った/怪しい）。disturbio は名詞、rubio は「金髪」。"
+        },
+        {
+          "n": 12,
+          "options": ["juicio", "dictamen", "litigio"],
+          "answer": 0,
+          "explanation": "en su sano juicio = 正気で（定型表現）。dictamen = 鑑定、litigio = 訴訟。"
+        },
+        {
+          "n": 13,
+          "options": ["asiste", "existe", "consiste"],
+          "answer": 2,
+          "explanation": "consistir en + inf. = 〜にある（固定構文）。前置詞 en 必須。"
+        }
+      ]
+    }
+  ]
+}
