@@ -2,7 +2,7 @@
   "words": [
     {
       "lemma": "embarcarse",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "verbo pron.",
       "meaning_ja": "(en algo) 〜に乗り出す、深く関わる（比喩）",
       "example": "vivimos embarcados en la obsesión de mejorar",
@@ -10,7 +10,18 @@
       "tags": [
         "cloze_answer",
         "expression"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-18T12:27:55.573Z",
+        "stability": 4.46685806,
+        "difficulty": 5.27296793,
+        "elapsed_days": 0,
+        "scheduled_days": 4,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:27:55.573Z"
+      }
     },
     {
       "lemma": "acometer",
@@ -21,22 +32,44 @@
       "source_text_id": "text_01",
       "tags": [
         "cloze_distractor"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-14T12:38:03.298Z",
+        "stability": 0.28393202,
+        "difficulty": 7.99230136,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 3,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:28:03.298Z"
+      }
     },
     {
       "lemma": "emprender",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "verbo tr.",
       "meaning_ja": "(事業などを)始める、企てる",
       "example": null,
       "source_text_id": "text_01",
       "tags": [
         "cloze_distractor"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-16T12:23:21.173Z",
+        "stability": 1.66658995,
+        "difficulty": 6.47329177,
+        "elapsed_days": 0,
+        "scheduled_days": 2,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:23:21.173Z"
+      }
     },
     {
       "lemma": "orden",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "sust.",
       "meaning_ja": "el orden = 秩序・領域 / la orden = 命令（性で意味変化）",
       "example": "en todos los órdenes de nuestra vida",
@@ -44,11 +77,22 @@
       "tags": [
         "cloze_answer",
         "gender_variation"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-16T12:23:23.139Z",
+        "stability": 1.66658995,
+        "difficulty": 6.47329177,
+        "elapsed_days": 0,
+        "scheduled_days": 2,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:23:23.139Z"
+      }
     },
     {
       "lemma": "a tenor de",
-      "state": "unknown",
+      "state": "mastered",
       "pos": "loc. prep.",
       "meaning_ja": "〜から判断すると、〜を鑑みて",
       "example": "a tenor de la cantidad de horas de psiquiatra que consumimos",
@@ -57,7 +101,18 @@
         "cloze_answer",
         "expression",
         "C1_key"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-15T12:33:52.781Z",
+        "stability": 1.39967119,
+        "difficulty": 7.02294795,
+        "elapsed_days": 0,
+        "scheduled_days": 1,
+        "reps": 3,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:33:52.781Z"
+      }
     },
     {
       "lemma": "a causa de",
@@ -68,40 +123,84 @@
       "source_text_id": "text_01",
       "tags": [
         "cloze_distractor"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-21T12:29:04.056Z",
+        "stability": 7.48750228,
+        "difficulty": 4.51098561,
+        "elapsed_days": 0,
+        "scheduled_days": 7,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:29:04.056Z"
+      }
     },
     {
       "lemma": "a consecuencia de",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "loc. prep.",
       "meaning_ja": "〜の結果として",
       "example": null,
       "source_text_id": "text_01",
       "tags": [
         "cloze_distractor"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-21T12:29:10.856Z",
+        "stability": 7.48750228,
+        "difficulty": 4.51098561,
+        "elapsed_days": 0,
+        "scheduled_days": 7,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:29:10.856Z"
+      }
     },
     {
       "lemma": "interminable",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "adj.",
       "meaning_ja": "終わりのない、果てしない",
       "example": "son interminables los cambios que producimos",
       "source_text_id": "text_01",
       "tags": [
         "cloze_answer"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-21T12:29:13.506Z",
+        "stability": 7.48750228,
+        "difficulty": 4.51098561,
+        "elapsed_days": 0,
+        "scheduled_days": 7,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:29:13.506Z"
+      }
     },
     {
       "lemma": "finito",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "adj.",
       "meaning_ja": "有限の",
       "example": null,
       "source_text_id": "text_01",
       "tags": [
         "cloze_distractor"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-16T12:24:12.331Z",
+        "stability": 1.66658995,
+        "difficulty": 6.47329177,
+        "elapsed_days": 0,
+        "scheduled_days": 2,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:24:12.331Z"
+      }
     },
     {
       "lemma": "limitado",
@@ -112,11 +211,22 @@
       "source_text_id": "text_01",
       "tags": [
         "cloze_distractor"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-21T12:29:15.889Z",
+        "stability": 7.48750228,
+        "difficulty": 4.51098561,
+        "elapsed_days": 0,
+        "scheduled_days": 7,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:29:15.889Z"
+      }
     },
     {
       "lemma": "atrincherarse",
-      "state": "unknown",
+      "state": "mastered",
       "pos": "verbo pron.",
       "meaning_ja": "塹壕に隠れる、立てこもる、頑固に固守する",
       "example": "atrincherarnos en sus rincones",
@@ -124,7 +234,18 @@
       "tags": [
         "cloze_answer",
         "C1_key"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-16T12:34:27.602Z",
+        "stability": 2.34617736,
+        "difficulty": 6.54492905,
+        "elapsed_days": 0,
+        "scheduled_days": 2,
+        "reps": 3,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:34:27.602Z"
+      }
     },
     {
       "lemma": "refugiarse",
@@ -135,7 +256,18 @@
       "source_text_id": "text_01",
       "tags": [
         "cloze_distractor"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-16T12:25:08.322Z",
+        "stability": 1.66658995,
+        "difficulty": 6.47329177,
+        "elapsed_days": 0,
+        "scheduled_days": 2,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:25:08.322Z"
+      }
     },
     {
       "lemma": "profecía",
@@ -146,11 +278,22 @@
       "source_text_id": "text_01",
       "tags": [
         "cloze_answer"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-14T12:45:15.915Z",
+        "stability": 0.8350091,
+        "difficulty": 7.50096685,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 3,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:35:15.915Z"
+      }
     },
     {
       "lemma": "fusionarse",
-      "state": "unknown",
+      "state": "mastered",
       "pos": "verbo pron.",
       "meaning_ja": "融合する、合併する【fisión=核分裂と混同注意】",
       "example": "nuestros cuerpos tienen que fusionarse con la máquina",
@@ -159,22 +302,44 @@
         "cloze_answer",
         "false_friend_trap",
         "C1_key"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-16T12:25:30.429Z",
+        "stability": 1.66658995,
+        "difficulty": 6.47329177,
+        "elapsed_days": 0,
+        "scheduled_days": 2,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:25:30.429Z"
+      }
     },
     {
       "lemma": "fundir",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "verbo tr.",
       "meaning_ja": "溶かす、鋳造する",
       "example": null,
       "source_text_id": "text_01",
       "tags": [
         "cloze_distractor"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-21T12:30:21.063Z",
+        "stability": 7.48750228,
+        "difficulty": 4.51098561,
+        "elapsed_days": 0,
+        "scheduled_days": 7,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:30:21.063Z"
+      }
     },
     {
       "lemma": "fisionar",
-      "state": "unknown",
+      "state": "probably_known",
       "pos": "verbo tr.",
       "meaning_ja": "核分裂させる（≠ fusionar）",
       "example": null,
@@ -182,11 +347,22 @@
       "tags": [
         "cloze_distractor",
         "false_friend_trap"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-14T12:45:40.448Z",
+        "stability": 0.8350091,
+        "difficulty": 7.50096685,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 3,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:35:40.448Z"
+      }
     },
     {
       "lemma": "crónica",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "sust. f.",
       "meaning_ja": "年代記、ルポルタージュ、報道記事",
       "example": "puede convertirse en la crónica del gran fracaso",
@@ -194,7 +370,18 @@
       "tags": [
         "cloze_answer",
         "gender_variation"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-16T12:25:41.883Z",
+        "stability": 1.66658995,
+        "difficulty": 6.47329177,
+        "elapsed_days": 0,
+        "scheduled_days": 2,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:25:41.883Z"
+      }
     },
     {
       "lemma": "crónico",
@@ -205,22 +392,44 @@
       "source_text_id": "text_01",
       "tags": [
         "cloze_distractor"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-21T12:31:21.949Z",
+        "stability": 7.48750228,
+        "difficulty": 4.51098561,
+        "elapsed_days": 0,
+        "scheduled_days": 7,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:31:21.949Z"
+      }
     },
     {
       "lemma": "crono",
-      "state": "unknown",
+      "state": "probably_known",
       "pos": "sust. m.",
       "meaning_ja": "ストップウォッチ、タイム（口語）",
       "example": null,
       "source_text_id": "text_01",
       "tags": [
         "cloze_distractor"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-14T12:36:05.358Z",
+        "stability": 0.99424621,
+        "difficulty": 7.04050155,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 2,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:26:05.358Z"
+      }
     },
     {
       "lemma": "pinta",
-      "state": "unknown",
+      "state": "probably_known",
       "pos": "sust. f.",
       "meaning_ja": "見た目、様子。tener (toda) la pinta de = いかにも〜しそう",
       "example": "tienen toda la pinta de adentrarnos por los derroteros",
@@ -229,7 +438,18 @@
         "cloze_answer",
         "expression",
         "C1_key"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-14T12:36:35.744Z",
+        "stability": 0.99424621,
+        "difficulty": 7.04050155,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 2,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:26:35.744Z"
+      }
     },
     {
       "lemma": "punta",
@@ -240,22 +460,44 @@
       "source_text_id": "text_01",
       "tags": [
         "cloze_distractor"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-21T12:31:29.258Z",
+        "stability": 7.48750228,
+        "difficulty": 4.51098561,
+        "elapsed_days": 0,
+        "scheduled_days": 7,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:31:29.258Z"
+      }
     },
     {
       "lemma": "puntada",
-      "state": "unknown",
+      "state": "mastered",
       "pos": "sust. f.",
       "meaning_ja": "一針、縫い目、鋭い痛み",
       "example": null,
       "source_text_id": "text_01",
       "tags": [
         "cloze_distractor"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-16T12:26:39.403Z",
+        "stability": 1.66658995,
+        "difficulty": 6.47329177,
+        "elapsed_days": 0,
+        "scheduled_days": 2,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:26:39.403Z"
+      }
     },
     {
       "lemma": "turbio",
-      "state": "unknown",
+      "state": "probably_known",
       "pos": "adj.",
       "meaning_ja": "濁った、うさんくさい、後ろ暗い",
       "example": "derroteros más tortuosos y turbios",
@@ -263,7 +505,18 @@
       "tags": [
         "cloze_answer",
         "C1_key"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-14T12:37:25.927Z",
+        "stability": 0.99424621,
+        "difficulty": 7.04050155,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 2,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:27:25.927Z"
+      }
     },
     {
       "lemma": "disturbio",
@@ -274,11 +527,22 @@
       "source_text_id": "text_01",
       "tags": [
         "cloze_distractor"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-14T12:37:29.444Z",
+        "stability": 0.99424621,
+        "difficulty": 7.04050155,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 2,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:27:29.444Z"
+      }
     },
     {
       "lemma": "juicio",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "sust. m.",
       "meaning_ja": "判断、分別、裁判。en su sano juicio = 正気で",
       "example": "Lo que nadie en su sano juicio se atreverá a negar",
@@ -286,11 +550,22 @@
       "tags": [
         "cloze_answer",
         "expression"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-16T12:28:00.181Z",
+        "stability": 1.66658995,
+        "difficulty": 6.47329177,
+        "elapsed_days": 0,
+        "scheduled_days": 2,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:28:00.181Z"
+      }
     },
     {
       "lemma": "dictamen",
-      "state": "unknown",
+      "state": "probably_known",
       "pos": "sust. m.",
       "meaning_ja": "鑑定、裁定、意見書",
       "example": null,
@@ -298,11 +573,22 @@
       "tags": [
         "cloze_distractor",
         "C1_key"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-14T12:38:20.174Z",
+        "stability": 0.99424621,
+        "difficulty": 7.04050155,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 2,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:28:20.174Z"
+      }
     },
     {
       "lemma": "litigio",
-      "state": "unknown",
+      "state": "probably_known",
       "pos": "sust. m.",
       "meaning_ja": "訴訟、法的紛争",
       "example": null,
@@ -310,11 +596,22 @@
       "tags": [
         "cloze_distractor",
         "C1_key"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-14T12:39:18.339Z",
+        "stability": 0.99424621,
+        "difficulty": 7.04050155,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 2,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:29:18.339Z"
+      }
     },
     {
       "lemma": "consistir en",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "verbo intr.",
       "meaning_ja": "〜にある、〜から成る（前置詞 en 必須）",
       "example": "El caramelo consiste en hacernos creer...",
@@ -322,7 +619,18 @@
       "tags": [
         "cloze_answer",
         "expression"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-17T12:29:22.230Z",
+        "stability": 2.79359583,
+        "difficulty": 5.906082,
+        "elapsed_days": 0,
+        "scheduled_days": 3,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:29:22.230Z"
+      }
     },
     {
       "lemma": "libre albedrío",
@@ -334,25 +642,58 @@
       "tags": [
         "expression",
         "C1_key"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-14T12:41:26.791Z",
+        "stability": 0.99424621,
+        "difficulty": 7.04050155,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 2,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:31:26.791Z"
+      }
     },
     {
       "lemma": "escaso",
-      "state": "mastered",
+      "state": "probably_known",
       "pos": "adj.",
       "meaning_ja": "乏しい、僅かな",
       "example": "con escaso éxito",
       "source_text_id": "text_01",
-      "tags": []
+      "tags": [],
+      "srs": {
+        "due": "2026-08-14T12:41:33.083Z",
+        "stability": 0.99424621,
+        "difficulty": 7.04050155,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 2,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:31:33.083Z"
+      }
     },
     {
       "lemma": "híbrido",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "sust./adj.",
       "meaning_ja": "ハイブリッド、混成の",
       "example": "híbridos de la carne y los huesos",
       "source_text_id": "text_01",
-      "tags": []
+      "tags": [],
+      "srs": {
+        "due": "2026-08-14T12:36:11.541Z",
+        "stability": 3.173,
+        "difficulty": 5.28243442,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:26:11.541Z"
+      }
     },
     {
       "lemma": "insospechado",
@@ -363,7 +704,18 @@
       "source_text_id": "text_01",
       "tags": [
         "C1_key"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-17T12:31:37.900Z",
+        "stability": 2.79359583,
+        "difficulty": 5.906082,
+        "elapsed_days": 0,
+        "scheduled_days": 3,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:31:37.900Z"
+      }
     },
     {
       "lemma": "rincón",
@@ -372,7 +724,18 @@
       "meaning_ja": "隅、片隅",
       "example": null,
       "source_text_id": "text_01",
-      "tags": []
+      "tags": [],
+      "srs": {
+        "due": "2026-08-17T12:32:28.403Z",
+        "stability": 2.79359583,
+        "difficulty": 5.906082,
+        "elapsed_days": 0,
+        "scheduled_days": 3,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:32:28.403Z"
+      }
     },
     {
       "lemma": "convivencia",
@@ -381,7 +744,18 @@
       "meaning_ja": "共生、共同生活",
       "example": null,
       "source_text_id": "text_01",
-      "tags": []
+      "tags": [],
+      "srs": {
+        "due": "2026-08-14T12:42:37.899Z",
+        "stability": 0.99424621,
+        "difficulty": 7.04050155,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 2,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:32:37.899Z"
+      }
     },
     {
       "lemma": "fracaso",
@@ -390,20 +764,42 @@
       "meaning_ja": "失敗（↔ éxito）",
       "example": null,
       "source_text_id": "text_01",
-      "tags": []
+      "tags": [],
+      "srs": {
+        "due": "2026-08-14T12:37:34.161Z",
+        "stability": 3.173,
+        "difficulty": 5.28243442,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:27:34.161Z"
+      }
     },
     {
       "lemma": "distopía",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "sust. f.",
       "meaning_ja": "ディストピア",
       "example": null,
       "source_text_id": "text_01",
-      "tags": []
+      "tags": [],
+      "srs": {
+        "due": "2026-08-17T12:32:51.286Z",
+        "stability": 2.79359583,
+        "difficulty": 5.906082,
+        "elapsed_days": 0,
+        "scheduled_days": 3,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:32:51.286Z"
+      }
     },
     {
       "lemma": "a los mandos",
-      "state": "unknown",
+      "state": "mastered",
       "pos": "loc.",
       "meaning_ja": "実権を握って、操縦席にいる（比喩）",
       "example": "los personajes a los mandos",
@@ -411,18 +807,40 @@
       "tags": [
         "expression",
         "C1_key"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-17T12:32:57.177Z",
+        "stability": 2.79359583,
+        "difficulty": 5.906082,
+        "elapsed_days": 0,
+        "scheduled_days": 3,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:32:57.177Z"
+      }
     },
     {
       "lemma": "derrotero",
-      "state": "unknown",
+      "state": "probably_known",
       "pos": "sust. m.",
       "meaning_ja": "進路、行く末（比喩でよく使う）",
       "example": "adentrarnos por los derroteros más tortuosos",
       "source_text_id": "text_01",
       "tags": [
         "C1_key"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-14T12:43:19.240Z",
+        "stability": 0.99424621,
+        "difficulty": 7.04050155,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 2,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:33:19.240Z"
+      }
     },
     {
       "lemma": "tortuoso",
@@ -431,7 +849,18 @@
       "meaning_ja": "曲がりくねった、複雑な",
       "example": null,
       "source_text_id": "text_01",
-      "tags": []
+      "tags": [],
+      "srs": {
+        "due": "2026-08-14T12:43:22.440Z",
+        "stability": 0.99424621,
+        "difficulty": 7.04050155,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 2,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:33:22.440Z"
+      }
     },
     {
       "lemma": "atreverse a",
@@ -442,27 +871,60 @@
       "source_text_id": "text_01",
       "tags": [
         "expression"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-17T12:34:14.373Z",
+        "stability": 2.79359583,
+        "difficulty": 5.906082,
+        "elapsed_days": 0,
+        "scheduled_days": 3,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:34:14.373Z"
+      }
     },
     {
       "lemma": "adentrarse",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "verbo pron.",
       "meaning_ja": "(en) 〜の中に入り込む、深く進む",
       "example": "adentrarnos por los derroteros",
       "source_text_id": "text_01",
-      "tags": []
+      "tags": [],
+      "srs": {
+        "due": "2026-08-30T12:29:26.889Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:29:26.889Z"
+      }
     },
     {
       "lemma": "caramelo",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "sust. m.",
       "meaning_ja": "キャンディー。比喩：うまい話・餌",
       "example": "El caramelo consiste en hacernos creer...",
       "source_text_id": "text_01",
       "tags": [
         "metaphor"
-      ]
+      ],
+      "srs": {
+        "due": "2026-08-17T12:34:39.182Z",
+        "stability": 2.79359583,
+        "difficulty": 5.906082,
+        "elapsed_days": 0,
+        "scheduled_days": 3,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:34:39.182Z"
+      }
     },
     {
       "lemma": "vivimos",
@@ -498,39 +960,101 @@
     },
     {
       "lemma": "bajo el brazo",
-      "state": "unknown",
+      "forms": [
+        "bajo"
+      ],
+      "state": "mastered",
       "pos": "loc.",
       "meaning_ja": "「〜という約束を掲げて」の比喩。con la promesa bajo el brazo = 公約を旗印に",
       "example": "llegaron al poder con la promesa bajo el brazo de poner fin al extractivismo",
       "source_text_id": "text_02",
-      "tags": ["cloze_answer", "expression", "C1_key"]
+      "tags": [
+        "cloze_answer",
+        "expression",
+        "C1_key"
+      ],
+      "srs": {
+        "due": "2026-08-17T12:34:54.907Z",
+        "stability": 2.79359583,
+        "difficulty": 5.906082,
+        "elapsed_days": 0,
+        "scheduled_days": 3,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:34:54.907Z"
+      }
     },
     {
       "lemma": "protagonismo",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "sust. m.",
       "meaning_ja": "主役性、存在感、目立つ役割（抽象名詞・不可算）",
       "example": "los proyectos siguen teniendo mucho protagonismo",
       "source_text_id": "text_02",
-      "tags": ["cloze_answer"]
+      "tags": [
+        "cloze_answer"
+      ],
+      "srs": {
+        "due": "2026-08-17T12:34:57.582Z",
+        "stability": 2.79359583,
+        "difficulty": 5.906082,
+        "elapsed_days": 0,
+        "scheduled_days": 3,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:34:57.582Z"
+      }
     },
     {
       "lemma": "cronista",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "sust. m./f.",
       "meaning_ja": "年代記作者、記者",
       "example": null,
       "source_text_id": "text_02",
-      "tags": ["cloze_distractor"]
+      "tags": [
+        "cloze_distractor"
+      ],
+      "srs": {
+        "due": "2026-08-17T12:35:00.106Z",
+        "stability": 2.79359583,
+        "difficulty": 5.906082,
+        "elapsed_days": 0,
+        "scheduled_days": 3,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:35:00.106Z"
+      }
     },
     {
       "lemma": "apostar por",
-      "state": "unknown",
+      "forms": [
+        "apostando"
+      ],
+      "state": "mastered",
       "pos": "verbo intr.",
       "meaning_ja": "〜に賭ける、〜に重点的に取り組む（C1頻出）",
       "example": "México y Ecuador han seguido apostando por una industria",
       "source_text_id": "text_02",
-      "tags": ["cloze_answer", "expression", "C1_key"]
+      "tags": [
+        "cloze_answer",
+        "expression",
+        "C1_key"
+      ],
+      "srs": {
+        "due": "2026-08-30T12:29:57.813Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:29:57.813Z"
+      }
     },
     {
       "lemma": "retar",
@@ -539,61 +1063,158 @@
       "meaning_ja": "挑む、挑戦する",
       "example": null,
       "source_text_id": "text_02",
-      "tags": ["cloze_distractor"]
+      "tags": [
+        "cloze_distractor"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:45:02.298Z",
+        "stability": 0.99424621,
+        "difficulty": 7.04050155,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 2,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:35:02.298Z"
+      }
     },
     {
       "lemma": "postura",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "sust. f.",
       "meaning_ja": "姿勢、立場、スタンス（definir su postura = 立場を明確にする）",
       "example": "el gobierno de Brasil no acaba de definir su postura",
       "source_text_id": "text_02",
-      "tags": ["cloze_answer", "expression"]
+      "tags": [
+        "cloze_answer",
+        "expression"
+      ],
+      "srs": {
+        "due": "2026-08-30T12:30:02.283Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:30:02.283Z"
+      }
     },
     {
       "lemma": "fiebre",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "sust. f.",
       "meaning_ja": "熱、熱狂。la fiebre del oro = ゴールドラッシュ",
       "example": "una nueva fiebre del oro negro",
       "source_text_id": "text_02",
-      "tags": ["cloze_answer", "expression"]
+      "tags": [
+        "cloze_answer",
+        "expression"
+      ],
+      "srs": {
+        "due": "2026-08-17T12:35:18.381Z",
+        "stability": 2.79359583,
+        "difficulty": 5.906082,
+        "elapsed_days": 0,
+        "scheduled_days": 3,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:35:18.381Z"
+      }
     },
     {
       "lemma": "viveza",
-      "state": "unknown",
+      "state": "probably_known",
       "pos": "sust. f.",
       "meaning_ja": "活発さ、機敏さ、生き生きした様子",
       "example": null,
       "source_text_id": "text_02",
-      "tags": ["cloze_distractor", "C1_key"]
+      "tags": [
+        "cloze_distractor",
+        "C1_key"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:45:20.640Z",
+        "stability": 0.99424621,
+        "difficulty": 7.04050155,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 2,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:35:20.640Z"
+      }
     },
     {
       "lemma": "molino",
-      "state": "mastered",
+      "forms": [
+        "molinos"
+      ],
+      "state": "probably_known",
       "pos": "sust. m.",
       "meaning_ja": "水車、風車。molino eólico = 風力発電機",
       "example": "los molinos eólicos, los paneles fotovoltaicos",
       "source_text_id": "text_02",
-      "tags": ["cloze_answer"]
+      "tags": [
+        "cloze_answer"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:45:24.515Z",
+        "stability": 0.99424621,
+        "difficulty": 7.04050155,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 2,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:35:24.515Z"
+      }
     },
     {
       "lemma": "molinero",
-      "state": "unknown",
+      "state": "mastered",
       "pos": "sust. m./f.",
       "meaning_ja": "粉屋、製粉業者",
       "example": null,
       "source_text_id": "text_02",
-      "tags": ["cloze_distractor"]
+      "tags": [
+        "cloze_distractor"
+      ],
+      "srs": {
+        "due": "2026-08-17T12:35:28.773Z",
+        "stability": 2.79359583,
+        "difficulty": 5.906082,
+        "elapsed_days": 0,
+        "scheduled_days": 3,
+        "reps": 2,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:35:28.773Z"
+      }
     },
     {
       "lemma": "molinete",
-      "state": "unknown",
+      "state": "probably_known",
       "pos": "sust. m.",
       "meaning_ja": "小さな回転車、風車のおもちゃ、入場ゲート",
       "example": null,
       "source_text_id": "text_02",
-      "tags": ["cloze_distractor"]
+      "tags": [
+        "cloze_distractor"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:36:19.267Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:31:19.267Z"
+      }
     },
     {
       "lemma": "sed",
@@ -602,34 +1223,92 @@
       "meaning_ja": "喉の渇き。比喩：〜への渇望（sed de + 名詞）",
       "example": "una sed inagotable de metales",
       "source_text_id": "text_02",
-      "tags": ["cloze_answer", "metaphor"]
+      "tags": [
+        "cloze_answer",
+        "metaphor"
+      ],
+      "srs": {
+        "due": "2026-08-30T12:31:39.816Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:31:39.816Z"
+      }
     },
     {
       "lemma": "inapetencia",
-      "state": "unknown",
+      "state": "probably_known",
       "pos": "sust. f.",
       "meaning_ja": "食欲不振、意欲のなさ",
       "example": null,
       "source_text_id": "text_02",
-      "tags": ["cloze_distractor", "C1_key"]
+      "tags": [
+        "cloze_distractor",
+        "C1_key"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:36:42.862Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:31:42.862Z"
+      }
     },
     {
       "lemma": "desgana",
-      "state": "unknown",
+      "state": "probably_known",
       "pos": "sust. f.",
       "meaning_ja": "気乗り薄、無気力、しぶしぶ",
       "example": null,
       "source_text_id": "text_02",
-      "tags": ["cloze_distractor", "C1_key"]
+      "tags": [
+        "cloze_distractor",
+        "C1_key"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:36:49.974Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:31:49.974Z"
+      }
     },
     {
       "lemma": "alrededor de",
+      "forms": [
+        "alrededor"
+      ],
       "state": "mastered",
       "pos": "loc. prep.",
       "meaning_ja": "〜の周りに、約〜（数値の概算）",
       "example": "alrededor del 60% de los recursos",
       "source_text_id": "text_02",
-      "tags": ["cloze_answer"]
+      "tags": [
+        "cloze_answer"
+      ],
+      "srs": {
+        "due": "2026-08-30T12:32:17.184Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:32:17.184Z"
+      }
     },
     {
       "lemma": "en torno a",
@@ -638,16 +1317,47 @@
       "meaning_ja": "〜の周辺に、〜について（a が必須）",
       "example": null,
       "source_text_id": "text_02",
-      "tags": ["cloze_distractor"]
+      "tags": [
+        "cloze_distractor"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:37:19.116Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:32:19.116Z"
+      }
     },
     {
       "lemma": "a costa de",
-      "state": "unknown",
+      "forms": [
+        "costa"
+      ],
+      "state": "probably_known",
       "pos": "loc. prep.",
       "meaning_ja": "〜を犠牲にして、〜と引き換えに（負の代償）",
       "example": "a costa de poner en peligro ecosistemas delicados",
       "source_text_id": "text_02",
-      "tags": ["cloze_answer", "expression", "C1_key"]
+      "tags": [
+        "cloze_answer",
+        "expression",
+        "C1_key"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:37:22.149Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:32:22.149Z"
+      }
     },
     {
       "lemma": "debido a",
@@ -656,7 +1366,20 @@
       "meaning_ja": "〜のために、〜が原因で",
       "example": null,
       "source_text_id": "text_02",
-      "tags": ["cloze_distractor"]
+      "tags": [
+        "cloze_distractor"
+      ],
+      "srs": {
+        "due": "2026-08-30T12:32:25.482Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:32:25.482Z"
+      }
     },
     {
       "lemma": "defender",
@@ -665,7 +1388,20 @@
       "meaning_ja": "守る、擁護する",
       "example": "asesinadas por defender los derechos humanos",
       "source_text_id": "text_02",
-      "tags": ["cloze_answer"]
+      "tags": [
+        "cloze_answer"
+      ],
+      "srs": {
+        "due": "2026-08-30T12:32:30.103Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:32:30.103Z"
+      }
     },
     {
       "lemma": "acusar",
@@ -674,7 +1410,20 @@
       "meaning_ja": "告発する、非難する",
       "example": null,
       "source_text_id": "text_02",
-      "tags": ["cloze_distractor"]
+      "tags": [
+        "cloze_distractor"
+      ],
+      "srs": {
+        "due": "2026-08-30T12:32:34.548Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:32:34.548Z"
+      }
     },
     {
       "lemma": "absolver",
@@ -683,43 +1432,120 @@
       "meaning_ja": "無罪放免にする、罪を赦す",
       "example": null,
       "source_text_id": "text_02",
-      "tags": ["cloze_distractor", "C1_key"]
+      "tags": [
+        "cloze_distractor",
+        "C1_key"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:37:40.566Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:32:40.566Z"
+      }
     },
     {
       "lemma": "víctima",
+      "forms": [
+        "víctimas"
+      ],
       "state": "mastered",
       "pos": "sust. f.",
       "meaning_ja": "被害者。víctimas mortales = 死者",
       "example": "más de la mitad de las víctimas mortales",
       "source_text_id": "text_02",
-      "tags": ["cloze_answer", "expression"]
+      "tags": [
+        "cloze_answer",
+        "expression"
+      ],
+      "srs": {
+        "due": "2026-08-30T12:32:47.019Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:32:47.019Z"
+      }
     },
     {
       "lemma": "difunto",
+      "forms": [
+        "difuntas"
+      ],
       "state": "probably_known",
       "pos": "adj./sust.",
       "meaning_ja": "亡くなった、故人",
       "example": null,
       "source_text_id": "text_02",
-      "tags": ["cloze_distractor"]
+      "tags": [
+        "cloze_distractor"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:37:59.469Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:32:59.469Z"
+      }
     },
     {
       "lemma": "amenaza",
+      "forms": [
+        "amenazas"
+      ],
       "state": "mastered",
       "pos": "sust. f.",
       "meaning_ja": "脅威、脅迫",
       "example": "amenazas directas a los líderes ambientales",
       "source_text_id": "text_02",
-      "tags": ["cloze_answer"]
+      "tags": [
+        "cloze_answer"
+      ],
+      "srs": {
+        "due": "2026-08-30T12:33:02.923Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:33:02.923Z"
+      }
     },
     {
       "lemma": "alabanza",
-      "state": "unknown",
+      "state": "probably_known",
       "pos": "sust. f.",
       "meaning_ja": "賞賛、称賛",
       "example": null,
       "source_text_id": "text_02",
-      "tags": ["cloze_distractor", "C1_key"]
+      "tags": [
+        "cloze_distractor",
+        "C1_key"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:38:05.607Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:33:05.607Z"
+      }
     },
     {
       "lemma": "ganancia",
@@ -728,106 +1554,281 @@
       "meaning_ja": "利益、収益",
       "example": null,
       "source_text_id": "text_02",
-      "tags": ["cloze_distractor"]
+      "tags": [
+        "cloze_distractor"
+      ],
+      "srs": {
+        "due": "2026-08-30T12:33:08.181Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:33:08.181Z"
+      }
     },
     {
       "lemma": "estar detrás de",
-      "state": "unknown",
+      "forms": [
+        "están"
+      ],
+      "state": "probably_known",
       "pos": "loc. verb.",
       "meaning_ja": "〜の背後にいる／原因である（位置・状態は estar）",
       "example": "los conflictos están detrás de uno de cada cuatro asesinatos",
       "source_text_id": "text_02",
-      "tags": ["cloze_answer", "expression"]
+      "tags": [
+        "cloze_answer",
+        "expression"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:38:15.823Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:33:15.823Z"
+      }
     },
     {
       "lemma": "extractivismo",
-      "state": "unknown",
+      "state": "probably_known",
       "pos": "sust. m.",
       "meaning_ja": "資源採取主義（採掘産業に依存する経済モデル）",
       "example": "poner fin al extractivismo",
       "source_text_id": "text_02",
-      "tags": ["C1_key", "topic_ecology"]
+      "tags": [
+        "C1_key",
+        "topic_ecology"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:38:40.798Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:33:40.798Z"
+      }
     },
     {
       "lemma": "prospección",
-      "state": "unknown",
+      "state": "probably_known",
       "pos": "sust. f.",
       "meaning_ja": "探査、試掘（地下資源）",
       "example": "proyectos de prospección y extracción de petróleo",
       "source_text_id": "text_02",
-      "tags": ["C1_key"]
+      "tags": [
+        "C1_key"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:38:59.160Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:33:59.160Z"
+      }
     },
     {
       "lemma": "agotamiento",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "sust. m.",
       "meaning_ja": "枯渇、疲弊",
       "example": "da muestras de agotamiento",
       "source_text_id": "text_02",
-      "tags": []
+      "tags": [],
+      "srs": {
+        "due": "2026-08-30T12:34:10.398Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:34:10.398Z"
+      }
     },
     {
       "lemma": "agarrarse a",
-      "state": "probably_known",
+      "forms": [
+        "agarra"
+      ],
+      "state": "mastered",
       "pos": "verbo pron.",
       "meaning_ja": "〜にしがみつく、必死に頼る",
       "example": "Venezuela se agarra a un sector nacional en crisis",
       "source_text_id": "text_02",
-      "tags": ["C1_key"]
+      "tags": [
+        "C1_key"
+      ],
+      "srs": {
+        "due": "2026-08-30T12:34:16.649Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:34:16.649Z"
+      }
     },
     {
       "lemma": "entregarse a",
-      "state": "probably_known",
+      "forms": [
+        "entregan"
+      ],
+      "state": "mastered",
       "pos": "verbo pron.",
       "meaning_ja": "〜に身を投じる、没頭する",
       "example": "Surinam y Guyana se entregan a una nueva fiebre del oro",
       "source_text_id": "text_02",
-      "tags": []
+      "tags": [],
+      "srs": {
+        "due": "2026-08-30T12:34:21.357Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:34:21.357Z"
+      }
     },
     {
       "lemma": "oro negro",
-      "state": "probably_known",
+      "forms": [
+        "negro"
+      ],
+      "state": "mastered",
       "pos": "loc. sust.",
       "meaning_ja": "黒い金＝石油の別称",
       "example": "una nueva fiebre del oro negro",
       "source_text_id": "text_02",
-      "tags": ["metaphor"]
+      "tags": [
+        "metaphor"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:44:36.015Z",
+        "stability": 3.173,
+        "difficulty": 5.28243442,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:34:36.015Z"
+      }
     },
     {
       "lemma": "denominador común",
+      "forms": [
+        "denominador"
+      ],
       "state": "probably_known",
       "pos": "loc. sust.",
       "meaning_ja": "共通項、共通分母",
       "example": "comparten un denominador común",
       "source_text_id": "text_02",
-      "tags": ["expression"]
+      "tags": [
+        "expression"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:39:47.999Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:34:47.999Z"
+      }
     },
     {
       "lemma": "inagotable",
-      "state": "probably_known",
+      "state": "mastered",
       "pos": "adj.",
       "meaning_ja": "尽きることのない、無尽蔵の",
       "example": "una sed inagotable de metales",
       "source_text_id": "text_02",
-      "tags": ["C1_key"]
+      "tags": [
+        "C1_key"
+      ],
+      "srs": {
+        "due": "2026-08-30T12:35:11.440Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:35:11.440Z"
+      }
     },
     {
       "lemma": "dispararse",
+      "forms": [
+        "disparado"
+      ],
       "state": "probably_known",
       "pos": "verbo pron.",
       "meaning_ja": "急激に増える、跳ね上がる",
       "example": "su extracción se ha disparado",
       "source_text_id": "text_02",
-      "tags": ["C1_key"]
+      "tags": [
+        "C1_key"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:40:33.306Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:35:33.306Z"
+      }
     },
     {
       "lemma": "salar",
-      "state": "unknown",
+      "forms": [
+        "salares"
+      ],
+      "state": "probably_known",
       "pos": "sust. m.",
       "meaning_ja": "塩湖、塩原（アンデスの塩湖）",
       "example": "los salares andinos",
       "source_text_id": "text_02",
-      "tags": ["topic_geography"]
+      "tags": [
+        "topic_geography"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:40:35.406Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:35:35.406Z"
+      }
     },
     {
       "lemma": "asesinato",
@@ -836,34 +1837,145 @@
       "meaning_ja": "殺人、暗殺",
       "example": null,
       "source_text_id": "text_02",
-      "tags": []
+      "tags": [],
+      "srs": {
+        "due": "2026-08-30T12:35:37.348Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:35:37.348Z"
+      }
     },
     {
       "lemma": "desplazamiento forzoso",
+      "forms": [
+        "desplazamientos",
+        "forzosos"
+      ],
       "state": "probably_known",
       "pos": "loc. sust.",
       "meaning_ja": "強制移住・避難",
       "example": null,
       "source_text_id": "text_02",
-      "tags": ["expression"]
+      "tags": [
+        "expression"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:40:51.290Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:35:51.290Z"
+      }
     },
     {
       "lemma": "reto",
+      "forms": [
+        "retos"
+      ],
       "state": "mastered",
       "pos": "sust. m.",
       "meaning_ja": "課題、挑戦",
       "example": "uno de los grandes retos ambientales",
       "source_text_id": "text_02",
-      "tags": []
+      "tags": [],
+      "srs": {
+        "due": "2026-08-30T12:35:53.214Z",
+        "stability": 15.69105,
+        "difficulty": 3.22450159,
+        "elapsed_days": 0,
+        "scheduled_days": 16,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-08-14T12:35:53.214Z"
+      }
     },
     {
       "lemma": "de la mano de",
+      "forms": [
+        "mano"
+      ],
       "state": "probably_known",
       "pos": "loc. prep.",
       "meaning_ja": "〜と手を携えて、〜の助けを借りて",
       "example": "de la mano de instrumentos como el Acuerdo de Escazú",
       "source_text_id": "text_02",
-      "tags": ["expression", "C1_key"]
-    }
+      "tags": [
+        "expression",
+        "C1_key"
+      ],
+      "srs": {
+        "due": "2026-08-14T12:40:56.839Z",
+        "stability": 1.18385,
+        "difficulty": 6.48830527,
+        "elapsed_days": 0,
+        "scheduled_days": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 1,
+        "last_review": "2026-08-14T12:35:56.839Z"
+      }
+    },
+    {
+      "lemma": "están",
+      "state": "unknown",
+      "source_text_id": "text_02",
+      "tags": [
+        "quiz_wrong"
+      ]
+    },
+    {
+      "lemma": "son",
+      "state": "unknown",
+      "source_text_id": "text_02",
+      "tags": [
+        "quiz_wrong"
+      ]
+    },
+    { "lemma": "aferrarse a", "forms": ["aferrada"], "state": "probably_known", "pos": "v. prnl.", "meaning_ja": "〜にしがみつく、固く結び付く", "example": "la edición aferrada al cuerpo", "source_text_id": "text_03", "tags": ["C1_key"] },
+    { "lemma": "editorial", "forms": ["editorial"], "state": "probably_known", "pos": "s. f.", "meaning_ja": "出版社、出版事業", "example": "pensar en una editorial", "source_text_id": "text_03", "tags": [] },
+    { "lemma": "taller literario", "forms": ["talleres"], "state": "probably_known", "pos": "loc. nom.", "meaning_ja": "文学ワークショップ", "example": "Coordinaba talleres literarios para niños", "source_text_id": "text_03", "tags": ["expression"] },
+    { "lemma": "marioneta", "forms": ["marionetas"], "state": "probably_known", "pos": "s. f.", "meaning_ja": "操り人形、マリオネット", "example": "marionetas de madera", "source_text_id": "text_03", "tags": [] },
+    { "lemma": "converger", "forms": ["convergieron"], "state": "probably_known", "pos": "v.", "meaning_ja": "一点に集まる、収束する", "example": "convergieron varias pasiones personales", "source_text_id": "text_03", "tags": ["C1_key"] },
+    { "lemma": "advertir", "forms": ["advertí"], "state": "probably_known", "pos": "v.", "meaning_ja": "気づく、警告する", "example": "Advertí que los movimientos…", "source_text_id": "text_03", "tags": ["C1_key"] },
+    { "lemma": "tridimensional", "forms": ["tridimensionales"], "state": "probably_known", "pos": "adj.", "meaning_ja": "三次元の、立体的な", "example": "formas tridimensionales", "source_text_id": "text_03", "tags": [] },
+    { "lemma": "seguir en marcha", "forms": ["marcha"], "state": "probably_known", "pos": "loc. verb.", "meaning_ja": "活動を続ける、稼働し続ける", "example": "sigue en marcha", "source_text_id": "text_03", "tags": ["expression"] },
+    { "lemma": "apenar", "forms": ["apenado"], "state": "probably_known", "pos": "v.", "meaning_ja": "悲しませる、残念に思わせる", "example": "siempre me ha apenado", "source_text_id": "text_03", "tags": ["C1_key"] },
+    { "lemma": "capa de sentido", "forms": ["capas"], "state": "probably_known", "pos": "loc. nom.", "meaning_ja": "意味の層、重なり合う解釈", "example": "otras capas de sentido", "source_text_id": "text_03", "tags": ["expression"] },
+    { "lemma": "seducir", "forms": ["seducen"], "state": "probably_known", "pos": "v.", "meaning_ja": "魅了する、引き付ける", "example": "me seducen los libros", "source_text_id": "text_03", "tags": [] },
+    { "lemma": "al revés", "forms": ["revés"], "state": "probably_known", "pos": "loc. adv.", "meaning_ja": "逆に、逆さまに", "example": "se leen al revés", "source_text_id": "text_03", "tags": ["expression"] },
+    { "lemma": "provocar un vuelco al corazón", "forms": ["vuelco"], "state": "probably_known", "pos": "loc. verb.", "meaning_ja": "心を大きく揺さぶる", "example": "textos que provocan un vuelco al corazón", "source_text_id": "text_03", "tags": ["expression", "C1_key"] },
+    { "lemma": "primordial", "forms": ["primordial"], "state": "probably_known", "pos": "adj.", "meaning_ja": "最も重要な、根本的な", "example": "la función primordial del editor", "source_text_id": "text_03", "tags": ["C1_key"] },
+    { "lemma": "tarea titánica", "forms": ["titánica"], "state": "probably_known", "pos": "loc. nom.", "meaning_ja": "途方もなく困難な仕事", "example": "es una tarea titánica", "source_text_id": "text_03", "tags": ["expression"] },
+    { "lemma": "encrucijada", "forms": ["encrucijada"], "state": "probably_known", "pos": "s. f.", "meaning_ja": "岐路、難しい選択を迫られる状況", "example": "deja a los editores en una encrucijada", "source_text_id": "text_03", "tags": ["C1_key"] },
+    { "lemma": "emancipador", "forms": ["emancipador"], "state": "probably_known", "pos": "adj.", "meaning_ja": "解放をもたらす", "example": "un objeto emancipador", "source_text_id": "text_03", "tags": ["C1_key"] },
+    { "lemma": "circulación", "forms": ["circulación"], "state": "probably_known", "pos": "s. f.", "meaning_ja": "流通、普及、循環", "example": "formas de producción y circulación", "source_text_id": "text_03", "tags": [] },
+    { "lemma": "mero", "forms": ["meros"], "state": "probably_known", "pos": "adj.", "meaning_ja": "単なる、ほんの", "example": "meros objetos de consumo", "source_text_id": "text_04", "tags": ["C1_key"] },
+    { "lemma": "peculiaridad", "forms": ["peculiaridades"], "state": "probably_known", "pos": "s. f.", "meaning_ja": "固有の特徴、特異性", "example": "destacar sus peculiaridades", "source_text_id": "text_04", "tags": [] },
+    { "lemma": "turismo de masas", "forms": ["masas"], "state": "probably_known", "pos": "loc. nom.", "meaning_ja": "マスツーリズム、大衆観光", "example": "en torno al turismo de masas", "source_text_id": "text_04", "tags": ["expression"] },
+    { "lemma": "potenciar", "forms": ["potenciando"], "state": "probably_known", "pos": "v.", "meaning_ja": "強化する、増大させる", "example": "potenciando el mismo tipo de espacios", "source_text_id": "text_04", "tags": ["C1_key"] },
+    { "lemma": "homogeneizar", "forms": ["homogeniza"], "state": "probably_known", "pos": "v.", "meaning_ja": "均質化する", "example": "se homogeniza el territorio urbano", "source_text_id": "text_04", "tags": ["C1_key"] },
+    { "lemma": "escenografía", "forms": ["escenografía"], "state": "probably_known", "pos": "s. f.", "meaning_ja": "舞台装置、舞台美術", "example": "presentándose como una escenografía", "source_text_id": "text_04", "tags": ["C1_key"] },
+    { "lemma": "simulacro", "forms": ["simulacros"], "state": "probably_known", "pos": "s. m.", "meaning_ja": "模造、見せかけ、シミュラークル", "example": "Simulacros de ciudad", "source_text_id": "text_04", "tags": ["C1_key"] },
+    { "lemma": "amoldarse a", "forms": ["amoldarse"], "state": "probably_known", "pos": "v. prnl.", "meaning_ja": "〜に合わせる、適応する", "example": "amoldarse a las expectativas", "source_text_id": "text_04", "tags": ["expression", "C1_key"] },
+    { "lemma": "desplazar", "forms": ["desplazando"], "state": "probably_known", "pos": "v.", "meaning_ja": "押しのける、移動させる", "example": "desplazando la vida ciudadana", "source_text_id": "text_04", "tags": [] },
+    { "lemma": "mercantilizar", "forms": ["mercantiliza"], "state": "probably_known", "pos": "v.", "meaning_ja": "商品化する、市場の論理に置く", "example": "todo se mercantiliza", "source_text_id": "text_04", "tags": ["C1_key"] },
+    { "lemma": "prolífico", "forms": ["prolífico"], "state": "probably_known", "pos": "adj.", "meaning_ja": "多作な、実りの多い", "example": "el más prolífico de los arquitectos", "source_text_id": "text_04", "tags": ["C1_key"] },
+    { "lemma": "esgrafiado", "forms": ["esgrafiado"], "state": "probably_known", "pos": "s. m.", "meaning_ja": "掻き落とし装飾、スグラッフィート", "example": "un elegante esgrafiado", "source_text_id": "text_04", "tags": [] },
+    { "lemma": "voluta", "forms": ["volutas"], "state": "probably_known", "pos": "s. f.", "meaning_ja": "渦巻き形の装飾", "example": "jarrones y volutas en granate", "source_text_id": "text_04", "tags": [] },
+    { "lemma": "sede", "forms": ["sede"], "state": "probably_known", "pos": "s. f.", "meaning_ja": "本拠地、所在地", "example": "ser la sede del primer gran almacén", "source_text_id": "text_04", "tags": ["C1_key"] },
+    { "lemma": "decantarse por", "forms": ["decantó"], "state": "probably_known", "pos": "v. prnl.", "meaning_ja": "〜を選ぶ、〜の方に傾く", "example": "se decantó por un estilo racionalista", "source_text_id": "text_04", "tags": ["expression", "C1_key"] },
+    { "lemma": "una suerte de", "forms": ["suerte"], "state": "probably_known", "pos": "loc.", "meaning_ja": "一種の〜、ある種の〜", "example": "una suerte de arrepentimiento", "source_text_id": "text_04", "tags": ["expression"] },
+    { "lemma": "obstaculizar", "forms": ["obstaculizar"], "state": "probably_known", "pos": "v.", "meaning_ja": "妨げる、障害となる", "example": "obstaculizar su visión", "source_text_id": "text_04", "tags": ["C1_key"] },
+    { "lemma": "delirante", "forms": ["delirante"], "state": "probably_known", "pos": "adj.", "meaning_ja": "常軌を逸した、幻惑的な", "example": "un espectáculo tan delirante", "source_text_id": "text_04", "tags": ["C1_key"] }
   ]
 }

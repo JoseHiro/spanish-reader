@@ -2,6 +2,8 @@ export type WordState = 'mastered' | 'probably_known' | 'unknown'
 
 export type Word = {
   lemma: string
+  /** Forms that occur in the source text (inflections or a tappable part of a phrase). */
+  forms?: string[]
   state: WordState
   pos?: string
   meaning_ja?: string
@@ -12,8 +14,11 @@ export type Word = {
     due: string
     stability: number
     difficulty: number
+    elapsed_days: number
+    scheduled_days: number
     reps: number
     lapses: number
+    state: number
     last_review?: string
   }
 }
@@ -35,6 +40,7 @@ export type Text = {
   level?: string
   added_at?: string
   paragraphs: string[]
+  translation_ja?: string[]
   clozes?: Cloze[]
 }
 

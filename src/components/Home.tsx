@@ -4,13 +4,11 @@ import { IconChevronRight, IconCheck } from './Icons'
 export function Home({
   texts,
   progress,
-  onOpenRead,
-  onOpenQuiz,
+  onOpenText,
 }: {
   texts: Text[]
   progress: ProgressMap
-  onOpenRead: (id: string) => void
-  onOpenQuiz: (id: string) => void
+  onOpenText: (text: Text) => void
 }) {
   const completedCount = texts.filter((t) => progress[t.id]?.completed).length
   return (
@@ -32,7 +30,7 @@ export function Home({
           <div
             key={t.id}
             className={'card clickable' + (done ? ' done' : '')}
-            onClick={() => onOpenRead(t.id)}
+            onClick={() => onOpenText(t)}
           >
             <div
               className="title"
@@ -62,22 +60,12 @@ export function Home({
               <button
                 onClick={(e) => {
                   e.stopPropagation()
-                  onOpenRead(t.id)
+                  onOpenText(t)
                 }}
               >
-                Leer
+                Abrir
                 <IconChevronRight size={14} strokeWidth={1.8} />
               </button>
-              {t.type === 'cloze' && (
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation()
-                    onOpenQuiz(t.id)
-                  }}
-                >
-                  Test
-                </button>
-              )}
             </div>
           </div>
         )

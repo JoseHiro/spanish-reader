@@ -13,6 +13,25 @@ const ALLOWED = new Set([
   'progress',
 ])
 
+// Keep writes to the same data file from overlapping. A quiz can update
+// several words at once, and concurrent fs.writeFile calls may interleave.
+const writeQueues = new Map<string, Promise<void>>()
+
+async function writeDataFile(filepath: string, body: string) {
+  const previous = writeQueues.get(filepath) ?? Promise.resolve()
+  const next = previous.catch(() => undefined).then(async () => {
+    const temporary = `${filepath}.tmp`
+    await fs.writeFile(temporary, body)
+    await fs.rename(temporary, filepath)
+  })
+  writeQueues.set(filepath, next)
+  try {
+    await next
+  } finally {
+    if (writeQueues.get(filepath) === next) writeQueues.delete(filepath)
+  }
+}
+
 function dataApi() {
   return {
     name: 'data-api',
@@ -40,7 +59,7 @@ function dataApi() {
             for await (const chunk of req) chunks.push(chunk)
             const body = Buffer.concat(chunks).toString('utf-8')
             JSON.parse(body)
-            await fs.writeFile(filepath, body)
+            await writeDataFile(filepath, body)
             res.statusCode = 204
             res.end()
             return

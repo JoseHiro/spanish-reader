@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import type * as React from 'react'
 import type { Text, Word, WordState, Encounter } from '../types'
-import { tokenize, normalize } from '../lib/tokenize'
+import { tokenize } from '../lib/tokenize'
+import { findWordBySurface } from '../lib/words'
 import { WordPopup } from './WordPopup'
 import { IconArrowLeft, IconEye, IconEyeOff, IconCheck } from './Icons'
 
@@ -32,11 +33,7 @@ export function TextReader({
   } | null>(null)
 
   function findWord(surface: string): Word | null {
-    const n = normalize(surface)
-    return (
-      words.find((w) => !w.lemma.includes(' ') && normalize(w.lemma) === n) ??
-      null
-    )
+    return findWordBySurface(words, surface)
   }
 
   function onWordClick(
@@ -198,11 +195,11 @@ function renderParagraph(
       )
     }
     const word = ctx.findWord(tok.text)
-    const cls = word ? `tok-word st-${word.state}` : 'tok-word'
+    if (!word) return <span key={i}>{tok.text}</span>
     return (
       <span
         key={i}
-        className={cls}
+        className={`tok-word st-${word.state}`}
         onClick={(ev) => ctx.onWordClick(tok.text, sentence, ev)}
       >
         {tok.text}

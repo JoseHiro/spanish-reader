@@ -218,6 +218,11 @@ a {
 .shell {
   min-height: 100vh;
   padding-left: var(--sidebar-w);
+  transition: padding-left 180ms var(--ease);
+}
+
+.shell.sidebar-collapsed {
+  padding-left: 0;
 }
 
 .sidebar {
@@ -232,6 +237,11 @@ a {
   width: var(--sidebar-w);
   height: 100vh;
   z-index: 10;
+  transition: transform 180ms var(--ease);
+}
+
+.sidebar-collapsed .sidebar {
+  transform: translateX(-100%);
 }
 
 .sidebar .brand {
@@ -242,6 +252,34 @@ a {
   font-weight: 600;
   font-size: 15px;
   letter-spacing: -0.01em;
+}
+
+.sidebar-toggle {
+  margin-left: auto;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  color: var(--text-mute);
+}
+
+.sidebar-toggle:hover {
+  color: var(--text);
+  background: var(--bg-hover);
+}
+
+.sidebar-reopen {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: var(--radius);
+  background: var(--bg-elev);
+  box-shadow: var(--shadow-md);
 }
 
 .sidebar .brand-mark {
@@ -362,6 +400,10 @@ a {
   max-width: var(--page-max);
   margin: 0 auto;
   padding: 32px 56px 0;
+}
+
+.container.quiz-container {
+  max-width: 1240px;
 }
 
 /* ==========================================================================
@@ -859,6 +901,86 @@ h2 {
    Cloze quiz
    ========================================================================== */
 
+.quiz-paragraph {
+  margin-bottom: 1em;
+}
+
+.quiz-paragraph.with-feedback:has(.paragraph-feedback) {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(280px, 2fr);
+  gap: 20px;
+  align-items: start;
+  margin: 0 -16px 28px;
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-mute);
+}
+
+.quiz-paragraph > p {
+  margin-bottom: 0;
+}
+
+.paragraph-feedback {
+  margin: 10px 0 24px;
+  padding: 14px 16px 2px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-elev);
+}
+
+.feedback-item {
+  margin-bottom: 12px;
+}
+
+.feedback-answer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-soft);
+  font-size: 13.5px;
+}
+
+.feedback-answer > span:first-child {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.paragraph-feedback .explanation {
+  margin-bottom: 0;
+}
+
+.chunk-translation-ja {
+  grid-column: 1 / -1;
+  margin-top: 2px;
+  padding: 16px 18px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--bg-elev);
+  color: var(--text-soft);
+  font-family: var(--font-serif);
+  font-size: 15.5px;
+  line-height: 1.9;
+}
+
+.quiz-paragraph:nth-child(2) .chunk-translation-ja,
+.quiz-paragraph:nth-child(4) .chunk-translation-ja {
+  padding: 10px 14px;
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 17px;
+  font-weight: 650;
+}
+
+@media (max-width: 820px) {
+  .quiz-paragraph.with-feedback:has(.paragraph-feedback) {
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    background: transparent;
+  }
+}
+
 .cloze-options {
   display: inline-flex;
   gap: 6px;
@@ -1013,6 +1135,85 @@ h2 {
   background: var(--accent);
   color: var(--accent-fg);
   border-color: var(--accent);
+}
+
+.review-start {
+  margin: 20px 0 24px;
+}
+
+.review-session,
+.review-complete {
+  max-width: 640px;
+  margin: 36px auto 0;
+  text-align: center;
+}
+
+.review-progress {
+  margin-bottom: 12px;
+  color: var(--text-mute);
+  font-size: 13px;
+}
+
+.review-card {
+  min-height: 330px;
+  padding: 46px 42px 34px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--bg-elev);
+  box-shadow: var(--shadow-md);
+}
+
+.review-lemma {
+  margin-bottom: 5px;
+  font-family: var(--font-serif);
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.review-pos {
+  margin-bottom: 40px;
+  color: var(--text-mute);
+  font-size: 13px;
+}
+
+.review-answer {
+  margin: 32px 0 14px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.review-example {
+  margin-bottom: 28px;
+  color: var(--text-soft);
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-style: italic;
+}
+
+.review-grades {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.review-grades button:nth-child(1) { color: var(--red-fg); }
+.review-grades button:nth-child(3) { color: var(--green-fg); }
+.review-grades button:nth-child(4) { color: var(--blue-fg); }
+
+.review-exit {
+  margin-top: 16px;
+  border: none;
+  color: var(--text-mute);
+  background: transparent;
+}
+
+@media (max-width: 620px) {
+  .review-card { padding: 34px 20px 24px; }
+  .review-grades { grid-template-columns: repeat(2, 1fr); }
 }
 
 .empty {

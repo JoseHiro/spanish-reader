@@ -14,4 +14,6 @@ export {
   Check as IconCheck,
   X as IconX,
   ChevronRight as IconChevronRight,
+  PanelLeftClose as IconPanelLeftClose,
+  PanelLeftOpen as IconPanelLeftOpen,
 } from 'lucide-react'

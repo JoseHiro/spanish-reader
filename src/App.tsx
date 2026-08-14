@@ -20,6 +20,8 @@ import {
   IconSun,
   IconMoon,
   IconMonitor,
+  IconPanelLeftClose,
+  IconPanelLeftOpen,
 } from './components/Icons'
 import { useTheme, type ThemeMode } from './lib/theme'
 
@@ -39,6 +41,7 @@ export function App() {
   const [progress, setProgress] = useState<ProgressMap>({})
   const [loading, setLoading] = useState(true)
   const [err, setErr] = useState<string | null>(null)
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
   const { mode, setMode } = useTheme()
 
   async function reloadAll() {
@@ -136,11 +139,21 @@ export function App() {
   ]
 
   return (
-    <div className="shell">
+    <div className={`shell${sidebarCollapsed ? ' sidebar-collapsed' : ''}`}>
       <aside className="sidebar">
         <div className="brand">
           <div className="brand-mark">SR</div>
           <div>Spanish Reader</div>
+          {view.name === 'quiz' && (
+            <button
+              className="sidebar-toggle"
+              onClick={() => setSidebarCollapsed(true)}
+              title="Ocultar barra lateral"
+              aria-label="Ocultar barra lateral"
+            >
+              <IconPanelLeftClose size={18} strokeWidth={1.8} />
+            </button>
+          )}
         </div>
 
         <div className="nav-section">Estudio</div>
@@ -165,11 +178,22 @@ export function App() {
         </div>
       </aside>
 
+      {view.name === 'quiz' && sidebarCollapsed && (
+        <button
+          className="sidebar-reopen"
+          onClick={() => setSidebarCollapsed(false)}
+          title="Mostrar barra lateral"
+          aria-label="Mostrar barra lateral"
+        >
+          <IconPanelLeftOpen size={19} strokeWidth={1.8} />
+        </button>
+      )}
+
       <main className="main">
         {!loading && !err && (
           <Header crumbs={buildCrumbs(view, currentText, setView)} words={words} />
         )}
-        <div className="container">
+        <div className={`container${view.name === 'quiz' ? ' quiz-container' : ''}`}>
           {err && (
             <div className="empty" style={{ color: 'var(--red-fg)' }}>
               {err}
@@ -183,8 +207,13 @@ export function App() {
                 <Home
                   texts={texts}
                   progress={progress}
-                  onOpenRead={(id) => setView({ name: 'read', textId: id })}
-                  onOpenQuiz={(id) => setView({ name: 'quiz', textId: id })}
+                  onOpenText={(text) =>
+                    setView(
+                      text.type === 'cloze'
+                        ? { name: 'quiz', textId: text.id }
+                        : { name: 'read', textId: text.id },
+                    )
+                  }
                 />
               )}
               {view.name === 'read' && currentText && (
@@ -205,11 +234,10 @@ export function App() {
                 <ClozeQuiz
                   text={currentText}
                   completed={!!progress[currentText.id]?.completed}
-                  onBack={() =>
-                    setView({ name: 'read', textId: currentText.id })
-                  }
+                  onBack={() => setView({ name: 'home' })}
                   onSaveResult={saveQuizResult}
                   onWordUpdate={updateWord}
+                  onEncounter={addEncounter}
                   onMarkCompleted={() => toggleCompleted(currentText.id)}
                   words={words}
                 />
@@ -249,12 +277,7 @@ function buildCrumbs(
     case 'quiz':
       return [
         { label: 'Leer', onClick: () => setView({ name: 'home' }) },
-        {
-          label: currentText?.title ?? '—',
-          onClick: () =>
-            currentText && setView({ name: 'read', textId: currentText.id }),
-        },
-        { label: 'Test' },
+        { label: currentText?.title ?? '—' },
       ]
     case 'vocab':
       return [{ label: 'Vocabulario' }]
