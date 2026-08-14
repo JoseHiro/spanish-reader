@@ -113,6 +113,13 @@
         "El riesgo de defender la tierra",
         "En 2021, 200 personas fueron asesinadas en todo el mundo por {{10}} los derechos humanos, la tierra y el medioambiente. México, Colombia y Brasil lideran esta triste estadística, concentrando más de la mitad de las {{11}} mortales, según los datos de la organización Global Witness. Pero el asesinato es solamente el final de un duro camino, en el que antes hay {{12}} directas a los líderes ambientales y sus familias, ataques y desplazamientos forzosos. Oficialmente, los conflictos por el territorio con empresas extractivas (petroleras, mineras, agrícolas, etc.) {{13}} detrás de uno de cada cuatro asesinatos, si bien las causas de la mayoría de ellos casi nunca se investigan en profundidad. Proteger a los defensores de la tierra y el medioambiente, de la mano de instrumentos como el Acuerdo de Escazú aprobado en 2021, es uno de los grandes retos ambientales de la región."
       ],
+      "translation_ja": [
+        "中南米の新政権の中には、採取主義に終止符を打ち、環境破壊を食い止めるという公約を掲げて政権の座に就いたものもある。しかし地域全体で見れば、石油・ガスの探査・採掘事業は依然として大きな存在感を保っている。近年、メキシコとエクアドルは、重要な収入源である一方、すでに資源枯渇の兆候を示し、数多くの環境紛争の原因にもなっているこの産業を、引き続き重視してきた。また、ブラジル政府が石油採掘に対する立場をいまだ明確にできずにいる一方で、ベネズエラは深刻な危機に陥った国内産業にしがみつき、アルゼンチンは海洋での沖合プラットフォーム建設を推進しようとしている。そしてスリナムとガイアナは、新たな「黒い金」ラッシュに身を投じている。",
+        "エネルギー転換のための鉱業",
+        "風力発電機、太陽光パネル、電気自動車、さらにはスマートフォン、データセンター、仮想現実技術には、ある共通項がある。それは、金属に対する尽きることのない渇望だ。国際エネルギー機関によれば、世界の鉱物需要は今世紀半ばまでに6倍に増えるという。その中心となるのは、とりわけ銅、ニッケル、コバルト、リチウムである。南米にはこれらすべての重要な埋蔵資源があり、なかでもリチウムについては、世界で確認されている全資源の約60％を擁する。近年、ボリビア、アルゼンチン、チリではその採掘量が急増したが、その代償としてアンデスの塩湖のような繊細な生態系を危険にさらし、この地域の数百万人が依存する飲料水源を汚染・変質させている。",
+        "土地を守ることの危険",
+        "2021年、世界では人権、土地、環境を守ったことを理由に200人が殺害された。団体グローバル・ウィットネスのデータによると、メキシコ、コロンビア、ブラジルがこの痛ましい統計の上位を占め、死者の半数以上がこの3か国に集中している。しかし殺害は、過酷な道のりの終着点にすぎない。それ以前にも、環境活動の指導者とその家族に対する直接的な脅迫、襲撃、強制移住がある。公式には、石油、鉱業、農業などの採取企業との領土をめぐる紛争が、殺害事件の4件に1件の背後にあるとされる。一方で、大半の事件については、その原因が詳しく調査されることはほとんどない。2021年に承認されたエスカス協定のような制度を活用しながら、土地と環境を守る人々を保護することは、この地域が直面する環境上の大きな課題の一つである。"
+      ],
       "clozes": [
         {
           "n": 1,
@@ -192,6 +199,82 @@
           "answer": 1,
           "explanation": "estar detrás de = 〜の背後にいる／原因である。位置・状態は estar。ser では意味が成立しない。"
         }
+      ]
+    },
+    {
+      "id": "text_03",
+      "title": "La pasión de la edición aferrada al cuerpo",
+      "author": "Carolina Musa",
+      "source": "SIELE C1 / DELE C1 - Texto Nº7",
+      "source_url": "https://courier.unesco.org/es/articles/la-pasion-de-la-edicion-aferrada-al-cuerpo",
+      "type": "cloze",
+      "level": "C1",
+      "added_at": "2026-08-14",
+      "paragraphs": [
+        "Desde que aprendí a leer, las palabras me han fascinado. Escribí mi {{1}} poema a los diez años y no he dejado de hacerlo nunca. Entonces empecé a pensar en una editorial como un camino posible para publicar mis propios textos. Coordinaba {{2}} literarios para niños y construía {{3}} de madera cuando me encontré con la técnica pop up. En ese encuentro convergieron varias pasiones personales, y se podría decir que me cambió la vida. {{4}} que los movimientos iban provocando a las palabras. Empecé probando {{5}} tridimensionales de una serie de casas que dibujaba mi amiga Laura Oriato y de ese juego nacieron los dos primeros «Libros Silvestres»: Caserío, en 2014, y Cabeza de flor, en 2015.",
+        "Hoy, diez años después de su creación, nuestra editorial {{6}} en Rosario, a unos 300 kilómetros al noroeste de Buenos Aires, sigue en marcha y nuestro catálogo {{7}} con 56 títulos. Edito y publico ficción, literatura, especialmente para niños. Me encantan los libros ilustrados y siempre me ha apenado que los libros para adultos no tengan dibujos. Creo que la imagen es un descanso para la mente, que aporta otras {{8}} de sentido y provoca al lector.",
+        "También me {{9}} los libros que se abren raro, que proponen recorridos interactivos, que poseen efectos de volumen, movimiento, que se leen {{10}}…",
+        "Tengo la suerte de publicar lo que me apasiona, aquellos textos que provocan {{11}} al corazón. A partir del texto, imagino el libro. Creo que esa {{12}} la función primordial del editor: imaginar el libro posible.",
+        "Hoy, sostener una programación anual de publicación en Argentina es una tarea titánica. Una dificultad que nos inquieta especialmente es el precio de venta al público de nuestros libros: altísimo. Eso nos deja a los editores en {{13}}: ¿Estamos produciendo un objeto elitista? ¿No era el libro un objeto emancipador, democratizador? Desde mi punto de vista, el gran desafío de los editores argentinos, posiblemente de todo el Sur global, es desarrollar nuestras ideas y proyectos al mismo tiempo que inventamos los recursos y reinventamos formas de producción y circulación."
+      ],
+      "translation_ja": [
+        "文字を読めるようになったときから、私は言葉に魅了されてきた。10歳で初めて詩を書き、それ以来ずっと書くことをやめていない。やがて、自分の文章を出版するための一つの道として、出版社について考え始めた。子ども向けの文学ワークショップを運営し、木製の操り人形を作っていた頃、ポップアップの技法に出会った。その出会いの中で、私のいくつもの個人的な情熱が一つに重なり、人生が変わったと言ってもよい。動きが言葉にもたらす作用に、私は気づいた。友人のラウラ・オリアートが描いていた家々をもとに、立体的な形を試作し始めた。その遊びから、最初の2冊の「野生の本」――2014年の『集落』と2015年の『花の頭』――が誕生した。",
+        "設立から10年が経った現在、私たちの出版社はブエノスアイレスの北西約300キロにあるロサリオを拠点に活動を続け、カタログには56作品が掲載されている。私はフィクションや文学、とりわけ子ども向けの作品を編集・出版している。絵本が大好きで、大人向けの本に絵がないことをいつも残念に思ってきた。イメージは心に休息を与え、別の意味の層を加え、読者を刺激するものだと思う。",
+        "私はまた、変わった開き方をする本、読者にインタラクティブな道筋を提案する本、立体感や動きの効果を備えた本、逆さまに読まれる本にも魅了される。",
+        "私は幸運にも、自分が情熱を感じるもの、心を大きく揺さぶる文章を出版できている。文章を出発点にして、私は本の姿を思い描く。それこそが編集者の最も重要な役割、すなわち、実現可能な本を想像することだと思う。",
+        "今日のアルゼンチンで年間出版計画を維持することは、途方もなく困難な仕事である。特に私たちを悩ませているのは、本の一般向け販売価格が極めて高いことだ。それによって編集者は岐路に立たされる。私たちは一部の人だけのためのものを作っているのだろうか。本とは、人々を解放し、誰もが利用できるようにするものではなかったのか。私の考えでは、アルゼンチンの編集者、ひいてはおそらくグローバル・サウス全体の編集者にとって最大の課題は、資金や手段を新たに生み出し、生産と流通の形を作り直しながら、同時に自分たちの着想と企画を発展させることである。"
+      ],
+      "clozes": [
+        { "n": 1, "options": ["primera", "primero", "primer"], "answer": 2, "explanation": "男性単数名詞 poema の前では、序数 primero が短縮されて primer になる。mi primer poema = 私の最初の詩。" },
+        { "n": 2, "options": ["tallados", "talleres", "tallajes"], "answer": 1, "explanation": "taller literario = 文学ワークショップ。複数形は talleres。tallado は彫刻、tallaje は衣服などのサイズ体系。" },
+        { "n": 3, "options": ["marionetas", "avionetas", "maletas"], "answer": 0, "explanation": "marionetas de madera = 木製の操り人形。avioneta は小型飛行機、maleta は旅行かばんで文脈に合わない。" },
+        { "n": 4, "options": ["Invertí", "Vertí", "Advertí"], "answer": 2, "explanation": "advertir que = 〜に気づく。invertir は投資する・逆にする、verter は注ぐ。ここでは動きが言葉に及ぼす効果への気づきを述べている。" },
+        { "n": 5, "options": ["maneras", "formas", "modales"], "answer": 1, "explanation": "formas tridimensionales = 立体的な形。maneras は方法、modales は作法・態度を表す。" },
+        { "n": 6, "options": ["ubicada", "aplazada", "hallada"], "answer": 0, "explanation": "nuestra editorial ubicada en Rosario = ロサリオに所在する私たちの出版社。ubicada は場所を示す過去分詞。aplazada は延期された、hallada は発見された。" },
+        { "n": 7, "options": ["recuenta", "se cuenta", "cuenta"], "answer": 2, "explanation": "contar con + 名詞 = 〜を備えている・有している。nuestro catálogo cuenta con 56 títulos の形になる。" },
+        { "n": 8, "options": ["capas", "cachas", "catas"], "answer": 0, "explanation": "capas de sentido = 意味の層。cacha は柄・グリップ、cata は試飲・試食。" },
+        { "n": 9, "options": ["flirtean", "seducen", "ligan"], "answer": 1, "explanation": "seducir a alguien = 人を魅了する。主語 los libros が複数なので seducen。flirtear は戯れに恋をする、ligar は結び付ける・口説く。" },
+        { "n": 10, "options": ["al dorso", "a la vuelta", "al revés"], "answer": 2, "explanation": "al revés = 逆に・逆さまに。leer al revés で「逆から／逆さまに読む」。al dorso は裏面に、a la vuelta は戻ったところに。" },
+        { "n": 11, "options": ["un vuelco", "un giro", "una vuelta"], "answer": 0, "explanation": "provocar un vuelco al corazón = 心を大きく揺さぶる。vuelco は急激な変化・動揺を表す。" },
+        { "n": 12, "options": ["es", "está", "---"], "answer": 0, "explanation": "esa es la función = それが役割である。主語 esa と補語 la función を結ぶ同定文なので ser を使う。" },
+        { "n": 13, "options": ["un cruce", "una encrucijada", "una intersección"], "answer": 1, "explanation": "dejar a alguien en una encrucijada = 人を岐路・難しい選択に立たせる。cruce/intersección は主に物理的な交差点。" }
+      ]
+    },
+    {
+      "id": "text_04",
+      "title": "«Fake» Madrid, un paseo por los hitos del simulacro (1ª parte)",
+      "author": "Enrique Piñuel",
+      "source": "SIELE C1 / DELE C1 - Texto Nº8",
+      "source_url": "https://www.elsaltodiario.com/madrid/fake-madrid-un-paseo-hitos-del-simulacro",
+      "type": "cloze",
+      "level": "C1",
+      "added_at": "2026-08-14",
+      "paragraphs": [
+        "Las ciudades en el siglo XXI, y en especial las grandes capitales, están perdiendo su identidad, convirtiéndose en {{1}} objetos de consumo. Aunque la imagen de cada ciudad trata de ser específica, y se busca destacar sus peculiaridades «frente a la competencia», el {{2}} generado en torno al turismo de masas siempre termina potenciando el mismo tipo de espacios. En un proceso de disneyficación de la vida diaria, se homogeniza el territorio urbano, presentándose ahora como una {{3}} en la que la identidad se limita a una serie de tópicos reconocibles. Simulacros de ciudad, que en el caso de Madrid está poblada de neotabernas {{4}}, turronerías franquiciadas, meninas customizadas repartidas en cada calle o exposiciones inmersivas, «experiencias únicas, para disfrutar de la obra de El Bosco o Dalí como nunca los has visto»: en una pantalla.",
+        "En palabras de Jean Baudrillard, estaríamos ante la resurrección artificial de lo real, espacios fabricados con el fin de {{5}} a las expectativas de los consumidores, esa clase turista que acaba desplazando la vida ciudadana, la historia de un lugar, en beneficio de la «ciudad marca» en la que todo se mercantiliza.",
+        "El punto de partida de este paseo lo situamos en la céntrica plaza del Callao, en torno a la que se levantan dos de los edificios que diseñó el más {{6}} de los arquitectos madrileños, Luis Gutiérrez Soto: el Cine Callao y el edificio FNAC. El primero se construyó en 1926, con un estilo decorativo influenciado por el art decó. Su fachada está {{7}} por un elegante esgrafiado a base de estilizados jarrones y volutas en granate, sobre el fondo crema de sus paredes. El segundo, construido en dos etapas entre los años 40 y 50, inicialmente para ser {{8}} del primer gran almacén de Galerías Preciados. Siguiendo la corriente Bauhaus, el arquitecto {{9}} por un estilo racionalista, de líneas {{10}}, utilizando el ladrillo como material constructivo.",
+        "La insistencia en destacar las fachadas de ambos edificios viene motivada porque, desde hace algo más de una década, sobre ellas y otras fachadas del {{11}} de la Gran Vía, se han empezado a colocar enormes pantallas publicitarias, que en estos dos casos impiden ver parte de los edificios, pero que gracias a {{12}} de arrepentimiento por obstaculizar su visión, nos brindan el momento más «baudrillardiano» de toda la ciudad, cuando la publicidad se toma un descanso y, entre anuncio y anuncio, las pantallas reproducen el fragmento de fachada que ocultan, un espectáculo tan {{13}}, que es de obligada parada en esta ruta del simulacro."
+      ],
+      "translation_ja": [
+        "21世紀の都市、とりわけ大都市は、そのアイデンティティを失い、単なる消費対象へと変わりつつある。それぞれの都市は独自のイメージを打ち出し、「競合相手に対して」固有の特徴を際立たせようとするが、マスツーリズムをめぐって作り出されるモデルは、結局いつも同じ種類の空間を増幅させる。日常生活がディズニー化される過程で都市空間は均質化され、今や、アイデンティティが一連の分かりやすい定型イメージだけに限定された舞台装置として現れる。都市の模造品である。マドリードの場合、その街は、伝統風の新しい居酒屋、チェーン展開するヌガー菓子店、各通りに置かれたカスタマイズ版の「ラス・メニーナス」、そして没入型展覧会で満たされている。「ボスやダリの作品を、これまで見たことのない方法で楽しむ唯一無二の体験」とは、つまり画面上で見る体験なのである。",
+        "ジャン・ボードリヤールの言葉を借りれば、私たちは「現実の人工的な復活」を目の前にしていることになる。それは消費者の期待に合わせるために作られた空間であり、観光客という階層が市民の日常生活や土地の歴史を押しのけ、すべてが商品化される「ブランド都市」を優先させる。",
+        "この散策の出発点は、中心部のカジャオ広場である。その周囲には、マドリードで最も多作な建築家ルイス・グティエレス・ソトが設計した建物のうち、カジャオ映画館とFNACビルの2棟が立っている。前者は1926年に建設され、アール・デコの影響を受けた装飾様式を持つ。クリーム色の壁を背景に、深紅色の様式化された壺や渦巻き模様を用いた優美な掻き落とし装飾が、ファサード全体を覆っている。後者は1940年代から50年代にかけて2段階で建設され、当初は百貨店ガレリアス・プレシアドス第1号店の本拠地となるためのものだった。バウハウスの潮流に従い、建築家はレンガを建材に用いた、酔ったようにうねる線を持つ合理主義様式を選んだ。",
+        "この2棟のファサードを強調するのには理由がある。10年余り前から、この建物やグラン・ビア周辺のほかの建物の正面に巨大な広告スクリーンが設置され始め、ここでは建物の一部が見えなくなっているからだ。ところが、その視界を遮ることへの一種の後悔によって、街全体で最も「ボードリヤール的」な瞬間が生まれる。広告が一休みし、広告と広告の合間に、スクリーンが自ら覆い隠しているファサード部分の映像を再現するのである。このあまりにも幻惑的な光景は、模造都市をたどるこのルートで必ず立ち寄るべき場所となっている。"
+      ],
+      "clozes": [
+        { "n": 1, "options": ["meros", "parcos", "solos"], "answer": 0, "explanation": "meros objetos de consumo = 単なる消費対象。mero は名詞の前で「ほんの、単なる」。parco は控えめな、solo は単独の。" },
+        { "n": 2, "options": ["molde", "modelaje", "modelo"], "answer": 2, "explanation": "el modelo generado en torno a… = 〜をめぐって生み出されたモデル。molde は鋳型、modelaje はモデル業・造形。" },
+        { "n": 3, "options": ["escenografía", "demografía", "reprografía"], "answer": 0, "explanation": "escenografía = 舞台装置・舞台美術。都市が均質化され、見せるための舞台になるという比喩。demografía は人口統計、reprografía は複写技術。" },
+        { "n": 4, "options": ["levadizas", "castizas", "rollizas"], "answer": 1, "explanation": "castizo = その土地の伝統的・典型的な。neotabernas castizas は「伝統風を装った新しい居酒屋」。levadizo は跳ね上げ式の、rollizo は丸々とした。" },
+        { "n": 5, "options": ["amoldarse", "amoldar", "moldear"], "answer": 0, "explanation": "amoldarse a + 名詞 = 〜に合わせる・適応する。主語 espacios 自身が期待に適合するため、再帰形が必要。" },
+        { "n": 6, "options": ["extenso", "amplio", "prolífico"], "answer": 2, "explanation": "arquitecto prolífico = 多作な建築家。extenso/amplio は広い・広範なという空間的な意味が中心。" },
+        { "n": 7, "options": ["recorrida", "recurrida", "referida"], "answer": 0, "explanation": "estar recorrida por = 〜が全体に走っている・覆っている。装飾がファサード上に広がる様子を表す。" },
+        { "n": 8, "options": ["la sede", "la sierra", "el asedio"], "answer": 0, "explanation": "ser la sede de = 〜の本拠地・所在地である。sierra は山脈・のこぎり、asedio は包囲。" },
+        { "n": 9, "options": ["se cantó", "se decantó", "decantó"], "answer": 1, "explanation": "decantarse por = 〜を選ぶ・〜の方に傾く。再帰形と前置詞 por が一組になる。" },
+        { "n": 10, "options": ["beodas", "ebrias", "sobrias"], "answer": 1, "explanation": "líneas ebrias = 酔ったようにうねる線、という建築表現。ebrio は「酔った」。sobrio は簡素な・しらふの、beodo は酔っ払いを指す語。" },
+        { "n": 11, "options": ["retorno", "torno", "entorno"], "answer": 2, "explanation": "el entorno de la Gran Vía = グラン・ビアの周辺。retorno は帰還、torno は周囲・旋盤だが、この構文では entorno が自然。" },
+        { "n": 12, "options": ["una suerte", "un azar", "un sino"], "answer": 0, "explanation": "una suerte de + 名詞 = 一種の〜。azar は偶然、sino は運命で、de arrepentimiento を導くこの定型表現にはならない。" },
+        { "n": 13, "options": ["delirante", "soso", "aburrido"], "answer": 0, "explanation": "delirante = 常軌を逸した、幻惑的な。ボードリヤール的な虚実の逆転を表す。soso/aburrido は退屈な。" }
       ]
     }
   ]
