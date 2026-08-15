@@ -5,6 +5,7 @@ import { normalize, tokenize } from '../lib/tokenize'
 import { findWordBySurface } from '../lib/words'
 import { IconArrowLeft, IconCheck, IconX } from './Icons'
 import { WordPopup } from './WordPopup'
+import { ArticleChunk } from './ArticleChunk'
 
 export function ClozeQuiz({
   text,
@@ -133,12 +134,11 @@ export function ClozeQuiz({
 
       <div className="reader">
         {text.paragraphs.map((para, pi) => (
-          <div
-            className={`quiz-paragraph${submitted ? ' with-feedback' : ''}`}
+          <ArticleChunk
             key={pi}
-          >
-            <p>
-              {renderQuizParagraph(para, text, {
+            type={text.chunk_types?.[pi] ?? 'body'}
+            submitted={submitted}
+            content={renderQuizParagraph(para, text, {
                 answers,
                 submitted,
                 findWord,
@@ -150,20 +150,15 @@ export function ClozeQuiz({
                   setAnswers(next)
                 },
               })}
-            </p>
-            {submitted && (
+            feedback={
               <ParagraphFeedback
                 paragraph={para}
                 text={text}
                 answers={answers}
               />
-            )}
-            {submitted && text.translation_ja?.[pi] && (
-              <div className="chunk-translation-ja">
-                {text.translation_ja[pi]}
-              </div>
-            )}
-          </div>
+            }
+            translation={text.translation_ja?.[pi]}
+          />
         ))}
       </div>
 

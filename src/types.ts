@@ -40,6 +40,7 @@ export type Text = {
   level?: string
   added_at?: string
   paragraphs: string[]
+  chunk_types?: Array<'body' | 'heading'>
   translation_ja?: string[]
   clozes?: Cloze[]
 }
