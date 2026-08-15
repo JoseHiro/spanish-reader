@@ -962,8 +962,7 @@ h2 {
   line-height: 1.9;
 }
 
-.quiz-paragraph:nth-child(2) .chunk-translation-ja,
-.quiz-paragraph:nth-child(4) .chunk-translation-ja {
+.quiz-paragraph:not(:has(.paragraph-feedback)) .chunk-translation-ja {
   padding: 10px 14px;
   color: var(--text);
   font-family: var(--font);
