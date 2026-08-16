@@ -1151,6 +1151,62 @@ h2 {
   border-color: var(--accent);
 }
 
+.vocab-scope {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+  margin: 22px 0 8px;
+  flex-wrap: wrap;
+}
+
+.vocab-scope label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--text-mute);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.vocab-scope select {
+  min-width: 280px;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
+.vocab-kind {
+  display: flex;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-mute);
+}
+
+.vocab-kind button {
+  border: none;
+  background: transparent;
+}
+
+.vocab-kind button.active {
+  color: var(--accent);
+  background: var(--bg-elev);
+  box-shadow: var(--shadow-sm);
+}
+
+.word-source {
+  max-width: 180px;
+  margin-top: 4px;
+  overflow: hidden;
+  color: var(--text-mute);
+  font-size: 10.5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .review-start {
   margin: 20px 0 24px;
 }

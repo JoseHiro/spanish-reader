@@ -243,7 +243,11 @@ export function App() {
                 />
               )}
               {view.name === 'vocab' && (
-                <VocabList words={words} onWordUpdate={updateWord} />
+                <VocabList
+                  words={words}
+                  texts={texts}
+                  onWordUpdate={updateWord}
+                />
               )}
               {view.name === 'dashboard' && (
                 <Dashboard

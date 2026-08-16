@@ -1,31 +1,51 @@
 import { useMemo, useState } from 'react'
-import type { Word, WordState } from '../types'
+import type { Text, Word, WordState } from '../types'
 import { createEmptyCard, fsrs, Rating, type Card, type Grade } from 'ts-fsrs'
 
 type Filter = 'unknown' | 'probably_known' | 'mastered' | 'all'
+type VocabKind = 'all' | 'expression'
+
+export function filterVocabWords(
+  words: Word[],
+  lessonId: string,
+  kind: VocabKind,
+) {
+  return words.filter(
+    (word) =>
+      (lessonId === 'all' || word.source_text_id === lessonId) &&
+      (kind === 'all' || word.tags?.includes('expression')),
+  )
+}
 
 export function VocabList({
   words,
+  texts,
   onWordUpdate,
 }: {
   words: Word[]
+  texts: Text[]
   onWordUpdate: (w: Word) => void
 }) {
   const [filter, setFilter] = useState<Filter>('unknown')
+  const [lessonId, setLessonId] = useState('all')
+  const [kind, setKind] = useState<VocabKind>('all')
   const [reviewing, setReviewing] = useState(false)
   const [revealed, setRevealed] = useState(false)
   const [reviewed, setReviewed] = useState(0)
 
+  const scopeWords = useMemo(
+    () => filterVocabWords(words, lessonId, kind),
+    [words, lessonId, kind],
+  )
+
   const dueWords = useMemo(() => {
     const now = Date.now()
-    return words.filter(
+    return scopeWords.filter(
       (word) =>
         word.meaning_ja &&
-        (word.state === 'unknown' ||
-          !word.srs ||
-          new Date(word.srs.due).getTime() <= now),
+        (!word.srs || new Date(word.srs.due).getTime() <= now),
     )
-  }, [words])
+  }, [scopeWords])
   const current = dueWords[0]
 
   function grade(rating: Grade) {
@@ -68,18 +88,20 @@ export function VocabList({
 
   const filtered = useMemo(() => {
     const list =
-      filter === 'all' ? words : words.filter((w) => w.state === filter)
+      filter === 'all'
+        ? scopeWords
+        : scopeWords.filter((w) => w.state === filter)
     return [...list].sort((a, b) => a.lemma.localeCompare(b.lemma))
-  }, [words, filter])
+  }, [scopeWords, filter])
 
   const counts = useMemo(() => {
     return {
-      unknown: words.filter((w) => w.state === 'unknown').length,
-      probably_known: words.filter((w) => w.state === 'probably_known').length,
-      mastered: words.filter((w) => w.state === 'mastered').length,
-      all: words.length,
+      unknown: scopeWords.filter((w) => w.state === 'unknown').length,
+      probably_known: scopeWords.filter((w) => w.state === 'probably_known').length,
+      mastered: scopeWords.filter((w) => w.state === 'mastered').length,
+      all: scopeWords.length,
     }
-  }, [words])
+  }, [scopeWords])
 
   return (
     <>
@@ -89,8 +111,40 @@ export function VocabList({
         {counts.probably_known} probables · {counts.mastered} dominadas
       </div>
 
+      {!reviewing && (
+        <div className="vocab-scope">
+          <label>
+            <span>Lección</span>
+            <select value={lessonId} onChange={(e) => setLessonId(e.target.value)}>
+              <option value="all">Todas las lecciones</option>
+              {texts.map((text) => (
+                <option key={text.id} value={text.id}>{text.title}</option>
+              ))}
+            </select>
+          </label>
+          <div className="vocab-kind" aria-label="Tipo de vocabulario">
+            <button
+              className={kind === 'all' ? 'active' : ''}
+              onClick={() => setKind('all')}
+            >
+              Todo
+            </button>
+            <button
+              className={kind === 'expression' ? 'active' : ''}
+              onClick={() => setKind('expression')}
+            >
+              Expresiones
+            </button>
+          </div>
+        </div>
+      )}
+
       {!reviewing && dueWords.length > 0 && (
-        <button className="primary review-start" onClick={() => setReviewing(true)}>
+        <button className="primary review-start" onClick={() => {
+          setReviewed(0)
+          setRevealed(false)
+          setReviewing(true)
+        }}>
           Repasar ahora ({dueWords.length})
         </button>
       )}
@@ -166,6 +220,11 @@ export function VocabList({
             <div style={{ color: 'var(--text-mute)', fontSize: 12 }}>
               {w.pos}
             </div>
+            {lessonId === 'all' && w.source_text_id && (
+              <div className="word-source">
+                {texts.find((text) => text.id === w.source_text_id)?.title}
+              </div>
+            )}
           </div>
           <div>
             <div className="meaning">{w.meaning_ja ?? 'Sin significado'}</div>
