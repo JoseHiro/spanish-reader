@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import type { Text, Word, WordState } from '../types'
 import { createEmptyCard, fsrs, Rating, type Card, type Grade } from 'ts-fsrs'
+import { getWordExamples } from '../lib/examples'
 
 type Filter = 'unknown' | 'probably_known' | 'mastered' | 'all'
 type VocabKind = 'all' | 'expression'
@@ -47,6 +48,10 @@ export function VocabList({
     )
   }, [scopeWords])
   const current = dueWords[0]
+  const currentExamples = useMemo(
+    () => (current ? getWordExamples(current, texts) : []),
+    [current, texts],
+  )
 
   function grade(rating: Grade) {
     if (!current) return
@@ -164,8 +169,15 @@ export function VocabList({
             ) : (
               <>
                 <div className="review-answer">{current.meaning_ja}</div>
-                {current.example && (
-                  <div className="review-example">{current.example}</div>
+                {currentExamples.length > 0 && (
+                  <div className="review-examples">
+                    <div className="review-examples-title">Ejemplos</div>
+                    <ol>
+                      {currentExamples.map((example, index) => (
+                        <li key={`${example}-${index}`}>{example}</li>
+                      ))}
+                    </ol>
+                  </div>
                 )}
                 <div className="review-grades">
                   <button onClick={() => grade(Rating.Again)}>Otra vez</button>

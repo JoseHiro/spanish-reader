@@ -1262,12 +1262,34 @@ h2 {
   line-height: 1.7;
 }
 
-.review-example {
+.review-examples {
   margin-bottom: 28px;
   color: var(--text-soft);
+  text-align: left;
+}
+
+.review-examples-title {
+  margin-bottom: 8px;
+  color: var(--text-mute);
+  font-family: var(--font);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.review-examples ol {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.review-examples li {
+  margin-bottom: 7px;
   font-family: var(--font-serif);
   font-size: 15px;
   font-style: italic;
+  line-height: 1.55;
 }
 
 .review-grades {
