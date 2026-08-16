@@ -1,5 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import data from '../../public/data/texts.json'
+import wordData from '../../public/data/words.json'
+import { getWordExamples } from './examples'
+import type { Text, Word } from '../types'
 
 describe('text chunk metadata', () => {
   it('defines one chunk type and one translation for every paragraph', () => {
@@ -40,6 +43,15 @@ describe('text chunk metadata', () => {
         ).toHaveLength(cloze.options.length)
         expect(cloze.option_meanings_ja?.every(Boolean)).toBe(true)
       }
+    }
+  })
+
+  it('provides two practice examples for every translated vocabulary item', () => {
+    for (const word of wordData.words.filter((item) => item.meaning_ja)) {
+      expect(
+        getWordExamples(word as Word, data.texts as Text[]),
+        word.lemma,
+      ).toHaveLength(2)
     }
   })
 })

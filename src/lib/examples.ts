@@ -18,8 +18,10 @@ function containsTerm(sentence: string, term: string) {
 }
 
 export function getWordExamples(word: Word, texts: Text[]): string[] {
-  const examples: string[] = []
-  if (word.example?.trim()) examples.push(word.example.trim())
+  const examples = (word.examples ?? []).map((example) => example.trim()).filter(Boolean)
+  if (word.example?.trim() && !examples.includes(word.example.trim())) {
+    examples.push(word.example.trim())
+  }
 
   const source = texts.find((text) => text.id === word.source_text_id)
   if (source) {

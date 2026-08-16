@@ -8,6 +8,7 @@ export type Word = {
   pos?: string
   meaning_ja?: string
   example?: string | null
+  examples?: string[]
   source_text_id?: string
   tags?: string[]
   srs?: {
