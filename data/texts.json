@@ -16,7 +16,13 @@
         "Pero todo tiene un precio. Para ser como dioses, nuestros cuerpos y nuestras mentes tienen que {{8}} con la máquina. Transformar nuestra inteligencia en artificial. Nos cuentan el cuento de la gran oportunidad, pero puede convertirse en {{9}} del gran fracaso, en el nacimiento de la gran distopía. De hecho, los personajes a los mandos tienen toda la {{10}} de adentrarnos por los derroteros más tortuosos y {{11}}.",
         "Lo que nadie en su sano {{12}} se atreverá a negar es que nos encontramos en un momento crucial. Llevan tiempo diseñando el futuro de la humanidad y el de cada uno de nosotros. Para ellos somos poco más que ratones de laboratorio. Nos encontramos en los inicios de un largo camino que, según ellos, nos mejorará físicamente y proyectará nuestro pensamiento. El caramelo {{13}} en hacernos creer que ya no sufriremos, no nos haremos viejos, no enfermaremos y no moriremos. Es mentira, pero suena bien. Los transhumanistas serían tan sólo una evolución modernizadora del humanismo, o eso quieren que creamos."
       ],
-      "chunk_types": ["body", "body", "body", "body", "body"],
+      "chunk_types": [
+        "body",
+        "body",
+        "body",
+        "body",
+        "body"
+      ],
       "translation_ja": [
         "私たちは生まれたときから、より良くなろうとする強迫観念の中に深く入り込んで生きている。何をどう改善するのか、それが実現することがどこまで望ましいのかも、よく分かってはいない。それでも私たちは、自分の自由意志によって、人生のあらゆる領域で改善を求める。精神科医、心理士、トレーナー、理学療法士に費やしている時間の多さから判断すれば、その試みはほとんど成功していない。それでも私たちは改善を望む。",
         "私たちは、自分たちが正しい道、正しい方向へ進んでいると思うかもしれない。実際、私たちが注いでいる努力は途方もなく、新しいテクノロジーの爆発的発展を利用して生み出す変化には終わりがない。すべてがあまりにも速く、加速度的に進む。私たちは、より高い身体能力と知的能力へ向かって、真っ逆さまに突き進んでいる。もっと優れた存在になり、より多く、より良く生産するようになる。現在の私たちを形作る肉と骨、そして私たちの身体、人類という種を共有する機械とのハイブリッドになるのだ。トランスヒューマニズム運動は、より良い人間になることを目指しているのか、それとも人間を改良するという思想を想像もつかない限界まで拡大するだけなのかを、明確にしていない。",
@@ -27,81 +33,198 @@
       "clozes": [
         {
           "n": 1,
-          "options": ["embarcados", "acometidos", "emprendidos"],
+          "options": [
+            "embarcados",
+            "acometidos",
+            "emprendidos"
+          ],
           "answer": 0,
-          "explanation": "estar embarcado en = 〜に深く関わっている（比喩）。acometer は他動詞、emprender は事業に使う。"
+          "explanation": "estar embarcado en = 〜に深く関わっている（比喩）。acometer は他動詞、emprender は事業に使う。",
+          "option_meanings_ja": [
+            "（計画などに）深く関わった",
+            "着手された／襲われた",
+            "開始された"
+          ]
         },
         {
           "n": 2,
-          "options": ["las órdenes", "los órdenes", "los ordenes"],
+          "options": [
+            "las órdenes",
+            "los órdenes",
+            "los ordenes"
+          ],
           "answer": 1,
-          "explanation": "el orden = 秩序・領域（男性名詞）／la orden = 命令。en todos los órdenes de la vida は定型表現。"
+          "explanation": "el orden = 秩序・領域（男性名詞）／la orden = 命令。en todos los órdenes de la vida は定型表現。",
+          "option_meanings_ja": [
+            "命令（女性複数）",
+            "領域・分野（男性複数）",
+            "アクセント欠落の誤形"
+          ]
         },
         {
           "n": 3,
-          "options": ["a causa", "a consecuencia", "a tenor de"],
+          "options": [
+            "a causa",
+            "a consecuencia",
+            "a tenor de"
+          ],
           "answer": 2,
-          "explanation": "a tenor de = 〜から判断すると（証拠に基づく推論）。他は de が必要 & 因果関係の主張になる。"
+          "explanation": "a tenor de = 〜から判断すると（証拠に基づく推論）。他は de が必要 & 因果関係の主張になる。",
+          "option_meanings_ja": [
+            "〜が原因で",
+            "〜の結果として",
+            "〜から判断すると"
+          ]
         },
         {
           "n": 4,
-          "options": ["finitos", "limitados", "interminables"],
+          "options": [
+            "finitos",
+            "limitados",
+            "interminables"
+          ],
           "answer": 2,
-          "explanation": "前文の「es inmenso el esfuerzo」との論理的整合。莫大な努力→終わりない変化。"
+          "explanation": "前文の「es inmenso el esfuerzo」との論理的整合。莫大な努力→終わりない変化。",
+          "option_meanings_ja": [
+            "有限の",
+            "限られた",
+            "終わりのない"
+          ]
         },
         {
           "n": 5,
-          "options": ["Seremos", "Estaremos", "---"],
+          "options": [
+            "Seremos",
+            "Estaremos",
+            "---"
+          ],
           "answer": 0,
-          "explanation": "アイデンティティ・本質は ser。ハイブリッド「である」ものになる、という文脈。"
+          "explanation": "アイデンティティ・本質は ser。ハイブリッド「である」ものになる、という文脈。",
+          "option_meanings_ja": [
+            "私たちは〜になる／である",
+            "私たちは〜の状態になる",
+            "語を入れない"
+          ]
         },
         {
           "n": 6,
-          "options": ["atrincherar", "atrincherarnos", "refugiar"],
+          "options": [
+            "atrincherar",
+            "atrincherarnos",
+            "refugiar"
+          ],
           "answer": 1,
-          "explanation": "並列動詞（vivir, vivir）に合わせ、主語 nosotros に対する再帰形が必要。"
+          "explanation": "並列動詞（vivir, vivir）に合わせ、主語 nosotros に対する再帰形が必要。",
+          "option_meanings_ja": [
+            "立てこもらせる",
+            "私たち自身が立てこもる",
+            "避難させる"
+          ]
         },
         {
           "n": 7,
-          "options": ["profecías", "productos", "orígenes"],
+          "options": [
+            "profecías",
+            "productos",
+            "orígenes"
+          ],
           "answer": 0,
-          "explanation": "映画が未来を予言した、という比喩。productos・orígenes では因果が逆または意味不明。"
+          "explanation": "映画が未来を予言した、という比喩。productos・orígenes では因果が逆または意味不明。",
+          "option_meanings_ja": [
+            "予言",
+            "製品",
+            "起源"
+          ]
         },
         {
           "n": 8,
-          "options": ["fundir", "fisionar", "fusionarse"],
+          "options": [
+            "fundir",
+            "fisionar",
+            "fusionarse"
+          ],
           "answer": 2,
-          "explanation": "【偽友注意】fusión（融合）≠ fisión（核分裂）。再帰形 fusionarse が必要。"
+          "explanation": "【偽友注意】fusión（融合）≠ fisión（核分裂）。再帰形 fusionarse が必要。",
+          "option_meanings_ja": [
+            "溶かす・鋳造する",
+            "核分裂させる",
+            "融合する"
+          ]
         },
         {
           "n": 9,
-          "options": ["la crónica", "el crónico", "el crono"],
+          "options": [
+            "la crónica",
+            "el crónico",
+            "el crono"
+          ],
           "answer": 0,
-          "explanation": "la crónica = 年代記・ルポ（女性名詞）。crónico は形容詞、crono はストップウォッチ。"
+          "explanation": "la crónica = 年代記・ルポ（女性名詞）。crónico は形容詞、crono はストップウォッチ。",
+          "option_meanings_ja": [
+            "年代記・記録",
+            "慢性的なもの",
+            "ストップウォッチ"
+          ]
         },
         {
           "n": 10,
-          "options": ["punta", "pinta", "puntada"],
+          "options": [
+            "punta",
+            "pinta",
+            "puntada"
+          ],
           "answer": 1,
-          "explanation": "tener toda la pinta de + inf. = いかにも〜しそうだ（C1超頻出の口語）。"
+          "explanation": "tener toda la pinta de + inf. = いかにも〜しそうだ（C1超頻出の口語）。",
+          "option_meanings_ja": [
+            "先端",
+            "見た目・気配",
+            "縫い目・一針"
+          ]
         },
         {
           "n": 11,
-          "options": ["rubios", "turbios", "disturbios"],
+          "options": [
+            "rubios",
+            "turbios",
+            "disturbios"
+          ],
           "answer": 1,
-          "explanation": "turbio（形容詞・濁った/怪しい）。disturbio は名詞、rubio は「金髪」。"
+          "explanation": "turbio（形容詞・濁った/怪しい）。disturbio は名詞、rubio は「金髪」。",
+          "option_meanings_ja": [
+            "金髪の",
+            "濁った・いかがわしい",
+            "騒乱・暴動"
+          ]
         },
         {
           "n": 12,
-          "options": ["juicio", "dictamen", "litigio"],
+          "options": [
+            "juicio",
+            "dictamen",
+            "litigio"
+          ],
           "answer": 0,
-          "explanation": "en su sano juicio = 正気で（定型表現）。dictamen = 鑑定、litigio = 訴訟。"
+          "explanation": "en su sano juicio = 正気で（定型表現）。dictamen = 鑑定、litigio = 訴訟。",
+          "option_meanings_ja": [
+            "判断力・正気",
+            "鑑定・意見書",
+            "訴訟"
+          ]
         },
         {
           "n": 13,
-          "options": ["asiste", "existe", "consiste"],
+          "options": [
+            "asiste",
+            "existe",
+            "consiste"
+          ],
           "answer": 2,
-          "explanation": "consistir en + inf. = 〜にある（固定構文）。前置詞 en 必須。"
+          "explanation": "consistir en + inf. = 〜にある（固定構文）。前置詞 en 必須。",
+          "option_meanings_ja": [
+            "出席する・援助する",
+            "存在する",
+            "〜にある・〜から成る"
+          ]
         }
       ]
     },
@@ -121,7 +244,13 @@
         "El riesgo de defender la tierra",
         "En 2021, 200 personas fueron asesinadas en todo el mundo por {{10}} los derechos humanos, la tierra y el medioambiente. México, Colombia y Brasil lideran esta triste estadística, concentrando más de la mitad de las {{11}} mortales, según los datos de la organización Global Witness. Pero el asesinato es solamente el final de un duro camino, en el que antes hay {{12}} directas a los líderes ambientales y sus familias, ataques y desplazamientos forzosos. Oficialmente, los conflictos por el territorio con empresas extractivas (petroleras, mineras, agrícolas, etc.) {{13}} detrás de uno de cada cuatro asesinatos, si bien las causas de la mayoría de ellos casi nunca se investigan en profundidad. Proteger a los defensores de la tierra y el medioambiente, de la mano de instrumentos como el Acuerdo de Escazú aprobado en 2021, es uno de los grandes retos ambientales de la región."
       ],
-      "chunk_types": ["body", "heading", "body", "heading", "body"],
+      "chunk_types": [
+        "body",
+        "heading",
+        "body",
+        "heading",
+        "body"
+      ],
       "translation_ja": [
         "中南米の新政権の中には、採取主義に終止符を打ち、環境破壊を食い止めるという公約を掲げて政権の座に就いたものもある。しかし地域全体で見れば、石油・ガスの探査・採掘事業は依然として大きな存在感を保っている。近年、メキシコとエクアドルは、重要な収入源である一方、すでに資源枯渇の兆候を示し、数多くの環境紛争の原因にもなっているこの産業を、引き続き重視してきた。また、ブラジル政府が石油採掘に対する立場をいまだ明確にできずにいる一方で、ベネズエラは深刻な危機に陥った国内産業にしがみつき、アルゼンチンは海洋での沖合プラットフォーム建設を推進しようとしている。そしてスリナムとガイアナは、新たな「黒い金」ラッシュに身を投じている。",
         "エネルギー転換のための鉱業",
@@ -132,81 +261,198 @@
       "clozes": [
         {
           "n": 1,
-          "options": ["bajo", "sobre", "en"],
+          "options": [
+            "bajo",
+            "sobre",
+            "en"
+          ],
           "answer": 0,
-          "explanation": "con la promesa bajo el brazo = 掲げて（比喩：抱えて／看板にして）。定型的な言い回しで「〜という約束を旗印に」。"
+          "explanation": "con la promesa bajo el brazo = 掲げて（比喩：抱えて／看板にして）。定型的な言い回しで「〜という約束を旗印に」。",
+          "option_meanings_ja": [
+            "〜の下に",
+            "〜の上に／〜について",
+            "〜の中に"
+          ]
         },
         {
           "n": 2,
-          "options": ["cronista", "protagonista", "protagonismo"],
+          "options": [
+            "cronista",
+            "protagonista",
+            "protagonismo"
+          ],
           "answer": 2,
-          "explanation": "tener mucho + 抽象名詞（不可算）が必要。protagonismo = 主役性・存在感（抽象名詞）。protagonista/cronista は人。"
+          "explanation": "tener mucho + 抽象名詞（不可算）が必要。protagonismo = 主役性・存在感（抽象名詞）。protagonista/cronista は人。",
+          "option_meanings_ja": [
+            "年代記作者・記者",
+            "主役・主人公",
+            "存在感・主役性"
+          ]
         },
         {
           "n": 3,
-          "options": ["apostando", "cortando", "retando"],
+          "options": [
+            "apostando",
+            "cortando",
+            "retando"
+          ],
           "answer": 0,
-          "explanation": "apostar por = 〜に賭ける・重点的に取り組む（C1頻出）。他は前置詞 por と共起しない or 意味不成立。"
+          "explanation": "apostar por = 〜に賭ける・重点的に取り組む（C1頻出）。他は前置詞 por と共起しない or 意味不成立。",
+          "option_meanings_ja": [
+            "力を入れている",
+            "切っている",
+            "挑んでいる"
+          ]
         },
         {
           "n": 4,
-          "options": ["forma", "postura", "manera"],
+          "options": [
+            "forma",
+            "postura",
+            "manera"
+          ],
           "answer": 1,
-          "explanation": "definir su postura (con/ante/sobre) = 立場を明確にする（政治的スタンス）。forma・manera は「方法」で文脈に合わない。"
+          "explanation": "definir su postura (con/ante/sobre) = 立場を明確にする（政治的スタンス）。forma・manera は「方法」で文脈に合わない。",
+          "option_meanings_ja": [
+            "形・方法",
+            "立場・姿勢",
+            "方法・やり方"
+          ]
         },
         {
           "n": 5,
-          "options": ["viveza", "fiebre", "temperatura"],
+          "options": [
+            "viveza",
+            "fiebre",
+            "temperatura"
+          ],
           "answer": 1,
-          "explanation": "la fiebre del oro = ゴールドラッシュ（歴史的な決まり文句）。ここでは「石油ラッシュ」の比喩。"
+          "explanation": "la fiebre del oro = ゴールドラッシュ（歴史的な決まり文句）。ここでは「石油ラッシュ」の比喩。",
+          "option_meanings_ja": [
+            "活発さ・機敏さ",
+            "熱・熱狂",
+            "温度"
+          ]
         },
         {
           "n": 6,
-          "options": ["molineros", "molinetes", "molinos"],
+          "options": [
+            "molineros",
+            "molinetes",
+            "molinos"
+          ],
           "answer": 2,
-          "explanation": "molinos eólicos = 風車（風力発電機）。molineros = 粉屋（人）、molinetes = 回転棒/入場ゲート。"
+          "explanation": "molinos eólicos = 風車（風力発電機）。molineros = 粉屋（人）、molinetes = 回転棒/入場ゲート。",
+          "option_meanings_ja": [
+            "粉屋",
+            "小さな回転車・改札口",
+            "風車・粉ひき機"
+          ]
         },
         {
           "n": 7,
-          "options": ["sed", "inapetencia", "desgana"],
+          "options": [
+            "sed",
+            "inapetencia",
+            "desgana"
+          ],
           "answer": 0,
-          "explanation": "sed de + 名詞 = 〜への渇望（比喩）。inapetencia/desgana は逆の意味（食欲不振・気乗り薄）。"
+          "explanation": "sed de + 名詞 = 〜への渇望（比喩）。inapetencia/desgana は逆の意味（食欲不振・気乗り薄）。",
+          "option_meanings_ja": [
+            "渇き・渇望",
+            "食欲不振",
+            "無気力・気乗り薄"
+          ]
         },
         {
           "n": 8,
-          "options": ["en torno", "alrededor", "sobre"],
+          "options": [
+            "en torno",
+            "alrededor",
+            "sobre"
+          ],
           "answer": 1,
-          "explanation": "alrededor del 60% = 約60%（数値の概算）。en torno は「a」が必要（en torno a）。"
+          "explanation": "alrededor del 60% = 約60%（数値の概算）。en torno は「a」が必要（en torno a）。",
+          "option_meanings_ja": [
+            "〜の周辺に（aが必要）",
+            "およそ・周辺に",
+            "〜の上に／約"
+          ]
         },
         {
           "n": 9,
-          "options": ["para", "debido a", "a costa de"],
+          "options": [
+            "para",
+            "debido a",
+            "a costa de"
+          ],
           "answer": 2,
-          "explanation": "a costa de + inf. = 〜を犠牲にして（負の代償）。para は目的、debido a は原因で文脈に合わない。"
+          "explanation": "a costa de + inf. = 〜を犠牲にして（負の代償）。para は目的、debido a は原因で文脈に合わない。",
+          "option_meanings_ja": [
+            "〜のために",
+            "〜が原因で",
+            "〜を犠牲にして"
+          ]
         },
         {
           "n": 10,
-          "options": ["defender", "acusar", "absolver"],
+          "options": [
+            "defender",
+            "acusar",
+            "absolver"
+          ],
           "answer": 0,
-          "explanation": "文脈：環境活動家が殺されたのは「defender = 守ろうとしたため」。acusar（告発）・absolver（無罪放免）は不成立。"
+          "explanation": "文脈：環境活動家が殺されたのは「defender = 守ろうとしたため」。acusar（告発）・absolver（無罪放免）は不成立。",
+          "option_meanings_ja": [
+            "守る・擁護する",
+            "告発する・非難する",
+            "無罪にする"
+          ]
         },
         {
           "n": 11,
-          "options": ["personas", "víctimas", "difuntas"],
+          "options": [
+            "personas",
+            "víctimas",
+            "difuntas"
+          ],
           "answer": 1,
-          "explanation": "víctimas mortales = 死者（決まり文句）。personas mortales は不自然、difuntas は形容詞用法で文法崩れ。"
+          "explanation": "víctimas mortales = 死者（決まり文句）。personas mortales は不自然、difuntas は形容詞用法で文法崩れ。",
+          "option_meanings_ja": [
+            "人々",
+            "犠牲者・被害者",
+            "亡くなった（女性複数）"
+          ]
         },
         {
           "n": 12,
-          "options": ["amenazas", "alabanzas", "ganancias"],
+          "options": [
+            "amenazas",
+            "alabanzas",
+            "ganancias"
+          ],
           "answer": 0,
-          "explanation": "amenazas directas a = 〜に対する直接の脅迫。alabanzas（賞賛）・ganancias（利益）は文脈と正反対。"
+          "explanation": "amenazas directas a = 〜に対する直接の脅迫。alabanzas（賞賛）・ganancias（利益）は文脈と正反対。",
+          "option_meanings_ja": [
+            "脅迫・脅威",
+            "称賛",
+            "利益・収益"
+          ]
         },
         {
           "n": 13,
-          "options": ["son", "están", "---"],
+          "options": [
+            "son",
+            "están",
+            "---"
+          ],
           "answer": 1,
-          "explanation": "estar detrás de = 〜の背後にいる／原因である。位置・状態は estar。ser では意味が成立しない。"
+          "explanation": "estar detrás de = 〜の背後にいる／原因である。位置・状態は estar。ser では意味が成立しない。",
+          "option_meanings_ja": [
+            "〜である",
+            "〜にいる／ある",
+            "語を入れない"
+          ]
         }
       ]
     },
@@ -226,7 +472,13 @@
         "Tengo la suerte de publicar lo que me apasiona, aquellos textos que provocan {{11}} al corazón. A partir del texto, imagino el libro. Creo que esa {{12}} la función primordial del editor: imaginar el libro posible.",
         "Hoy, sostener una programación anual de publicación en Argentina es una tarea titánica. Una dificultad que nos inquieta especialmente es el precio de venta al público de nuestros libros: altísimo. Eso nos deja a los editores en {{13}}: ¿Estamos produciendo un objeto elitista? ¿No era el libro un objeto emancipador, democratizador? Desde mi punto de vista, el gran desafío de los editores argentinos, posiblemente de todo el Sur global, es desarrollar nuestras ideas y proyectos al mismo tiempo que inventamos los recursos y reinventamos formas de producción y circulación."
       ],
-      "chunk_types": ["body", "body", "body", "body", "body"],
+      "chunk_types": [
+        "body",
+        "body",
+        "body",
+        "body",
+        "body"
+      ],
       "translation_ja": [
         "文字を読めるようになったときから、私は言葉に魅了されてきた。10歳で初めて詩を書き、それ以来ずっと書くことをやめていない。やがて、自分の文章を出版するための一つの道として、出版社について考え始めた。子ども向けの文学ワークショップを運営し、木製の操り人形を作っていた頃、ポップアップの技法に出会った。その出会いの中で、私のいくつもの個人的な情熱が一つに重なり、人生が変わったと言ってもよい。動きが言葉にもたらす作用に、私は気づいた。友人のラウラ・オリアートが描いていた家々をもとに、立体的な形を試作し始めた。その遊びから、最初の2冊の「野生の本」――2014年の『集落』と2015年の『花の頭』――が誕生した。",
         "設立から10年が経った現在、私たちの出版社はブエノスアイレスの北西約300キロにあるロサリオを拠点に活動を続け、カタログには56作品が掲載されている。私はフィクションや文学、とりわけ子ども向けの作品を編集・出版している。絵本が大好きで、大人向けの本に絵がないことをいつも残念に思ってきた。イメージは心に休息を与え、別の意味の層を加え、読者を刺激するものだと思う。",
@@ -235,19 +487,201 @@
         "今日のアルゼンチンで年間出版計画を維持することは、途方もなく困難な仕事である。特に私たちを悩ませているのは、本の一般向け販売価格が極めて高いことだ。それによって編集者は岐路に立たされる。私たちは一部の人だけのためのものを作っているのだろうか。本とは、人々を解放し、誰もが利用できるようにするものではなかったのか。私の考えでは、アルゼンチンの編集者、ひいてはおそらくグローバル・サウス全体の編集者にとって最大の課題は、資金や手段を新たに生み出し、生産と流通の形を作り直しながら、同時に自分たちの着想と企画を発展させることである。"
       ],
       "clozes": [
-        { "n": 1, "options": ["primera", "primero", "primer"], "answer": 2, "explanation": "男性単数名詞 poema の前では、序数 primero が短縮されて primer になる。mi primer poema = 私の最初の詩。" },
-        { "n": 2, "options": ["tallados", "talleres", "tallajes"], "answer": 1, "explanation": "taller literario = 文学ワークショップ。複数形は talleres。tallado は彫刻、tallaje は衣服などのサイズ体系。" },
-        { "n": 3, "options": ["marionetas", "avionetas", "maletas"], "answer": 0, "explanation": "marionetas de madera = 木製の操り人形。avioneta は小型飛行機、maleta は旅行かばんで文脈に合わない。" },
-        { "n": 4, "options": ["Invertí", "Vertí", "Advertí"], "answer": 2, "explanation": "advertir que = 〜に気づく。invertir は投資する・逆にする、verter は注ぐ。ここでは動きが言葉に及ぼす効果への気づきを述べている。" },
-        { "n": 5, "options": ["maneras", "formas", "modales"], "answer": 1, "explanation": "formas tridimensionales = 立体的な形。maneras は方法、modales は作法・態度を表す。" },
-        { "n": 6, "options": ["ubicada", "aplazada", "hallada"], "answer": 0, "explanation": "nuestra editorial ubicada en Rosario = ロサリオに所在する私たちの出版社。ubicada は場所を示す過去分詞。aplazada は延期された、hallada は発見された。" },
-        { "n": 7, "options": ["recuenta", "se cuenta", "cuenta"], "answer": 2, "explanation": "contar con + 名詞 = 〜を備えている・有している。nuestro catálogo cuenta con 56 títulos の形になる。" },
-        { "n": 8, "options": ["capas", "cachas", "catas"], "answer": 0, "explanation": "capas de sentido = 意味の層。cacha は柄・グリップ、cata は試飲・試食。" },
-        { "n": 9, "options": ["flirtean", "seducen", "ligan"], "answer": 1, "explanation": "seducir a alguien = 人を魅了する。主語 los libros が複数なので seducen。flirtear は戯れに恋をする、ligar は結び付ける・口説く。" },
-        { "n": 10, "options": ["al dorso", "a la vuelta", "al revés"], "answer": 2, "explanation": "al revés = 逆に・逆さまに。leer al revés で「逆から／逆さまに読む」。al dorso は裏面に、a la vuelta は戻ったところに。" },
-        { "n": 11, "options": ["un vuelco", "un giro", "una vuelta"], "answer": 0, "explanation": "provocar un vuelco al corazón = 心を大きく揺さぶる。vuelco は急激な変化・動揺を表す。" },
-        { "n": 12, "options": ["es", "está", "---"], "answer": 0, "explanation": "esa es la función = それが役割である。主語 esa と補語 la función を結ぶ同定文なので ser を使う。" },
-        { "n": 13, "options": ["un cruce", "una encrucijada", "una intersección"], "answer": 1, "explanation": "dejar a alguien en una encrucijada = 人を岐路・難しい選択に立たせる。cruce/intersección は主に物理的な交差点。" }
+        {
+          "n": 1,
+          "options": [
+            "primera",
+            "primero",
+            "primer"
+          ],
+          "answer": 2,
+          "explanation": "男性単数名詞 poema の前では、序数 primero が短縮されて primer になる。mi primer poema = 私の最初の詩。",
+          "option_meanings_ja": [
+            "最初の（女性形）",
+            "最初・第一のもの",
+            "最初の（男性名詞前）"
+          ]
+        },
+        {
+          "n": 2,
+          "options": [
+            "tallados",
+            "talleres",
+            "tallajes"
+          ],
+          "answer": 1,
+          "explanation": "taller literario = 文学ワークショップ。複数形は talleres。tallado は彫刻、tallaje は衣服などのサイズ体系。",
+          "option_meanings_ja": [
+            "彫られた",
+            "ワークショップ",
+            "サイズ体系"
+          ]
+        },
+        {
+          "n": 3,
+          "options": [
+            "marionetas",
+            "avionetas",
+            "maletas"
+          ],
+          "answer": 0,
+          "explanation": "marionetas de madera = 木製の操り人形。avioneta は小型飛行機、maleta は旅行かばんで文脈に合わない。",
+          "option_meanings_ja": [
+            "操り人形",
+            "小型飛行機",
+            "旅行かばん"
+          ]
+        },
+        {
+          "n": 4,
+          "options": [
+            "Invertí",
+            "Vertí",
+            "Advertí"
+          ],
+          "answer": 2,
+          "explanation": "advertir que = 〜に気づく。invertir は投資する・逆にする、verter は注ぐ。ここでは動きが言葉に及ぼす効果への気づきを述べている。",
+          "option_meanings_ja": [
+            "投資した／逆にした",
+            "注いだ",
+            "気づいた／警告した"
+          ]
+        },
+        {
+          "n": 5,
+          "options": [
+            "maneras",
+            "formas",
+            "modales"
+          ],
+          "answer": 1,
+          "explanation": "formas tridimensionales = 立体的な形。maneras は方法、modales は作法・態度を表す。",
+          "option_meanings_ja": [
+            "やり方",
+            "形・形式",
+            "作法・態度"
+          ]
+        },
+        {
+          "n": 6,
+          "options": [
+            "ubicada",
+            "aplazada",
+            "hallada"
+          ],
+          "answer": 0,
+          "explanation": "nuestra editorial ubicada en Rosario = ロサリオに所在する私たちの出版社。ubicada は場所を示す過去分詞。aplazada は延期された、hallada は発見された。",
+          "option_meanings_ja": [
+            "所在する",
+            "延期された",
+            "発見された"
+          ]
+        },
+        {
+          "n": 7,
+          "options": [
+            "recuenta",
+            "se cuenta",
+            "cuenta"
+          ],
+          "answer": 2,
+          "explanation": "contar con + 名詞 = 〜を備えている・有している。nuestro catálogo cuenta con 56 títulos の形になる。",
+          "option_meanings_ja": [
+            "数え直す",
+            "数えられる",
+            "有する／数える"
+          ]
+        },
+        {
+          "n": 8,
+          "options": [
+            "capas",
+            "cachas",
+            "catas"
+          ],
+          "answer": 0,
+          "explanation": "capas de sentido = 意味の層。cacha は柄・グリップ、cata は試飲・試食。",
+          "option_meanings_ja": [
+            "層",
+            "柄・グリップ",
+            "試飲・試食"
+          ]
+        },
+        {
+          "n": 9,
+          "options": [
+            "flirtean",
+            "seducen",
+            "ligan"
+          ],
+          "answer": 1,
+          "explanation": "seducir a alguien = 人を魅了する。主語 los libros が複数なので seducen。flirtear は戯れに恋をする、ligar は結び付ける・口説く。",
+          "option_meanings_ja": [
+            "戯れに恋をする",
+            "魅了する",
+            "結び付ける／口説く"
+          ]
+        },
+        {
+          "n": 10,
+          "options": [
+            "al dorso",
+            "a la vuelta",
+            "al revés"
+          ],
+          "answer": 2,
+          "explanation": "al revés = 逆に・逆さまに。leer al revés で「逆から／逆さまに読む」。al dorso は裏面に、a la vuelta は戻ったところに。",
+          "option_meanings_ja": [
+            "裏面に",
+            "戻ったところに",
+            "逆に・逆さまに"
+          ]
+        },
+        {
+          "n": 11,
+          "options": [
+            "un vuelco",
+            "un giro",
+            "una vuelta"
+          ],
+          "answer": 0,
+          "explanation": "provocar un vuelco al corazón = 心を大きく揺さぶる。vuelco は急激な変化・動揺を表す。",
+          "option_meanings_ja": [
+            "大きな動揺・急変",
+            "方向転換",
+            "一回転・散歩"
+          ]
+        },
+        {
+          "n": 12,
+          "options": [
+            "es",
+            "está",
+            "---"
+          ],
+          "answer": 0,
+          "explanation": "esa es la función = それが役割である。主語 esa と補語 la función を結ぶ同定文なので ser を使う。",
+          "option_meanings_ja": [
+            "〜である",
+            "〜の状態にある",
+            "語を入れない"
+          ]
+        },
+        {
+          "n": 13,
+          "options": [
+            "un cruce",
+            "una encrucijada",
+            "una intersección"
+          ],
+          "answer": 1,
+          "explanation": "dejar a alguien en una encrucijada = 人を岐路・難しい選択に立たせる。cruce/intersección は主に物理的な交差点。",
+          "option_meanings_ja": [
+            "交差・交差点",
+            "岐路・難しい選択",
+            "交差点"
+          ]
+        }
       ]
     },
     {
@@ -265,7 +699,12 @@
         "El punto de partida de este paseo lo situamos en la céntrica plaza del Callao, en torno a la que se levantan dos de los edificios que diseñó el más {{6}} de los arquitectos madrileños, Luis Gutiérrez Soto: el Cine Callao y el edificio FNAC. El primero se construyó en 1926, con un estilo decorativo influenciado por el art decó. Su fachada está {{7}} por un elegante esgrafiado a base de estilizados jarrones y volutas en granate, sobre el fondo crema de sus paredes. El segundo, construido en dos etapas entre los años 40 y 50, inicialmente para ser {{8}} del primer gran almacén de Galerías Preciados. Siguiendo la corriente Bauhaus, el arquitecto {{9}} por un estilo racionalista, de líneas {{10}}, utilizando el ladrillo como material constructivo.",
         "La insistencia en destacar las fachadas de ambos edificios viene motivada porque, desde hace algo más de una década, sobre ellas y otras fachadas del {{11}} de la Gran Vía, se han empezado a colocar enormes pantallas publicitarias, que en estos dos casos impiden ver parte de los edificios, pero que gracias a {{12}} de arrepentimiento por obstaculizar su visión, nos brindan el momento más «baudrillardiano» de toda la ciudad, cuando la publicidad se toma un descanso y, entre anuncio y anuncio, las pantallas reproducen el fragmento de fachada que ocultan, un espectáculo tan {{13}}, que es de obligada parada en esta ruta del simulacro."
       ],
-      "chunk_types": ["body", "body", "body", "body"],
+      "chunk_types": [
+        "body",
+        "body",
+        "body",
+        "body"
+      ],
       "translation_ja": [
         "21世紀の都市、とりわけ大都市は、そのアイデンティティを失い、単なる消費対象へと変わりつつある。それぞれの都市は独自のイメージを打ち出し、「競合相手に対して」固有の特徴を際立たせようとするが、マスツーリズムをめぐって作り出されるモデルは、結局いつも同じ種類の空間を増幅させる。日常生活がディズニー化される過程で都市空間は均質化され、今や、アイデンティティが一連の分かりやすい定型イメージだけに限定された舞台装置として現れる。都市の模造品である。マドリードの場合、その街は、伝統風の新しい居酒屋、チェーン展開するヌガー菓子店、各通りに置かれたカスタマイズ版の「ラス・メニーナス」、そして没入型展覧会で満たされている。「ボスやダリの作品を、これまで見たことのない方法で楽しむ唯一無二の体験」とは、つまり画面上で見る体験なのである。",
         "ジャン・ボードリヤールの言葉を借りれば、私たちは「現実の人工的な復活」を目の前にしていることになる。それは消費者の期待に合わせるために作られた空間であり、観光客という階層が市民の日常生活や土地の歴史を押しのけ、すべてが商品化される「ブランド都市」を優先させる。",
@@ -273,19 +712,201 @@
         "この2棟のファサードを強調するのには理由がある。10年余り前から、この建物やグラン・ビア周辺のほかの建物の正面に巨大な広告スクリーンが設置され始め、ここでは建物の一部が見えなくなっているからだ。ところが、その視界を遮ることへの一種の後悔によって、街全体で最も「ボードリヤール的」な瞬間が生まれる。広告が一休みし、広告と広告の合間に、スクリーンが自ら覆い隠しているファサード部分の映像を再現するのである。このあまりにも幻惑的な光景は、模造都市をたどるこのルートで必ず立ち寄るべき場所となっている。"
       ],
       "clozes": [
-        { "n": 1, "options": ["meros", "parcos", "solos"], "answer": 0, "explanation": "meros objetos de consumo = 単なる消費対象。mero は名詞の前で「ほんの、単なる」。parco は控えめな、solo は単独の。" },
-        { "n": 2, "options": ["molde", "modelaje", "modelo"], "answer": 2, "explanation": "el modelo generado en torno a… = 〜をめぐって生み出されたモデル。molde は鋳型、modelaje はモデル業・造形。" },
-        { "n": 3, "options": ["escenografía", "demografía", "reprografía"], "answer": 0, "explanation": "escenografía = 舞台装置・舞台美術。都市が均質化され、見せるための舞台になるという比喩。demografía は人口統計、reprografía は複写技術。" },
-        { "n": 4, "options": ["levadizas", "castizas", "rollizas"], "answer": 1, "explanation": "castizo = その土地の伝統的・典型的な。neotabernas castizas は「伝統風を装った新しい居酒屋」。levadizo は跳ね上げ式の、rollizo は丸々とした。" },
-        { "n": 5, "options": ["amoldarse", "amoldar", "moldear"], "answer": 0, "explanation": "amoldarse a + 名詞 = 〜に合わせる・適応する。主語 espacios 自身が期待に適合するため、再帰形が必要。" },
-        { "n": 6, "options": ["extenso", "amplio", "prolífico"], "answer": 2, "explanation": "arquitecto prolífico = 多作な建築家。extenso/amplio は広い・広範なという空間的な意味が中心。" },
-        { "n": 7, "options": ["recorrida", "recurrida", "referida"], "answer": 0, "explanation": "estar recorrida por = 〜が全体に走っている・覆っている。装飾がファサード上に広がる様子を表す。" },
-        { "n": 8, "options": ["la sede", "la sierra", "el asedio"], "answer": 0, "explanation": "ser la sede de = 〜の本拠地・所在地である。sierra は山脈・のこぎり、asedio は包囲。" },
-        { "n": 9, "options": ["se cantó", "se decantó", "decantó"], "answer": 1, "explanation": "decantarse por = 〜を選ぶ・〜の方に傾く。再帰形と前置詞 por が一組になる。" },
-        { "n": 10, "options": ["beodas", "ebrias", "sobrias"], "answer": 1, "explanation": "líneas ebrias = 酔ったようにうねる線、という建築表現。ebrio は「酔った」。sobrio は簡素な・しらふの、beodo は酔っ払いを指す語。" },
-        { "n": 11, "options": ["retorno", "torno", "entorno"], "answer": 2, "explanation": "el entorno de la Gran Vía = グラン・ビアの周辺。retorno は帰還、torno は周囲・旋盤だが、この構文では entorno が自然。" },
-        { "n": 12, "options": ["una suerte", "un azar", "un sino"], "answer": 0, "explanation": "una suerte de + 名詞 = 一種の〜。azar は偶然、sino は運命で、de arrepentimiento を導くこの定型表現にはならない。" },
-        { "n": 13, "options": ["delirante", "soso", "aburrido"], "answer": 0, "explanation": "delirante = 常軌を逸した、幻惑的な。ボードリヤール的な虚実の逆転を表す。soso/aburrido は退屈な。" }
+        {
+          "n": 1,
+          "options": [
+            "meros",
+            "parcos",
+            "solos"
+          ],
+          "answer": 0,
+          "explanation": "meros objetos de consumo = 単なる消費対象。mero は名詞の前で「ほんの、単なる」。parco は控えめな、solo は単独の。",
+          "option_meanings_ja": [
+            "単なる",
+            "控えめな・乏しい",
+            "単独の"
+          ]
+        },
+        {
+          "n": 2,
+          "options": [
+            "molde",
+            "modelaje",
+            "modelo"
+          ],
+          "answer": 2,
+          "explanation": "el modelo generado en torno a… = 〜をめぐって生み出されたモデル。molde は鋳型、modelaje はモデル業・造形。",
+          "option_meanings_ja": [
+            "型・鋳型",
+            "モデル業・造形",
+            "モデル・型"
+          ]
+        },
+        {
+          "n": 3,
+          "options": [
+            "escenografía",
+            "demografía",
+            "reprografía"
+          ],
+          "answer": 0,
+          "explanation": "escenografía = 舞台装置・舞台美術。都市が均質化され、見せるための舞台になるという比喩。demografía は人口統計、reprografía は複写技術。",
+          "option_meanings_ja": [
+            "舞台装置・舞台美術",
+            "人口統計",
+            "複写技術"
+          ]
+        },
+        {
+          "n": 4,
+          "options": [
+            "levadizas",
+            "castizas",
+            "rollizas"
+          ],
+          "answer": 1,
+          "explanation": "castizo = その土地の伝統的・典型的な。neotabernas castizas は「伝統風を装った新しい居酒屋」。levadizo は跳ね上げ式の、rollizo は丸々とした。",
+          "option_meanings_ja": [
+            "跳ね上げ式の",
+            "土地固有の・伝統的な",
+            "丸々とした"
+          ]
+        },
+        {
+          "n": 5,
+          "options": [
+            "amoldarse",
+            "amoldar",
+            "moldear"
+          ],
+          "answer": 0,
+          "explanation": "amoldarse a + 名詞 = 〜に合わせる・適応する。主語 espacios 自身が期待に適合するため、再帰形が必要。",
+          "option_meanings_ja": [
+            "〜に合わせる・適応する",
+            "合わせる",
+            "形作る"
+          ]
+        },
+        {
+          "n": 6,
+          "options": [
+            "extenso",
+            "amplio",
+            "prolífico"
+          ],
+          "answer": 2,
+          "explanation": "arquitecto prolífico = 多作な建築家。extenso/amplio は広い・広範なという空間的な意味が中心。",
+          "option_meanings_ja": [
+            "広範な・長い",
+            "広い",
+            "多作な"
+          ]
+        },
+        {
+          "n": 7,
+          "options": [
+            "recorrida",
+            "recurrida",
+            "referida"
+          ],
+          "answer": 0,
+          "explanation": "estar recorrida por = 〜が全体に走っている・覆っている。装飾がファサード上に広がる様子を表す。",
+          "option_meanings_ja": [
+            "全体を走る・覆う",
+            "再発した",
+            "言及された"
+          ]
+        },
+        {
+          "n": 8,
+          "options": [
+            "la sede",
+            "la sierra",
+            "el asedio"
+          ],
+          "answer": 0,
+          "explanation": "ser la sede de = 〜の本拠地・所在地である。sierra は山脈・のこぎり、asedio は包囲。",
+          "option_meanings_ja": [
+            "本拠地・所在地",
+            "山脈・のこぎり",
+            "包囲"
+          ]
+        },
+        {
+          "n": 9,
+          "options": [
+            "se cantó",
+            "se decantó",
+            "decantó"
+          ],
+          "answer": 1,
+          "explanation": "decantarse por = 〜を選ぶ・〜の方に傾く。再帰形と前置詞 por が一組になる。",
+          "option_meanings_ja": [
+            "歌われた",
+            "〜を選んだ",
+            "沈殿させた"
+          ]
+        },
+        {
+          "n": 10,
+          "options": [
+            "beodas",
+            "ebrias",
+            "sobrias"
+          ],
+          "answer": 1,
+          "explanation": "líneas ebrias = 酔ったようにうねる線、という建築表現。ebrio は「酔った」。sobrio は簡素な・しらふの、beodo は酔っ払いを指す語。",
+          "option_meanings_ja": [
+            "酔った（beodo）",
+            "酔った・うねる",
+            "しらふの・簡素な"
+          ]
+        },
+        {
+          "n": 11,
+          "options": [
+            "retorno",
+            "torno",
+            "entorno"
+          ],
+          "answer": 2,
+          "explanation": "el entorno de la Gran Vía = グラン・ビアの周辺。retorno は帰還、torno は周囲・旋盤だが、この構文では entorno が自然。",
+          "option_meanings_ja": [
+            "帰還",
+            "周囲・旋盤",
+            "周辺・環境"
+          ]
+        },
+        {
+          "n": 12,
+          "options": [
+            "una suerte",
+            "un azar",
+            "un sino"
+          ],
+          "answer": 0,
+          "explanation": "una suerte de + 名詞 = 一種の〜。azar は偶然、sino は運命で、de arrepentimiento を導くこの定型表現にはならない。",
+          "option_meanings_ja": [
+            "一種の〜",
+            "偶然",
+            "運命"
+          ]
+        },
+        {
+          "n": 13,
+          "options": [
+            "delirante",
+            "soso",
+            "aburrido"
+          ],
+          "answer": 0,
+          "explanation": "delirante = 常軌を逸した、幻惑的な。ボードリヤール的な虚実の逆転を表す。soso/aburrido は退屈な。",
+          "option_meanings_ja": [
+            "常軌を逸した・幻惑的な",
+            "味気ない",
+            "退屈な"
+          ]
+        }
       ]
     }
   ]
