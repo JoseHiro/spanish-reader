@@ -69,3 +69,10 @@ export type TextProgress = {
 }
 
 export type ProgressMap = { [text_id: string]: TextProgress }
+
+export type View =
+  | { name: 'home' }
+  | { name: 'read'; textId: string }
+  | { name: 'quiz'; textId: string }
+  | { name: 'vocab' }
+  | { name: 'dashboard' }

@@ -6,6 +6,7 @@ import type {
   Encounter,
   QuizResult,
   ProgressMap,
+  View,
 } from './types'
 import { Home } from './components/Home'
 import { TextReader } from './components/TextReader'
@@ -24,16 +25,10 @@ import {
   IconPanelLeftOpen,
 } from './components/Icons'
 import { useTheme, type ThemeMode } from './lib/theme'
-
-type View =
-  | { name: 'home' }
-  | { name: 'read'; textId: string }
-  | { name: 'quiz'; textId: string }
-  | { name: 'vocab' }
-  | { name: 'dashboard' }
+import { parseHash, viewToHash } from './lib/routes'
 
 export function App() {
-  const [view, setView] = useState<View>({ name: 'home' })
+  const [view, setView] = useState<View>(() => parseHash(window.location.hash))
   const [texts, setTexts] = useState<Text[]>([])
   const [words, setWords] = useState<Word[]>([])
   const [encounters, setEncounters] = useState<Encounter[]>([])
@@ -68,6 +63,26 @@ export function App() {
   useEffect(() => {
     reloadAll()
   }, [])
+
+  useEffect(() => {
+    if (!window.location.hash) {
+      window.history.replaceState(null, '', `${window.location.pathname}#/`)
+    }
+    const onHashChange = () => setView(parseHash(window.location.hash))
+    window.addEventListener('hashchange', onHashChange)
+    return () => window.removeEventListener('hashchange', onHashChange)
+  }, [])
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' })
+    setSidebarCollapsed(false)
+  }, [view])
+
+  function navigate(next: View) {
+    const hash = viewToHash(next)
+    if (window.location.hash === hash) setView(next)
+    else window.location.hash = hash
+  }
 
   async function updateWord(updated: Word) {
     const next = [...words]
@@ -120,21 +135,21 @@ export function App() {
       icon: <IconRead size={18} strokeWidth={1.8} />,
       active:
         view.name === 'home' || view.name === 'read' || view.name === 'quiz',
-      onClick: () => setView({ name: 'home' }),
+      onClick: () => navigate({ name: 'home' }),
     },
     {
       key: 'vocab',
       label: 'Vocabulario',
       icon: <IconVocab size={18} strokeWidth={1.8} />,
       active: view.name === 'vocab',
-      onClick: () => setView({ name: 'vocab' }),
+      onClick: () => navigate({ name: 'vocab' }),
     },
     {
       key: 'dashboard',
       label: 'Progreso',
       icon: <IconChart size={18} strokeWidth={1.8} />,
       active: view.name === 'dashboard',
-      onClick: () => setView({ name: 'dashboard' }),
+      onClick: () => navigate({ name: 'dashboard' }),
     },
   ]
 
@@ -191,7 +206,7 @@ export function App() {
 
       <main className="main">
         {!loading && !err && (
-          <Header crumbs={buildCrumbs(view, currentText, setView)} words={words} />
+          <Header crumbs={buildCrumbs(view, currentText, navigate)} words={words} />
         )}
         <div className={`container${view.name === 'quiz' ? ' quiz-container' : ''}`}>
           {err && (
@@ -208,7 +223,7 @@ export function App() {
                   texts={texts}
                   progress={progress}
                   onOpenText={(text) =>
-                    setView(
+                    navigate(
                       text.type === 'cloze'
                         ? { name: 'quiz', textId: text.id }
                         : { name: 'read', textId: text.id },
@@ -221,9 +236,9 @@ export function App() {
                   text={currentText}
                   words={words}
                   completed={!!progress[currentText.id]?.completed}
-                  onBack={() => setView({ name: 'home' })}
+                  onBack={() => navigate({ name: 'home' })}
                   onOpenQuiz={() =>
-                    setView({ name: 'quiz', textId: currentText.id })
+                    navigate({ name: 'quiz', textId: currentText.id })
                   }
                   onWordUpdate={updateWord}
                   onEncounter={addEncounter}
@@ -234,7 +249,7 @@ export function App() {
                 <ClozeQuiz
                   text={currentText}
                   completed={!!progress[currentText.id]?.completed}
-                  onBack={() => setView({ name: 'home' })}
+                  onBack={() => navigate({ name: 'home' })}
                   onSaveResult={saveQuizResult}
                   onWordUpdate={updateWord}
                   onEncounter={addEncounter}
@@ -268,19 +283,19 @@ export function App() {
 function buildCrumbs(
   view: View,
   currentText: Text | undefined,
-  setView: (v: View) => void,
+  navigate: (v: View) => void,
 ): { label: string; onClick?: () => void }[] {
   switch (view.name) {
     case 'home':
       return [{ label: 'Leer' }]
     case 'read':
       return [
-        { label: 'Leer', onClick: () => setView({ name: 'home' }) },
+        { label: 'Leer', onClick: () => navigate({ name: 'home' }) },
         { label: currentText?.title ?? '—' },
       ]
     case 'quiz':
       return [
-        { label: 'Leer', onClick: () => setView({ name: 'home' }) },
+        { label: 'Leer', onClick: () => navigate({ name: 'home' }) },
         { label: currentText?.title ?? '—' },
       ]
     case 'vocab':
