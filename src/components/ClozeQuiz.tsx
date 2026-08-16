@@ -6,6 +6,7 @@ import { findWordBySurface } from '../lib/words'
 import { IconArrowLeft, IconCheck, IconX } from './Icons'
 import { WordPopup } from './WordPopup'
 import { ArticleChunk } from './ArticleChunk'
+import { QuizOption } from './QuizOption'
 
 export function ClozeQuiz({
   text,
@@ -345,14 +346,14 @@ function renderQuizParagraph(
               else if (chosen === i) cls = 'cloze-option wrong'
             }
             return (
-              <button
+              <QuizOption
                 key={i}
                 className={cls}
+                label={`${['a', 'b', 'c'][i]}) ${opt}`}
+                meaningJa={c.option_meanings_ja?.[i]}
+                submitted={ctx.submitted}
                 onClick={() => ctx.setAnswer(n, i)}
-                disabled={ctx.submitted}
-              >
-                {['a', 'b', 'c'][i]}) {opt}
-              </button>
+              />
             )
           })}
         </span>

@@ -1003,6 +1003,16 @@ h2 {
   font-family: var(--font);
   color: var(--text-soft);
   transition: all 140ms var(--ease);
+  text-align: left;
+}
+
+.option-meaning-ja {
+  display: block;
+  margin-top: 3px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.35;
+  opacity: 0.82;
 }
 
 .cloze-option:hover {

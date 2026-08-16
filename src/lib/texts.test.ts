@@ -30,4 +30,16 @@ describe('text chunk metadata', () => {
       'body',
     ])
   })
+
+  it('provides a Japanese meaning for every quiz option', () => {
+    for (const text of data.texts) {
+      for (const cloze of text.clozes ?? []) {
+        expect(
+          cloze.option_meanings_ja,
+          `${text.title} - pregunta ${cloze.n}`,
+        ).toHaveLength(cloze.options.length)
+        expect(cloze.option_meanings_ja?.every(Boolean)).toBe(true)
+      }
+    }
+  })
 })

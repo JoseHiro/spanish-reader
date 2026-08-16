@@ -26,6 +26,7 @@ export type Word = {
 export type Cloze = {
   n: number
   options: string[]
+  option_meanings_ja?: string[]
   answer: number
   explanation?: string
 }
