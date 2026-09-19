@@ -50,6 +50,16 @@
       "examples": [
         "El gobierno acometió una reforma profunda del sistema educativo.",
         "Debemos acometer el problema antes de que empeore."
+      ],
+      "practice_examples": [
+        {
+          "es": "El gobierno acometió una reforma profunda del sistema educativo.",
+          "ja": "政府は教育制度の抜本的な改革に着手した。"
+        },
+        {
+          "es": "Debemos acometer el problema antes de que empeore.",
+          "ja": "問題が悪化する前に取り組まなければならない。"
+        }
       ]
     },
     {

@@ -46,12 +46,11 @@ describe('text chunk metadata', () => {
     }
   })
 
-  it('provides two practice examples for every translated vocabulary item', () => {
+  it('provides two translated practice examples for every vocabulary item', () => {
     for (const word of wordData.words.filter((item) => item.meaning_ja)) {
-      expect(
-        getWordExamples(word as Word, data.texts as Text[]),
-        word.lemma,
-      ).toHaveLength(2)
+      const examples = getWordExamples(word as Word, data.texts as Text[])
+      expect(examples, word.lemma).toHaveLength(2)
+      expect(examples.every((example) => example.japanese.length > 0), word.lemma).toBe(true)
     }
   })
 })

@@ -9,6 +9,10 @@ export type Word = {
   meaning_ja?: string
   example?: string | null
   examples?: string[]
+  practice_examples?: Array<{
+    es: string
+    ja: string
+  }>
   source_text_id?: string
   tags?: string[]
   srs?: {

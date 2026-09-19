@@ -17,26 +17,39 @@ const text: Text = {
 }
 
 describe('getWordExamples', () => {
-  it('combines the registered example with the source lesson sentence', () => {
+  it('uses two authored bilingual examples instead of source text', () => {
     const word: Word = {
       lemma: 'apostar por',
       forms: ['apostando'],
       state: 'unknown',
       example: 'Apostamos por las energías renovables.',
       source_text_id: 'lesson',
+      practice_examples: [
+        { es: 'Apostamos por la educación pública.', ja: '私たちは公教育を重視している。' },
+        { es: 'La empresa apostó por la energía solar.', ja: 'その企業は太陽エネルギーに力を入れた。' },
+      ],
     }
     expect(getWordExamples(word, [text])).toEqual([
-      'Apostamos por las energías renovables.',
-      'Han seguido apostando por una industria.',
+      { spanish: 'Apostamos por la educación pública.', japanese: '私たちは公教育を重視している。' },
+      { spanish: 'La empresa apostó por la energía solar.', japanese: 'その企業は太陽エネルギーに力を入れた。' },
     ])
   })
 
-  it('does not match a lemma inside another word', () => {
+  it('creates two bilingual examples without copying the lesson', () => {
     const word: Word = {
       lemma: 'sede',
       state: 'unknown',
       source_text_id: 'lesson',
     }
-    expect(getWordExamples(word, [text])).toEqual([])
+    expect(getWordExamples(word, [text])).toEqual([
+      {
+        spanish: 'En clase aprendimos a usar «sede» correctamente.',
+        japanese: '授業で「sede」の正しい使い方を学んだ。',
+      },
+      {
+        spanish: 'Escribí una oración nueva con «sede» para recordarlo.',
+        japanese: '「sede」を覚えるために、新しい文を一つ書いた。',
+      },
+    ])
   })
 })

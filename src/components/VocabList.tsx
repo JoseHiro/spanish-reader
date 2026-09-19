@@ -174,7 +174,10 @@ export function VocabList({
                     <div className="review-examples-title">Ejemplos</div>
                     <ol>
                       {currentExamples.map((example, index) => (
-                        <li key={`${example}-${index}`}>{example}</li>
+                        <li key={`${example.spanish}-${index}`}>
+                          <div className="review-example-es">{example.spanish}</div>
+                          <div className="review-example-ja">{example.japanese}</div>
+                        </li>
                       ))}
                     </ol>
                   </div>

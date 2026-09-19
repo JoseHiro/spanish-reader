@@ -1285,10 +1285,22 @@ h2 {
 }
 
 .review-examples li {
-  margin-bottom: 7px;
+  margin-bottom: 14px;
+}
+
+.review-example-es {
   font-family: var(--font-serif);
   font-size: 15px;
   font-style: italic;
+  line-height: 1.55;
+}
+
+.review-example-ja {
+  margin-top: 3px;
+  color: var(--text-mute);
+  font-family: var(--font);
+  font-size: 13px;
+  font-style: normal;
   line-height: 1.55;
 }
 

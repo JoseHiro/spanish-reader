@@ -1,43 +1,30 @@
 import type { Text, Word } from '../types'
-import { normalize } from './tokenize'
 
-const LETTERS = 'A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9'
-
-function resolveClozes(paragraph: string, text: Text) {
-  return paragraph.replace(/\{\{(\d+)\}\}/g, (_, rawNumber) => {
-    const cloze = text.clozes?.find((item) => item.n === Number(rawNumber))
-    return cloze ? cloze.options[cloze.answer] : ''
-  })
+export type WordExample = {
+  spanish: string
+  japanese: string
 }
 
-function containsTerm(sentence: string, term: string) {
-  const escaped = normalize(term).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-  return new RegExp(`(^|[^${LETTERS}])${escaped}(?=$|[^${LETTERS}])`, 'i').test(
-    normalize(sentence),
-  )
-}
-
-export function getWordExamples(word: Word, texts: Text[]): string[] {
-  const examples = (word.examples ?? []).map((example) => example.trim()).filter(Boolean)
-  if (word.example?.trim() && !examples.includes(word.example.trim())) {
-    examples.push(word.example.trim())
+export function getWordExamples(word: Word, _texts: Text[]): WordExample[] {
+  const authored = (word.practice_examples ?? [])
+    .map((example) => ({
+      spanish: example.es.trim(),
+      japanese: example.ja.trim(),
+    }))
+    .filter((example) => example.spanish && example.japanese)
+  if (authored.length >= 2) {
+    return authored.slice(0, 2)
   }
 
-  const source = texts.find((text) => text.id === word.source_text_id)
-  if (source) {
-    const terms = [...(word.forms ?? []), word.lemma].sort(
-      (a, b) => b.length - a.length,
-    )
-    const sentences = source.paragraphs
-      .map((paragraph) => resolveClozes(paragraph, source))
-      .flatMap((paragraph) => paragraph.split(/(?<=[.!?…])\s+/))
-      .map((sentence) => sentence.trim())
-      .filter(Boolean)
-    const context = sentences.find((sentence) =>
-      terms.some((term) => containsTerm(sentence, term)),
-    )
-    if (context && !examples.includes(context)) examples.push(context)
-  }
-
-  return examples.slice(0, 2)
+  const lemma = word.lemma.trim()
+  return [
+    {
+      spanish: `En clase aprendimos a usar «${lemma}» correctamente.`,
+      japanese: `授業で「${lemma}」の正しい使い方を学んだ。`,
+    },
+    {
+      spanish: `Escribí una oración nueva con «${lemma}» para recordarlo.`,
+      japanese: `「${lemma}」を覚えるために、新しい文を一つ書いた。`,
+    },
+  ]
 }
