@@ -35,21 +35,12 @@ describe('getWordExamples', () => {
     ])
   })
 
-  it('creates two bilingual examples without copying the lesson', () => {
+  it('does not create meta sentences when authored examples are unavailable', () => {
     const word: Word = {
       lemma: 'sede',
       state: 'unknown',
       source_text_id: 'lesson',
     }
-    expect(getWordExamples(word, [text])).toEqual([
-      {
-        spanish: 'En clase aprendimos a usar «sede» correctamente.',
-        japanese: '授業で「sede」の正しい使い方を学んだ。',
-      },
-      {
-        spanish: 'Escribí una oración nueva con «sede» para recordarlo.',
-        japanese: '「sede」を覚えるために、新しい文を一つ書いた。',
-      },
-    ])
+    expect(getWordExamples(word, [text])).toEqual([])
   })
 })

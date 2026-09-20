@@ -15,16 +15,5 @@ export function getWordExamples(word: Word, _texts: Text[]): WordExample[] {
   if (authored.length >= 2) {
     return authored.slice(0, 2)
   }
-
-  const lemma = word.lemma.trim()
-  return [
-    {
-      spanish: `En clase aprendimos a usar «${lemma}» correctamente.`,
-      japanese: `授業で「${lemma}」の正しい使い方を学んだ。`,
-    },
-    {
-      spanish: `Escribí una oración nueva con «${lemma}» para recordarlo.`,
-      japanese: `「${lemma}」を覚えるために、新しい文を一つ書いた。`,
-    },
-  ]
+  return []
 }

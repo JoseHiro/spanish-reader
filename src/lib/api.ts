@@ -54,11 +54,39 @@ async function writeFile(name: string, data: unknown): Promise<void> {
   localStorage.setItem(LS_PREFIX + name, JSON.stringify(data))
 }
 
+export function mergeSeedWords(seedWords: Word[], storedWords: Word[]): Word[] {
+  const storedByLemma = new Map(storedWords.map((word) => [word.lemma, word]))
+  const merged = seedWords.map((seed) => {
+    const stored = storedByLemma.get(seed.lemma)
+    if (!stored) return seed
+    return {
+      ...seed,
+      state: stored.state ?? seed.state,
+      srs: stored.srs ?? seed.srs,
+    }
+  })
+  const seedLemmas = new Set(seedWords.map((word) => word.lemma))
+  return [...merged, ...storedWords.filter((word) => !seedLemmas.has(word.lemma))]
+}
+
+async function readWords(): Promise<{ words: Word[] }> {
+  if (IS_DEV) return apiGet<{ words: Word[] }>('words')
+  const seed = await fetchSeed<{ words: Word[] }>('words')
+  const stored = localStorage.getItem(LS_PREFIX + 'words')
+  if (!stored) return seed
+  try {
+    const parsed = JSON.parse(stored) as { words: Word[] }
+    return { words: mergeSeedWords(seed.words, parsed.words ?? []) }
+  } catch {
+    return seed
+  }
+}
+
 export const api = {
   getTexts: () => readFile<{ texts: Text[] }>('texts'),
   putTexts: (data: { texts: Text[] }) => writeFile('texts', data),
 
-  getWords: () => readFile<{ words: Word[] }>('words'),
+  getWords: readWords,
   putWords: (data: { words: Word[] }) => writeFile('words', data),
 
   getEncounters: () => readFile<{ encounters: Encounter[] }>('encounters'),
