@@ -1,4 +1,5 @@
 import type { Text, Word } from '../types'
+import { PRACTICE_EXAMPLES } from '../data/practiceExamples'
 
 export type WordExample = {
   spanish: string
@@ -6,10 +7,14 @@ export type WordExample = {
 }
 
 export function getWordExamples(word: Word, _texts: Text[]): WordExample[] {
-  const authored = (word.practice_examples ?? [])
+  const registered = word.practice_examples?.map((example) => ({
+    spanish: example.es,
+    japanese: example.ja,
+  })) ?? PRACTICE_EXAMPLES[word.lemma] ?? []
+  const authored = registered
     .map((example) => ({
-      spanish: example.es.trim(),
-      japanese: example.ja.trim(),
+      spanish: example.spanish.trim(),
+      japanese: example.japanese.trim(),
     }))
     .filter((example) => example.spanish && example.japanese)
   if (authored.length >= 2) {

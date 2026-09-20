@@ -46,11 +46,16 @@ describe('text chunk metadata', () => {
     }
   })
 
-  it('keeps authored practice examples bilingual and paired', () => {
-    for (const word of wordData.words.filter((item) => item.practice_examples)) {
+  it('provides two authored bilingual examples for every vocabulary item', () => {
+    for (const word of wordData.words.filter((item) => item.meaning_ja)) {
       const examples = getWordExamples(word as Word, data.texts as Text[])
       expect(examples, word.lemma).toHaveLength(2)
-      expect(examples.every((example) => example.japanese.length > 0), word.lemma).toBe(true)
+      expect(
+        examples.every(
+          (example) => example.spanish.length > 0 && example.japanese.length > 0,
+        ),
+        word.lemma,
+      ).toBe(true)
     }
   })
 })

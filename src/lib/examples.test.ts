@@ -37,7 +37,7 @@ describe('getWordExamples', () => {
 
   it('does not create meta sentences when authored examples are unavailable', () => {
     const word: Word = {
-      lemma: 'sede',
+      lemma: 'palabra sin registrar',
       state: 'unknown',
       source_text_id: 'lesson',
     }
