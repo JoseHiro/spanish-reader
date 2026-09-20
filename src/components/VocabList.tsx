@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import type { Text, Word, WordState } from '../types'
 import { createEmptyCard, fsrs, Rating, type Card, type Grade } from 'ts-fsrs'
 import { getWordExamples } from '../lib/examples'
+import { buildReviewQueue, requeueAfterAgain } from '../lib/reviewQueue'
 
 type Filter = 'unknown' | 'probably_known' | 'mastered' | 'all'
 type VocabKind = 'all' | 'expression'
@@ -33,6 +34,7 @@ export function VocabList({
   const [reviewing, setReviewing] = useState(false)
   const [revealed, setRevealed] = useState(false)
   const [reviewed, setReviewed] = useState(0)
+  const [reviewQueue, setReviewQueue] = useState<string[]>([])
 
   const scopeWords = useMemo(
     () => filterVocabWords(words, lessonId, kind),
@@ -47,7 +49,7 @@ export function VocabList({
         (!word.srs || new Date(word.srs.due).getTime() <= now),
     )
   }, [scopeWords])
-  const current = dueWords[0]
+  const current = words.find((word) => word.lemma === reviewQueue[0])
   const currentExamples = useMemo(
     () => (current ? getWordExamples(current, texts) : []),
     [current, texts],
@@ -87,6 +89,9 @@ export function VocabList({
         last_review: result.last_review?.toISOString(),
       },
     })
+    setReviewQueue((queue) =>
+      rating === Rating.Again ? requeueAfterAgain(queue) : queue.slice(1),
+    )
     setReviewed((count) => count + 1)
     setRevealed(false)
   }
@@ -148,6 +153,7 @@ export function VocabList({
         <button className="primary review-start" onClick={() => {
           setReviewed(0)
           setRevealed(false)
+          setReviewQueue(buildReviewQueue(dueWords))
           setReviewing(true)
         }}>
           Repasar ahora ({dueWords.length})
@@ -157,7 +163,7 @@ export function VocabList({
       {reviewing && current && (
         <div className="review-session">
           <div className="review-progress">
-            {reviewed} repasadas · {dueWords.length} pendientes
+            {reviewed} respuestas · {reviewQueue.length} pendientes
           </div>
           <div className="review-card">
             <div className="review-lemma">{current.lemma}</div>
@@ -191,7 +197,10 @@ export function VocabList({
               </>
             )}
           </div>
-          <button className="review-exit" onClick={() => setReviewing(false)}>
+          <button className="review-exit" onClick={() => {
+            setReviewQueue([])
+            setReviewing(false)
+          }}>
             Terminar sesión
           </button>
         </div>
@@ -200,8 +209,11 @@ export function VocabList({
       {reviewing && !current && (
         <div className="review-complete">
           <h2>¡Repaso terminado!</h2>
-          <div className="subtitle">Has repasado {reviewed} palabras.</div>
-          <button onClick={() => setReviewing(false)}>Volver a la lista</button>
+          <div className="subtitle">Has completado {reviewed} respuestas.</div>
+          <button onClick={() => {
+            setReviewQueue([])
+            setReviewing(false)
+          }}>Volver a la lista</button>
         </div>
       )}
 
