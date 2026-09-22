@@ -477,4 +477,56 @@ export const PRACTICE_EXAMPLES: Record<string, [WordExample, WordExample]> = {
     { spanish: "La película cuenta una historia delirante y divertida.", japanese: "その映画は常軌を逸した愉快な物語を描いている。" },
     { spanish: "El espectáculo ofrece una mezcla delirante de luces y sonidos.", japanese: "そのショーは光と音の幻惑的な組み合わせを見せる。" },
   ],
+  "tocar tierra": [
+    { spanish: "El huracán tocó tierra cerca de la capital.", japanese: "ハリケーンは首都近郊に上陸した。" },
+    { spanish: "Los marineros celebraron al tocar tierra después de dos meses.", japanese: "船員たちは2か月ぶりに上陸して喜んだ。" },
+  ],
+  "dejar afectado": [
+    { spanish: "El apagón dejó afectados a miles de usuarios.", japanese: "停電によって何千人もの利用者が影響を受けた。" },
+    { spanish: "Las inundaciones dejaron gravemente afectada la zona rural.", japanese: "洪水は農村地域に深刻な被害を与えた。" },
+  ],
+  "deslizamiento de tierra": [
+    { spanish: "Las lluvias provocaron un deslizamiento de tierra.", japanese: "大雨によって地滑りが発生した。" },
+    { spanish: "La carretera quedó bloqueada por varios deslizamientos de tierra.", japanese: "道路は複数の地滑りによってふさがれた。" },
+  ],
+  "estación de lluvias": [
+    { spanish: "La estación de lluvias comienza en mayo.", japanese: "雨季は5月に始まる。" },
+    { spanish: "Durante la estación de lluvias, el río crece rápidamente.", japanese: "雨季には川の水位が急速に上がる。" },
+  ],
+  "ola de calor": [
+    { spanish: "La ola de calor obligó a cerrar las escuelas.", japanese: "熱波のため学校は休校になった。" },
+    { spanish: "Se esperan nuevas olas de calor este verano.", japanese: "この夏は新たな熱波が予想されている。" },
+  ],
+  "cordillera": [
+    { spanish: "La cordillera está cubierta de nieve.", japanese: "その山脈は雪に覆われている。" },
+    { spanish: "Atravesaron la cordillera a pie.", japanese: "彼らは徒歩で山脈を越えた。" },
+  ],
+  "servir de refugio": [
+    { spanish: "La cueva sirvió de refugio durante la tormenta.", japanese: "洞窟は嵐の間、避難場所となった。" },
+    { spanish: "El bosque sirve de refugio para numerosas especies.", japanese: "その森は多くの種の保護場所となっている。" },
+  ],
+  "agua dulce": [
+    { spanish: "El lago contiene una enorme reserva de agua dulce.", japanese: "その湖には膨大な淡水が蓄えられている。" },
+    { spanish: "Muchas comunidades carecen de acceso al agua dulce.", japanese: "多くの共同体が淡水を利用できずにいる。" },
+  ],
+  "potencia agrícola": [
+    { spanish: "El país se convirtió en una potencia agrícola.", japanese: "その国は農業大国となった。" },
+    { spanish: "La región aspira a consolidarse como potencia agrícola mundial.", japanese: "その地域は世界的な農業大国としての地位確立を目指している。" },
+  ],
+  "agricultura de subsistencia": [
+    { spanish: "La mayoría de las familias vive de la agricultura de subsistencia.", japanese: "大半の家族は自給農業で暮らしている。" },
+    { spanish: "La sequía amenaza la agricultura de subsistencia de la región.", japanese: "干ばつが地域の自給農業を脅かしている。" },
+  ],
+  "cosecha": [
+    { spanish: "La cosecha de maíz fue abundante este año.", japanese: "今年のトウモロコシの収穫は豊作だった。" },
+    { spanish: "Las heladas arruinaron gran parte de la cosecha.", japanese: "霜によって収穫物の大部分が台無しになった。" },
+  ],
+  "clave": [
+    { spanish: "La educación es clave para reducir la desigualdad.", japanese: "教育は格差を縮小するために重要である。" },
+    { spanish: "La policía encontró una clave para resolver el caso.", japanese: "警察は事件解決の手がかりを見つけた。" },
+  ],
+  "acusado": [
+    { spanish: "Se observa un acusado descenso de las temperaturas.", japanese: "気温の著しい低下が見られる。" },
+    { spanish: "El contraste entre ambas regiones es muy acusado.", japanese: "両地域の対照は非常に顕著だ。" },
+  ],
 }
