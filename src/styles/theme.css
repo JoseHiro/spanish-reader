@@ -967,6 +967,28 @@ h2 {
   line-height: 1.9;
 }
 
+.alignment-segment {
+  border-radius: 4px;
+  transition: color 120ms ease, background-color 120ms ease,
+    box-shadow 120ms ease;
+}
+
+.alignment-segment.source,
+.alignment-segment.translation {
+  cursor: crosshair;
+}
+
+.alignment-segment.source.active {
+  background: color-mix(in srgb, var(--accent) 19%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 19%, transparent);
+}
+
+.alignment-segment.translation.active {
+  color: var(--text);
+  background: color-mix(in srgb, var(--accent) 24%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 24%, transparent);
+}
+
 .quiz-paragraph.heading .chunk-translation-ja {
   padding: 10px 14px;
   color: var(--text);

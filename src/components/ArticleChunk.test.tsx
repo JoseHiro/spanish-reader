@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
 import { ArticleChunk } from './ArticleChunk'
 
@@ -51,5 +51,26 @@ describe('ArticleChunk', () => {
 
     expect(screen.queryByText('解答解説')).not.toBeInTheDocument()
     expect(screen.queryByText('日本語訳')).not.toBeInTheDocument()
+  })
+
+  it('highlights corresponding source and translation segments on hover', () => {
+    const { container } = render(
+      <ArticleChunk
+        content="Primera frase. Segunda frase."
+        contentSegments={['Primera frase.', 'Segunda frase.']}
+        translation="最初の文。次の文。"
+        translationSegments={['最初の文。', '次の文。']}
+        submitted
+      />,
+    )
+
+    const source = container.querySelector('.alignment-segment.source')!
+    fireEvent.mouseEnter(source)
+    expect(source).toHaveClass('active')
+    expect(screen.getByText('最初の文。')).toHaveClass('active')
+
+    fireEvent.mouseLeave(source)
+    expect(source).not.toHaveClass('active')
+    expect(screen.getByText('最初の文。')).not.toHaveClass('active')
   })
 })

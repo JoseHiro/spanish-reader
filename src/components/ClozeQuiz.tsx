@@ -7,6 +7,7 @@ import { IconArrowLeft, IconCheck, IconX } from './Icons'
 import { WordPopup } from './WordPopup'
 import { ArticleChunk } from './ArticleChunk'
 import { QuizOption } from './QuizOption'
+import { alignJapaneseTranslation, splitSpanishSentences } from '../lib/alignment'
 
 export function ClozeQuiz({
   text,
@@ -134,10 +135,14 @@ export function ClozeQuiz({
       </div>
 
       <div className="reader">
-        {text.paragraphs.map((para, pi) => (
-          <ArticleChunk
+        {text.paragraphs.map((para, pi) => {
+          const type = text.chunk_types?.[pi] ?? 'body'
+          const sourceSegments =
+            type === 'body' ? splitSpanishSentences(para) : [para]
+          const translation = text.translation_ja?.[pi]
+          return <ArticleChunk
             key={pi}
-            type={text.chunk_types?.[pi] ?? 'body'}
+            type={type}
             submitted={submitted}
             content={renderQuizParagraph(para, text, {
                 answers,
@@ -151,6 +156,20 @@ export function ClozeQuiz({
                   setAnswers(next)
                 },
               })}
+            contentSegments={sourceSegments.map((segment) =>
+              renderQuizParagraph(segment, text, {
+                answers,
+                submitted,
+                findWord,
+                onWordClick,
+                setAnswer: (n, i) => {
+                  if (submitted) return
+                  const next = [...answers]
+                  next[n - 1] = i
+                  setAnswers(next)
+                },
+              }),
+            )}
             feedback={
               <ParagraphFeedback
                 paragraph={para}
@@ -158,9 +177,14 @@ export function ClozeQuiz({
                 answers={answers}
               />
             }
-            translation={text.translation_ja?.[pi]}
+            translation={translation}
+            translationSegments={
+              translation
+                ? alignJapaneseTranslation(translation, sourceSegments.length)
+                : undefined
+            }
           />
-        ))}
+        })}
       </div>
 
       {!submitted && (
