@@ -24,52 +24,53 @@ export function Home({
           Aún no hay textos. Pídele a Claude que añada uno.
         </div>
       )}
-      {texts.map((t) => {
-        const done = !!progress[t.id]?.completed
-        return (
-          <div
-            key={t.id}
-            className={'card clickable' + (done ? ' done' : '')}
-            onClick={() => onOpenText(t)}
-          >
-            <div
-              className="title"
-              style={{ display: 'flex', alignItems: 'center', gap: 8 }}
+      <div className="text-card-grid">
+        {texts.map((t) => {
+          const done = !!progress[t.id]?.completed
+          return (
+            <article
+              key={t.id}
+              className={'card text-card clickable' + (done ? ' done' : '')}
+              onClick={() => onOpenText(t)}
             >
-              {done && (
-                <span className="done-mark" title="Completado">
-                  <IconCheck size={12} strokeWidth={3} />
-                </span>
-              )}
-              <span>{t.title}</span>
-            </div>
-            <div className="meta">
-              {t.author && <span>{t.author}</span>}
-              {t.source && <span>· {t.source}</span>}
-              {t.level && <span className="badge">{t.level}</span>}
-              {t.type === 'cloze' && (
-                <span className="badge">
-                  {t.clozes?.length ?? 0} huecos
-                </span>
-              )}
-              {done && (
-                <span className="badge mastered">Completado</span>
-              )}
-            </div>
-            <div className="actions">
-              <button
-                onClick={(e) => {
-                  e.stopPropagation()
-                  onOpenText(t)
-                }}
-              >
-                Abrir
-                <IconChevronRight size={14} strokeWidth={1.8} />
-              </button>
-            </div>
-          </div>
-        )
-      })}
+              <div className="text-card-heading">
+                {done && (
+                  <span className="done-mark" title="Completado">
+                    <IconCheck size={11} strokeWidth={3} />
+                  </span>
+                )}
+                <div className="title">{t.title}</div>
+              </div>
+              <div className="text-card-byline">
+                {t.author && <span>{t.author}</span>}
+                {t.source && <span>{t.source}</span>}
+              </div>
+              <div className="text-card-footer">
+                <div className="meta">
+                  {t.level && <span className="badge">{t.level}</span>}
+                  {t.type === 'cloze' && (
+                    <span className="badge">
+                      {t.clozes?.length ?? 0} huecos
+                    </span>
+                  )}
+                  {done && <span className="badge mastered">Completado</span>}
+                </div>
+                <button
+                  className="text-card-open"
+                  aria-label={`${t.title}を開く`}
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    onOpenText(t)
+                  }}
+                >
+                  Abrir
+                  <IconChevronRight size={13} strokeWidth={1.8} />
+                </button>
+              </div>
+            </article>
+          )
+        })}
+      </div>
     </>
   )
 }
