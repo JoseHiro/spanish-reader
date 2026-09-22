@@ -908,6 +908,130 @@
           ]
         }
       ]
+    },
+    {
+      "id": "text_05",
+      "title": "La relación rota del ser humano y la naturaleza (3ª parte)",
+      "author": "Juan F. Samaniego",
+      "source": "SIELE C1 / DELE C1 - Texto Nº9",
+      "source_url": "https://www.lamarea.com/2023/08/16/la-relacion-rota-del-ser-humano-y-la-naturaleza-amenazas-medioambientales-america-latina/",
+      "type": "cloze",
+      "level": "C1",
+      "added_at": "2026-09-22",
+      "paragraphs": [
+        "En noviembre de 2020, los huracanes Eta y Iota tocaron {{1}} en el mismo punto de la costa de Nicaragua con apenas dos semanas de diferencia, y {{2}} a más de 10 millones de personas afectadas por inundaciones, {{3}} de tierra y destrucción de viviendas e infraestructuras. No solo la ruta y la intensidad de Eta y Iota fueron excepcionales, sino también la época en la que se produjeron, ya que la {{4}} de lluvias en Centroamérica suele terminar en octubre. Los fenómenos meteorológicos extremos, desde huracanes a {{5}} de calor, se están haciendo más frecuentes e intensos en América Latina a causa del cambio climático.",
+        "Desaparición de los glaciares andinos",
+        "Los Andes son la {{6}} de los nevados, montañas tan altas que a pesar de estar en zonas tropicales todavía sirven de {{7}} para las nieves y los hielos perpetuos que aguantan desde la última gran glaciación. Los glaciares andinos son, también, una fuente esencial de agua {{8}} para cerca de 75 millones de personas en América Latina, pero están desapareciendo. De acuerdo con el IPCC, su superficie se ha reducido un 50 % desde 1980, amenazando la seguridad hídrica de muchas comunidades y aumentando el riesgo de erosión.",
+        "Alteración de los regímenes de lluvias",
+        "América Latina es {{9}} agrícola. Pero, más allá de la gran industria dedicada al cultivo de soja o cereales para exportación, la agricultura de la región es fundamentalmente familiar y de {{10}}. En las últimas décadas, los regímenes de lluvias en los que se basan los calendarios de siembra y {{11}} se han vuelto cada vez más irregulares e impredecibles. Esto ha provocado un descenso en la producción de alimentos {{12}} como el maíz, una tendencia muy {{13}} en el llamado «corredor seco de Centroamérica»."
+      ],
+      "chunk_types": [
+        "body",
+        "heading",
+        "body",
+        "heading",
+        "body"
+      ],
+      "translation_ja": [
+        "2020年11月、ハリケーンのイータとイオタは、わずか2週間の間隔でニカラグア沿岸の同じ地点に上陸し、洪水、地滑り、住宅やインフラの破壊によって1,000万人を超える人々が被災した。イータとイオタは進路と勢力だけでなく、発生時期も異例だった。中央アメリカの雨季は通常10月に終わるからである。ハリケーンから熱波に至る異常気象は、気候変動のためラテンアメリカでますます頻繁かつ激しくなっている。",
+        "アンデスの氷河の消失",
+        "アンデス山脈には雪山が連なっている。熱帯地域にありながら、非常に標高が高いため、最終氷期から残る万年雪や氷の避難場所となっている。アンデスの氷河はラテンアメリカの約7,500万人にとって不可欠な淡水源でもあるが、現在消失しつつある。IPCCによれば、その面積は1980年以降50％減少し、多くの共同体の水の安全保障を脅かし、侵食の危険を高めている。",
+        "降雨パターンの変化",
+        "ラテンアメリカは農業大国である。しかし、大豆や輸出用穀物を栽培する大規模産業以外では、この地域の農業は主として家族経営の自給農業である。ここ数十年、播種と収穫の暦が基礎としてきた降雨パターンは、ますます不規則で予測困難になった。その結果、トウモロコシのような主要食料の生産量が減少しており、この傾向は、いわゆる「中央アメリカ乾燥回廊」で特に顕著である。"
+      ],
+      "clozes": [
+        {
+          "n": 1,
+          "options": ["terreno", "tierra", "territorio"],
+          "answer": 1,
+          "explanation": "tocar tierra = （船・航空機・嵐などが）上陸する、陸地に達する、という定型表現。",
+          "option_meanings_ja": ["地面・用地", "陸地／大地", "領土・区域"]
+        },
+        {
+          "n": 2,
+          "options": ["salieron", "soltaron", "dejaron"],
+          "answer": 2,
+          "explanation": "dejar a alguien + 形容詞／分詞 = 人を〜の状態にする。ここでは「1,000万人以上を被災した状態にした」。",
+          "option_meanings_ja": ["出た", "放した", "〜の状態にした／残した"]
+        },
+        {
+          "n": 3,
+          "options": ["resbalones", "deslizamientos", "remiendos"],
+          "answer": 1,
+          "explanation": "deslizamiento de tierra = 地滑り。自然災害についての定型的な組み合わせ。",
+          "option_meanings_ja": ["滑って転ぶこと", "滑落・地滑り", "継ぎ当て・補修"]
+        },
+        {
+          "n": 4,
+          "options": ["estación", "sesión", "era"],
+          "answer": 0,
+          "explanation": "estación de lluvias = 雨季。sesión は会合、era は時代。",
+          "option_meanings_ja": ["季節", "会期・セッション", "時代"]
+        },
+        {
+          "n": 5,
+          "options": ["ondas", "olas", "vagas"],
+          "answer": 1,
+          "explanation": "ola de calor = 熱波、という固定表現。onda は物理的な波、vaga は曖昧な・怠惰な。",
+          "option_meanings_ja": ["波動・電波", "波／熱波", "曖昧な・怠惰な"]
+        },
+        {
+          "n": 6,
+          "options": ["carrillera", "rodillera", "cordillera"],
+          "answer": 2,
+          "explanation": "cordillera = 山脈。Los Andes は一連の山々からなる山脈である。",
+          "option_meanings_ja": ["頬当て・弾帯", "膝当て", "山脈"]
+        },
+        {
+          "n": 7,
+          "options": ["refugio", "albergue", "local"],
+          "answer": 0,
+          "explanation": "servir de refugio para = 〜の避難場所・保護場所となる。自然物にも使える refugio が適切。",
+          "option_meanings_ja": ["避難場所・保護場所", "宿泊施設・避難所", "場所／地元の"]
+        },
+        {
+          "n": 8,
+          "options": ["dulce", "salada", "sucia"],
+          "answer": 0,
+          "explanation": "agua dulce = 淡水。氷河は塩分を含まない重要な淡水源である。",
+          "option_meanings_ja": ["淡水の／甘い", "塩水の", "汚れた"]
+        },
+        {
+          "n": 9,
+          "options": ["un poderío", "un poder", "una potencia"],
+          "answer": 2,
+          "explanation": "ser una potencia agrícola = 農業大国である。potencia は特定分野で大きな力を持つ国・地域を表す。",
+          "option_meanings_ja": ["強大な力・威勢", "権力・能力", "大国・有力国"]
+        },
+        {
+          "n": 10,
+          "options": ["subsistencia", "consistencia", "existencia"],
+          "answer": 0,
+          "explanation": "agricultura de subsistencia = 自給農業。生活維持に必要な食料を主に生産する農業を指す。",
+          "option_meanings_ja": ["生計・自給", "一貫性・固さ", "存在"]
+        },
+        {
+          "n": 11,
+          "options": ["cosecha", "cogida", "colecta"],
+          "answer": 0,
+          "explanation": "siembra y cosecha = 播種と収穫、という農業上の自然な対句。",
+          "option_meanings_ja": ["収穫", "採取・つかむこと", "募金・採集"]
+        },
+        {
+          "n": 12,
+          "options": ["llave", "enclave", "clave"],
+          "answer": 2,
+          "explanation": "alimentos clave = 主要な・重要な食料。clave は名詞の後で「鍵となる、重要な」を表す。",
+          "option_meanings_ja": ["鍵", "飛び地・拠点", "重要な・鍵となる"]
+        },
+        {
+          "n": 13,
+          "options": ["causada", "acusada", "acosada"],
+          "answer": 1,
+          "explanation": "tendencia acusada = 顕著な傾向。acusado はここでは「はっきりした、著しい」の意味。",
+          "option_meanings_ja": ["引き起こされた", "顕著な／告発された", "悩まされた・追い詰められた"]
+        }
+      ]
     }
   ]
 }

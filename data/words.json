@@ -2621,6 +2621,136 @@
       "tags": [
         "C1_key"
       ]
+    },
+    {
+      "lemma": "tocar tierra",
+      "forms": ["tocaron tierra"],
+      "state": "unknown",
+      "pos": "loc. verb.",
+      "meaning_ja": "上陸する、陸地に達する",
+      "example": "los huracanes tocaron tierra",
+      "source_text_id": "text_05",
+      "tags": ["cloze_answer", "expression", "C1_key"]
+    },
+    {
+      "lemma": "dejar afectado",
+      "forms": ["dejaron", "afectadas"],
+      "state": "unknown",
+      "pos": "loc. verb.",
+      "meaning_ja": "被害を与える、影響を受けた状態にする",
+      "example": "dejaron a más de 10 millones de personas afectadas",
+      "source_text_id": "text_05",
+      "tags": ["cloze_answer", "expression"]
+    },
+    {
+      "lemma": "deslizamiento de tierra",
+      "forms": ["deslizamientos de tierra"],
+      "state": "unknown",
+      "pos": "loc. sust.",
+      "meaning_ja": "地滑り",
+      "example": "inundaciones y deslizamientos de tierra",
+      "source_text_id": "text_05",
+      "tags": ["cloze_answer", "expression", "C1_key"]
+    },
+    {
+      "lemma": "estación de lluvias",
+      "forms": ["estación de lluvias"],
+      "state": "unknown",
+      "pos": "loc. sust.",
+      "meaning_ja": "雨季",
+      "example": "la estación de lluvias suele terminar en octubre",
+      "source_text_id": "text_05",
+      "tags": ["cloze_answer", "expression"]
+    },
+    {
+      "lemma": "ola de calor",
+      "forms": ["olas de calor"],
+      "state": "unknown",
+      "pos": "loc. sust.",
+      "meaning_ja": "熱波",
+      "example": "desde huracanes a olas de calor",
+      "source_text_id": "text_05",
+      "tags": ["cloze_answer", "expression", "C1_key"]
+    },
+    {
+      "lemma": "cordillera",
+      "forms": ["cordillera"],
+      "state": "unknown",
+      "pos": "s. f.",
+      "meaning_ja": "山脈",
+      "example": "Los Andes son la cordillera de los nevados",
+      "source_text_id": "text_05",
+      "tags": ["cloze_answer"]
+    },
+    {
+      "lemma": "servir de refugio",
+      "forms": ["sirven de refugio"],
+      "state": "unknown",
+      "pos": "loc. verb.",
+      "meaning_ja": "避難場所・保護場所となる",
+      "example": "sirven de refugio para las nieves",
+      "source_text_id": "text_05",
+      "tags": ["cloze_answer", "expression"]
+    },
+    {
+      "lemma": "agua dulce",
+      "forms": ["agua dulce"],
+      "state": "unknown",
+      "pos": "loc. sust.",
+      "meaning_ja": "淡水",
+      "example": "una fuente esencial de agua dulce",
+      "source_text_id": "text_05",
+      "tags": ["cloze_answer", "expression"]
+    },
+    {
+      "lemma": "potencia agrícola",
+      "forms": ["potencia agrícola"],
+      "state": "unknown",
+      "pos": "loc. sust.",
+      "meaning_ja": "農業大国、農業分野の有力国・地域",
+      "example": "América Latina es una potencia agrícola",
+      "source_text_id": "text_05",
+      "tags": ["cloze_answer", "expression", "C1_key"]
+    },
+    {
+      "lemma": "agricultura de subsistencia",
+      "forms": ["de subsistencia"],
+      "state": "unknown",
+      "pos": "loc. sust.",
+      "meaning_ja": "自給農業",
+      "example": "agricultura familiar y de subsistencia",
+      "source_text_id": "text_05",
+      "tags": ["cloze_answer", "expression", "C1_key"]
+    },
+    {
+      "lemma": "cosecha",
+      "forms": ["cosecha"],
+      "state": "unknown",
+      "pos": "s. f.",
+      "meaning_ja": "収穫、収穫物",
+      "example": "los calendarios de siembra y cosecha",
+      "source_text_id": "text_05",
+      "tags": ["cloze_answer"]
+    },
+    {
+      "lemma": "clave",
+      "forms": ["clave"],
+      "state": "unknown",
+      "pos": "adj./sust.",
+      "meaning_ja": "重要な、鍵となる／鍵・手がかり",
+      "example": "alimentos clave como el maíz",
+      "source_text_id": "text_05",
+      "tags": ["cloze_answer", "C1_key"]
+    },
+    {
+      "lemma": "acusado",
+      "forms": ["acusada"],
+      "state": "unknown",
+      "pos": "adj.",
+      "meaning_ja": "顕著な、著しい／告発された",
+      "example": "una tendencia muy acusada",
+      "source_text_id": "text_05",
+      "tags": ["cloze_answer", "C1_key"]
     }
   ]
 }
