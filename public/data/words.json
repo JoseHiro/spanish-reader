@@ -2568,7 +2568,9 @@
     {
       "lemma": "decantarse por",
       "forms": [
-        "decantó"
+        "decantó",
+        "se decantó",
+        "decanto"
       ],
       "state": "probably_known",
       "pos": "v. prnl.",
@@ -2751,6 +2753,27 @@
       "example": "una tendencia muy acusada",
       "source_text_id": "text_05",
       "tags": ["cloze_answer", "C1_key"]
-    }
+    },
+    {"lemma":"reconocible","forms":["reconocibles"],"state":"unknown","pos":"adj.","meaning_ja":"見分けられる、認識できる","example":"tópicos reconocibles","source_text_id":"text_04","tags":["C1_key"]},
+    {"lemma":"neotaberna","forms":["neotabernas"],"state":"unknown","pos":"s. f.","meaning_ja":"伝統風に作られた新しい居酒屋","example":"neotabernas castizas","source_text_id":"text_04","tags":["C1_key"]},
+    {"lemma":"turronería","forms":["turronerías"],"state":"unknown","pos":"s. f.","meaning_ja":"トゥロン菓子店","example":"turronerías franquiciadas","source_text_id":"text_04","tags":[]},
+    {"lemma":"franquiciado","forms":["franquiciadas"],"state":"unknown","pos":"adj.","meaning_ja":"フランチャイズ化された","example":"turronerías franquiciadas","source_text_id":"text_04","tags":["C1_key"]},
+    {"lemma":"menina","forms":["meninas"],"state":"unknown","pos":"s. f.","meaning_ja":"女官、侍女（特にベラスケスの作品に由来する像）","example":"meninas customizadas","source_text_id":"text_04","tags":[]},
+    {"lemma":"resurrección","forms":["resurrección"],"state":"unknown","pos":"s. f.","meaning_ja":"復活、蘇生","example":"la resurrección artificial de lo real","source_text_id":"text_04","tags":["C1_key"]},
+    {"lemma":"fachada","forms":["fachada","fachadas"],"state":"unknown","pos":"s. f.","meaning_ja":"建物の正面、ファサード","example":"la fachada del edificio","source_text_id":"text_04","tags":[]},
+    {"lemma":"almacén","forms":["almacén"],"state":"unknown","pos":"s. m.","meaning_ja":"倉庫、店舗、百貨店","example":"el primer gran almacén","source_text_id":"text_04","tags":[]},
+    {"lemma":"alzarse","forms":["se alza"],"state":"unknown","pos":"v. prnl.","meaning_ja":"そびえ立つ、立ち上がる","example":"se alza una curiosidad arquitectónica","source_text_id":"text_06","tags":["cloze_answer","C1_key"]},
+    {"lemma":"adosado a","forms":["adosada"],"state":"unknown","pos":"adj.","meaning_ja":"〜に隣接・接合した","example":"adosada a un edificio de cristal","source_text_id":"text_06","tags":["cloze_answer","expression"]},
+    {"lemma":"dar cabida a","forms":["da cabida"],"state":"unknown","pos":"loc. verb.","meaning_ja":"〜を収容する、〜のための場所を設ける","example":"da cabida a diversos puntos de vegetación","source_text_id":"text_06","tags":["cloze_answer","expression","C1_key"]},
+    {"lemma":"aunque","forms":["Aunque"],"state":"unknown","pos":"conj.","meaning_ja":"〜ではあるが、〜にもかかわらず","example":"Aunque se trata del edificio más emblemático","source_text_id":"text_06","tags":["cloze_answer"]},
+    {"lemma":"inventario","forms":["inventario"],"state":"unknown","pos":"s. m.","meaning_ja":"一覧、目録、在庫目録","example":"estableció un inventario de tejados","source_text_id":"text_06","tags":["cloze_answer","C1_key"]},
+    {"lemma":"estar documentado","forms":["están bien documentados"],"state":"unknown","pos":"loc. verb.","meaning_ja":"実証・記録されている","example":"los beneficios están bien documentados","source_text_id":"text_06","tags":["cloze_answer","expression"]},
+    {"lemma":"suficiente","forms":["suficiente"],"state":"unknown","pos":"adj.","meaning_ja":"十分な","example":"no queda espacio suficiente","source_text_id":"text_06","tags":["cloze_answer"]},
+    {"lemma":"hormigón","forms":["hormigón"],"state":"unknown","pos":"s. m.","meaning_ja":"コンクリート","example":"edificios hechos de hormigón","source_text_id":"text_06","tags":["cloze_answer"]},
+    {"lemma":"desprenderse de","forms":["se desprenden"],"state":"unknown","pos":"v. prnl.","meaning_ja":"〜から放出される、離れる","example":"temperaturas que se desprenden de los aparatos","source_text_id":"text_06","tags":["cloze_answer","expression","C1_key"]},
+    {"lemma":"pico de calor","forms":["picos de calor"],"state":"unknown","pos":"loc. sust.","meaning_ja":"暑さのピーク、猛暑期","example":"durante los picos de calor","source_text_id":"text_06","tags":["cloze_answer","expression"]},
+    {"lemma":"fomentar","forms":["fomentar"],"state":"unknown","pos":"v. tr.","meaning_ja":"促進する、奨励する","example":"fomentar la jardinería en la ciudad","source_text_id":"text_06","tags":["cloze_answer","C1_key"]},
+    {"lemma":"huerto","forms":["huertos"],"state":"unknown","pos":"s. m.","meaning_ja":"菜園、果樹園","example":"los huertos proliferan en las terrazas","source_text_id":"text_06","tags":["cloze_answer"]},
+    {"lemma":"a largo plazo","forms":["a largo plazo"],"state":"unknown","pos":"loc. adv.","meaning_ja":"長期的に、長い目で見れば","example":"a largo plazo, estas iniciativas pueden contribuir","source_text_id":"text_06","tags":["cloze_answer","expression","C1_key"]}
   ]
 }

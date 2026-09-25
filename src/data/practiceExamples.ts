@@ -529,4 +529,88 @@ export const PRACTICE_EXAMPLES: Record<string, [WordExample, WordExample]> = {
     { spanish: "Se observa un acusado descenso de las temperaturas.", japanese: "気温の著しい低下が見られる。" },
     { spanish: "El contraste entre ambas regiones es muy acusado.", japanese: "両地域の対照は非常に顕著だ。" },
   ],
+  "reconocible": [
+    { spanish: "Su estilo es inmediatamente reconocible.", japanese: "彼の作風はすぐに見分けられる。" },
+    { spanish: "La ciudad conserva varios símbolos reconocibles.", japanese: "その都市には見覚えのある象徴がいくつも残っている。" },
+  ],
+  "neotaberna": [
+    { spanish: "El barrio se ha llenado de neotabernas para turistas.", japanese: "その地区には観光客向けの新しい伝統風居酒屋が増えた。" },
+    { spanish: "La neotaberna imita la decoración de un local antiguo.", japanese: "その新しい居酒屋は昔の店の内装を模している。" },
+  ],
+  "turronería": [
+    { spanish: "Compramos dulces en una turronería tradicional.", japanese: "私たちは昔ながらのトゥロン菓子店で菓子を買った。" },
+    { spanish: "La turronería abre especialmente durante la Navidad.", japanese: "そのトゥロン菓子店は主にクリスマス期に営業する。" },
+  ],
+  "franquiciado": [
+    { spanish: "La cadena cuenta con más de cien establecimientos franquiciados.", japanese: "そのチェーンには100店以上のフランチャイズ店舗がある。" },
+    { spanish: "Abrieron una cafetería franquiciada junto a la estación.", japanese: "駅のそばにフランチャイズのカフェが開店した。" },
+  ],
+  "menina": [
+    { spanish: "Una escultura de una menina decora la calle.", japanese: "女官をかたどった彫刻が通りを飾っている。" },
+    { spanish: "El museo expone varias meninas inspiradas en Velázquez.", japanese: "美術館はベラスケスに着想を得た複数のメニーナ像を展示している。" },
+  ],
+  "resurrección": [
+    { spanish: "La restauración permitió la resurrección del antiguo teatro.", japanese: "修復によって古い劇場が復活した。" },
+    { spanish: "La novela imagina la resurrección de una civilización perdida.", japanese: "その小説は失われた文明の復活を描いている。" },
+  ],
+  "fachada": [
+    { spanish: "La fachada del palacio fue restaurada recientemente.", japanese: "宮殿の正面は最近修復された。" },
+    { spanish: "Una enorme pantalla oculta parte de la fachada.", japanese: "巨大な画面が建物正面の一部を隠している。" },
+  ],
+  "almacén": [
+    { spanish: "Guardan las mercancías en un almacén cercano.", japanese: "商品は近くの倉庫に保管されている。" },
+    { spanish: "El edificio fue la sede de unos grandes almacenes.", japanese: "その建物にはかつて百貨店が入っていた。" },
+  ],
+  "alzarse": [
+    { spanish: "Una torre moderna se alza junto al río.", japanese: "川のそばに近代的な塔がそびえ立っている。" },
+    { spanish: "Las montañas se alzan al fondo del valle.", japanese: "谷の奥に山々がそびえている。" },
+  ],
+  "adosado a": [
+    { spanish: "El garaje está adosado a la casa.", japanese: "車庫は家に接している。" },
+    { spanish: "Construyeron un invernadero adosado al edificio.", japanese: "建物に隣接する温室を建てた。" },
+  ],
+  "dar cabida a": [
+    { spanish: "La plaza da cabida a varios mercados semanales.", japanese: "その広場では毎週いくつもの市場を開ける。" },
+    { spanish: "El proyecto da cabida a propuestas muy diversas.", japanese: "その計画は多様な提案を受け入れている。" },
+  ],
+  "aunque": [
+    { spanish: "Aunque llovía, salimos a caminar.", japanese: "雨が降っていたが、私たちは散歩に出た。" },
+    { spanish: "Lo intentaré aunque resulte difícil.", japanese: "難しくても挑戦してみる。" },
+  ],
+  "inventario": [
+    { spanish: "El museo elaboró un inventario de todas sus obras.", japanese: "美術館は全作品の目録を作成した。" },
+    { spanish: "Tenemos que revisar el inventario del almacén.", japanese: "倉庫の在庫一覧を確認しなければならない。" },
+  ],
+  "estar documentado": [
+    { spanish: "Los efectos del tratamiento están bien documentados.", japanese: "その治療の効果は十分に実証されている。" },
+    { spanish: "El fenómeno está documentado desde el siglo XIX.", japanese: "その現象は19世紀から記録されている。" },
+  ],
+  "suficiente": [
+    { spanish: "No tenemos suficiente tiempo para terminar.", japanese: "終えるための十分な時間がない。" },
+    { spanish: "Una explicación breve será suficiente.", japanese: "簡潔な説明で十分だろう。" },
+  ],
+  "hormigón": [
+    { spanish: "El puente está construido con hormigón armado.", japanese: "その橋は鉄筋コンクリートで造られている。" },
+    { spanish: "El hormigón absorbe y conserva mucho calor.", japanese: "コンクリートは多くの熱を吸収し保持する。" },
+  ],
+  "desprenderse de": [
+    { spanish: "Del motor se desprende un olor extraño.", japanese: "エンジンから奇妙な匂いが放たれている。" },
+    { spanish: "Una rama se desprendió del árbol durante la tormenta.", japanese: "嵐の間に枝が木から折れ落ちた。" },
+  ],
+  "pico de calor": [
+    { spanish: "El consumo eléctrico aumenta durante los picos de calor.", japanese: "猛暑時には電力消費が増える。" },
+    { spanish: "La ciudad abrió refugios ante el próximo pico de calor.", japanese: "次の猛暑に備え、都市は避難施設を開設した。" },
+  ],
+  "fomentar": [
+    { spanish: "La campaña busca fomentar el uso de la bicicleta.", japanese: "その運動は自転車利用の促進を目指している。" },
+    { spanish: "La escuela fomenta la lectura entre los alumnos.", japanese: "学校は生徒の読書を奨励している。" },
+  ],
+  "huerto": [
+    { spanish: "Cultivan tomates en un pequeño huerto urbano.", japanese: "彼らは小さな都市菜園でトマトを育てている。" },
+    { spanish: "El colegio creó un huerto en la azotea.", japanese: "学校は屋上に菜園を作った。" },
+  ],
+  "a largo plazo": [
+    { spanish: "La inversión será rentable a largo plazo.", japanese: "その投資は長期的には利益を生むだろう。" },
+    { spanish: "A largo plazo, necesitamos reducir el consumo energético.", japanese: "長期的にはエネルギー消費を減らす必要がある。" },
+  ],
 }

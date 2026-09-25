@@ -1032,6 +1032,46 @@
           "option_meanings_ja": ["引き起こされた", "顕著な／告発された", "悩まされた・追い詰められた"]
         }
       ]
+    },
+    {
+      "id": "text_06",
+      "title": "En Viena, jardines en las cumbres",
+      "author": "Barbara Hallmann",
+      "source": "SIELE C1 / DELE C1 - Texto Nº10",
+      "source_url": "https://courier.unesco.org/es/articles/en-viena-jardines-en-la-cumbre",
+      "type": "cloze",
+      "level": "C1",
+      "added_at": "2026-09-25",
+      "paragraphs": [
+        "En el número 34-38 de la calle Kegelgasse, en el distrito 3 de Viena, {{1}} una de las curiosidades arquitectónicas de la ciudad. Este colorido edificio de formas singulares fue construido en la década de 1980 por Friedensreich Hundertwasser y se ha convertido en fuente de inspiración para generaciones de arquitectos preocupados por la ecología. Esta extraña casa {{2}} a un edificio de cristal {{3}} cabida a diversos puntos de vegetación, y su tejado y balcones albergan no menos de 250 árboles y arbustos.",
+        "{{4}} se trata del edificio más emblemático de este estilo, la Hundertwasserhaus dista mucho de ser el único inmueble de Viena que posee una cubierta vegetal. Los jardines colgantes crecen en esta ciudad desde hace varias décadas. En 2011, el Ayuntamiento estableció {{5}} de cerca de 1.070 hectáreas de tejado aptas para acogerlos. En aquel momento, casi una de cada cuatro de estas zonas ya estaba plantada, y los proyectos de este tipo siguen prosperando.",
+        "Más que una moda, estos espacios suspendidos responden a una necesidad real. Los beneficios de las zonas ajardinadas, que proporcionan islas de frescura vitales en verano y contribuyen a reducir las emisiones de dióxido de carbono, {{6}} bien documentados. Pero en las grandes ciudades no queda espacio {{7}} para crear nuevos parques y jardines.",
+        "Los edificios actuales casi siempre están hechos de materiales como {{8}} que absorben y retienen el calor, y su altura impide que se beneficien de la sombra natural de los árboles. Las altas temperaturas que {{9}} de los aparatos de aire acondicionado, el tráfico y los residuos industriales contribuyen a convertir las ciudades en hornos durante {{10}} de calor. Por eso las terrazas ajardinadas son cada vez más populares, ya que constituyen una alternativa ante el calentamiento global contemporáneo.",
+        "La asociación Operación Grüner Daumen lleva más de diez años trabajando para {{11}} la jardinería en la ciudad, sobre todo en el barrio de Mariahilf, uno de los más poblados de la capital, donde los {{12}} proliferan ahora en numerosas terrazas. Mike Graner, su fundador, está convencido de que, a {{13}} plazo, estas iniciativas pueden contribuir a cambiar los comportamientos de las personas. «Los vecinos cultivan sus propias frutas y verduras, y así se ven confrontados en el día a día a los desafíos de la producción hortícola y los efectos del cambio climático», explica."
+      ],
+      "chunk_types": ["body", "body", "body", "body", "body"],
+      "translation_ja": [
+        "ウィーン第3区、ケーゲルガッセ通り34～38番地には、この街の建築上の名所の一つがそびえ立っている。独特な形をしたこの色鮮やかな建物は、1980年代にフリーデンスライヒ・フンデルトヴァッサーによって建設され、環境問題に関心を持つ何世代もの建築家に着想を与えてきた。この風変わりな住宅はガラス張りの建物に隣接し、各所に植生のための空間を設けている。屋根とバルコニーには250本以上の樹木や低木が植えられている。",
+        "この様式を最も象徴する建物ではあるが、フンデルトヴァッサーハウスは、緑化屋根を備えたウィーン唯一の建物というわけでは決してない。この街では数十年前から空中庭園が育てられている。2011年、市役所は庭園を設置できる屋根約1,070ヘクタールの一覧を作成した。当時すでにその約4分の1が植栽済みで、この種の事業は今も増え続けている。",
+        "こうした空中空間は単なる流行ではなく、現実の必要性に応えるものだ。緑化区域は夏に不可欠な涼しい場所を生み、二酸化炭素の排出削減にも役立つ。その利点は十分に実証されている。しかし大都市には、新しい公園や庭園を造るのに十分な空間が残っていない。",
+        "現代の建物は多くの場合、熱を吸収して蓄えるコンクリートなどの材料で造られ、その高さのため樹木の自然な日陰の恩恵を受けられない。空調設備、交通、産業廃棄物から放出される高温は、猛暑の期間に都市をオーブンのように変える一因となる。そのため、屋上庭園は現代の地球温暖化への代替策として、ますます人気を集めている。",
+        "グリューナー・ダウメン作戦協会は10年以上にわたり、都市園芸の促進に取り組んできた。特に首都でも人口の多いマリアヒルフ地区では、現在、多くのテラスに菜園が増えている。創設者マイク・グラナーは、長期的にはこうした取り組みが人々の行動を変え得ると確信している。「住民は自分たちで果物や野菜を育てることで、園芸生産の難しさや気候変動の影響に日々向き合うことになります」と彼は説明する。"
+      ],
+      "clozes": [
+        {"n":1,"options":["realza","alza","se alza"],"answer":2,"explanation":"alzarse = そびえ立つ。建物自体が立っているため再帰形 se alza が必要。realzar は引き立たせる他動詞。","option_meanings_ja":["引き立たせる","持ち上げる","そびえ立つ"]},
+        {"n":2,"options":["junta","adosada","adherida"],"answer":1,"explanation":"estar adosado a = 建物などが〜に隣接・接合している。casa に合わせて女性形 adosada。","option_meanings_ja":["一緒になった／集める","隣接・接合した","付着した"]},
+        {"n":3,"options":["sale","da","pone"],"answer":1,"explanation":"dar cabida a = 〜のための場所を設ける、〜を収容する、という定型表現。","option_meanings_ja":["出る","与える（dar cabida）","置く"]},
+        {"n":4,"options":["Aunque","Como","Ya que"],"answer":0,"explanation":"後半の「唯一ではない」と前半の「最も象徴的」が逆接関係なので Aunque（〜ではあるが）。","option_meanings_ja":["〜ではあるが","〜なので／〜のように","〜なので"]},
+        {"n":5,"options":["un inventario","un estado","un veto"],"answer":0,"explanation":"establecer un inventario de = 〜の一覧・目録を作成する。面積を調査し一覧化した文脈。","option_meanings_ja":["一覧・目録","状態／国家","拒否・禁止"]},
+        {"n":6,"options":["son","están","---"],"answer":1,"explanation":"estar documentado = 実証・記録されている。結果状態を表すので están。","option_meanings_ja":["本質的に〜である","〜の状態にある","動詞なし"]},
+        {"n":7,"options":["demasiado","mucho","suficiente"],"answer":2,"explanation":"espacio suficiente para + 不定詞 = 〜するのに十分な空間。否定文では「十分な空間がない」。","option_meanings_ja":["多すぎる","多くの","十分な"]},
+        {"n":8,"options":["el hormiguero","el hormigón","la hormigonera"],"answer":1,"explanation":"hormigón = コンクリート。建築材料を列挙する文脈に合う。","option_meanings_ja":["アリ塚","コンクリート","コンクリートミキサー"]},
+        {"n":9,"options":["se desprenden","desprenden","se prenden"],"answer":0,"explanation":"desprenderse de = 〜から放出される。temperaturas が主語なので再帰形 se desprenden。","option_meanings_ja":["放出される","放出する","火がつく／つかまる"]},
+        {"n":10,"options":["los piquetes","los picotazos","los picos"],"answer":2,"explanation":"pico de calor = 気温が極端に高くなるピーク・猛暑。複数形 los picos。","option_meanings_ja":["小集団・監視隊","くちばしでつつくこと","ピーク・最高潮"]},
+        {"n":11,"options":["entorpecer","fomentar","ahuyentar"],"answer":1,"explanation":"fomentar = 促進・奨励する。都市園芸を広げる活動の目的に合う。","option_meanings_ja":["妨げる","促進する・奨励する","追い払う"]},
+        {"n":12,"options":["huertos","campos","prados"],"answer":0,"explanation":"huerto = 果物・野菜を栽培する菜園。テラス上で増えている対象として自然。","option_meanings_ja":["菜園・果樹園","野原・畑","牧草地"]},
+        {"n":13,"options":["ancho","estrecho","largo"],"answer":2,"explanation":"a largo plazo = 長期的に、という固定表現。","option_meanings_ja":["幅広い（a ancho plazo は不可）","狭い（a estrecho plazo は不可）","長い（長期的に）"]}
+      ]
     }
   ]
 }
