@@ -613,4 +613,32 @@ export const PRACTICE_EXAMPLES: Record<string, [WordExample, WordExample]> = {
     { spanish: "La inversión será rentable a largo plazo.", japanese: "その投資は長期的には利益を生むだろう。" },
     { spanish: "A largo plazo, necesitamos reducir el consumo energético.", japanese: "長期的にはエネルギー消費を減らす必要がある。" },
   ],
+  "resbalón": [
+    { spanish: "Tuvo un resbalón al bajar la escalera mojada.", japanese: "彼は濡れた階段を下りるときに足を滑らせた。" },
+    { spanish: "Un resbalón inesperado le hizo perder la carrera.", japanese: "思いがけず滑ったことで、彼はレースに敗れた。" },
+  ],
+  "deslizamiento": [
+    { spanish: "La lluvia provocó varios deslizamientos de tierra.", japanese: "雨によって複数の地滑りが発生した。" },
+    { spanish: "El deslizamiento bloqueó la carretera de montaña.", japanese: "地滑りが山道をふさいだ。" },
+  ],
+  "remiendo": [
+    { spanish: "Puso un remiendo en el agujero del pantalón.", japanese: "彼はズボンの穴に継ぎ当てをした。" },
+    { spanish: "La medida es solo un remiendo y no resuelve el problema.", japanese: "その措置はその場しのぎにすぎず、問題を解決しない。" },
+  ],
+  "carrillera": [
+    { spanish: "Ajustó la carrillera del casco antes de montar.", japanese: "彼は乗る前にヘルメットの顎ひもを調整した。" },
+    { spanish: "El restaurante sirve carrillera de cerdo al vino tinto.", japanese: "そのレストランでは豚頬肉の赤ワイン煮を出している。" },
+  ],
+  "rodillera": [
+    { spanish: "El jugador lleva una rodillera en la pierna derecha.", japanese: "その選手は右脚に膝サポーターを着けている。" },
+    { spanish: "Ponte las rodilleras antes de usar el monopatín.", japanese: "スケートボードに乗る前に膝当てを着けなさい。" },
+  ],
+  "perpetuo": [
+    { spanish: "La cima permanece cubierta de nieves perpetuas.", japanese: "山頂は万年雪に覆われたままだ。" },
+    { spanish: "Parecía atrapado en un conflicto perpetuo.", japanese: "彼は終わりのない争いに囚われているようだった。" },
+  ],
+  "poderío": [
+    { spanish: "El país demostró su poderío económico.", japanese: "その国は経済力の強大さを示した。" },
+    { spanish: "La flota simbolizaba el poderío militar del imperio.", japanese: "その艦隊は帝国の軍事力を象徴していた。" },
+  ],
 }
