@@ -2764,7 +2764,7 @@
     {"lemma":"almacén","forms":["almacén"],"state":"unknown","pos":"s. m.","meaning_ja":"倉庫、店舗、百貨店","example":"el primer gran almacén","source_text_id":"text_04","tags":[]},
     {"lemma":"alzarse","forms":["se alza"],"state":"unknown","pos":"v. prnl.","meaning_ja":"そびえ立つ、立ち上がる","example":"se alza una curiosidad arquitectónica","source_text_id":"text_06","tags":["cloze_answer","C1_key"]},
     {"lemma":"adosado a","forms":["adosada"],"state":"unknown","pos":"adj.","meaning_ja":"〜に隣接・接合した","example":"adosada a un edificio de cristal","source_text_id":"text_06","tags":["cloze_answer","expression"]},
-    {"lemma":"dar cabida a","forms":["da cabida"],"state":"unknown","pos":"loc. verb.","meaning_ja":"〜を収容する、〜のための場所を設ける","example":"da cabida a diversos puntos de vegetación","source_text_id":"text_06","tags":["cloze_answer","expression","C1_key"]},
+    {"lemma":"dar cabida a","forms":["da cabida","cabida"],"state":"unknown","pos":"loc. verb.","meaning_ja":"〜を収容する、〜のための場所を設ける","example":"da cabida a diversos puntos de vegetación","source_text_id":"text_06","tags":["cloze_answer","expression","C1_key"]},
     {"lemma":"aunque","forms":["Aunque"],"state":"unknown","pos":"conj.","meaning_ja":"〜ではあるが、〜にもかかわらず","example":"Aunque se trata del edificio más emblemático","source_text_id":"text_06","tags":["cloze_answer"]},
     {"lemma":"inventario","forms":["inventario"],"state":"unknown","pos":"s. m.","meaning_ja":"一覧、目録、在庫目録","example":"estableció un inventario de tejados","source_text_id":"text_06","tags":["cloze_answer","C1_key"]},
     {"lemma":"estar documentado","forms":["están bien documentados"],"state":"unknown","pos":"loc. verb.","meaning_ja":"実証・記録されている","example":"los beneficios están bien documentados","source_text_id":"text_06","tags":["cloze_answer","expression"]},
@@ -2781,6 +2781,23 @@
     {"lemma":"carrillera","forms":["carrillera"],"state":"unknown","pos":"s. f.","meaning_ja":"頬当て、顎ひも／牛や豚の頬肉","example":"la carrillera del casco","source_text_id":"text_05","tags":["cloze_distractor"]},
     {"lemma":"rodillera","forms":["rodillera"],"state":"unknown","pos":"s. f.","meaning_ja":"膝当て、膝用サポーター","example":"lleva una rodillera para protegerse","source_text_id":"text_05","tags":["cloze_distractor"]},
     {"lemma":"perpetuo","forms":["perpetuos","perpetua","perpetuas"],"state":"unknown","pos":"adj.","meaning_ja":"永続する、永久の","example":"las nieves y los hielos perpetuos","source_text_id":"text_05","tags":["C1_key"]},
-    {"lemma":"poderío","forms":["poderío"],"state":"unknown","pos":"s. m.","meaning_ja":"強大な力、威力、勢力","example":"el poderío económico del país","source_text_id":"text_05","tags":["cloze_distractor","C1_key"]}
+    {"lemma":"poderío","forms":["poderío"],"state":"unknown","pos":"s. m.","meaning_ja":"強大な力、威力、勢力","example":"el poderío económico del país","source_text_id":"text_05","tags":["cloze_distractor","C1_key"]},
+    {"lemma":"realzar","forms":["realza"],"state":"unknown","pos":"v. tr.","meaning_ja":"引き立てる、際立たせる、高める","example":"la luz realza los colores del edificio","source_text_id":"text_06","tags":["cloze_distractor","C1_key"]},
+    {"lemma":"alzar","forms":["alza"],"state":"unknown","pos":"v. tr.","meaning_ja":"持ち上げる、掲げる、建てる","example":"alza la mano para hacer una pregunta","source_text_id":"text_06","tags":["cloze_distractor"]},
+    {"lemma":"adherido","forms":["adherida"],"state":"unknown","pos":"adj.","meaning_ja":"付着した、貼り付いた、加入した","example":"una etiqueta adherida al cristal","source_text_id":"text_06","tags":["cloze_distractor"]},
+    {"lemma":"tejado","forms":["tejado","tejados"],"state":"unknown","pos":"s. m.","meaning_ja":"屋根（特に瓦などで覆われたもの）","example":"un jardín instalado sobre el tejado","source_text_id":"text_06","tags":[]},
+    {"lemma":"emblemático","forms":["emblemático","emblemática","emblemáticos","emblemáticas"],"state":"unknown","pos":"adj.","meaning_ja":"象徴的な、代表的な","example":"el edificio más emblemático de la ciudad","source_text_id":"text_06","tags":["C1_key"]},
+    {"lemma":"distar","forms":["dista","distan"],"state":"unknown","pos":"v. intr.","meaning_ja":"隔たっている、かけ離れている","example":"dista mucho de ser el único inmueble","source_text_id":"text_06","tags":["C1_key"]},
+    {"lemma":"veto","forms":["veto"],"state":"unknown","pos":"s. m.","meaning_ja":"拒否権、禁止、拒絶","example":"el gobierno impuso un veto al proyecto","source_text_id":"text_06","tags":["cloze_distractor","C1_key"]},
+    {"lemma":"colgante","forms":["colgante","colgantes"],"state":"unknown","pos":"adj.","meaning_ja":"垂れ下がった、吊り下げ式の","example":"los jardines colgantes crecen en la ciudad","source_text_id":"text_06","tags":[]},
+    {"lemma":"acoger","forms":["acoger","acogerlos","acoge","acogen"],"state":"unknown","pos":"v. tr.","meaning_ja":"受け入れる、収容する、開催する","example":"tejados aptos para acoger jardines","source_text_id":"text_06","tags":["C1_key"]},
+    {"lemma":"prosperar","forms":["prosperando","prospera","prosperan"],"state":"unknown","pos":"v. intr.","meaning_ja":"繁栄する、順調に発展する","example":"los proyectos siguen prosperando","source_text_id":"text_06","tags":["C1_key"]},
+    {"lemma":"hormigonera","forms":["hormigonera","hormigoneras"],"state":"unknown","pos":"s. f.","meaning_ja":"コンクリートミキサー、ミキサー車","example":"una hormigonera mezcla el cemento","source_text_id":"text_06","tags":["cloze_distractor"]},
+    {"lemma":"entorpecer","forms":["entorpecer","entorpece","entorpecen"],"state":"unknown","pos":"v. tr.","meaning_ja":"妨げる、遅らせる、動きを鈍らせる","example":"las obras entorpecen el tráfico","source_text_id":"text_06","tags":["cloze_distractor","C1_key"]},
+    {"lemma":"ahuyentar","forms":["ahuyentar","ahuyenta","ahuyentan"],"state":"unknown","pos":"v. tr.","meaning_ja":"追い払う、遠ざける","example":"el ruido ahuyenta a los pájaros","source_text_id":"text_06","tags":["cloze_distractor"]},
+    {"lemma":"prado","forms":["prado","prados"],"state":"unknown","pos":"s. m.","meaning_ja":"牧草地、草原","example":"el ganado pasta en los prados","source_text_id":"text_06","tags":["cloze_distractor"]},
+    {"lemma":"arbusto","forms":["arbusto","arbustos"],"state":"unknown","pos":"s. m.","meaning_ja":"低木、灌木","example":"el tejado alberga árboles y arbustos","source_text_id":"text_06","tags":[]},
+    {"lemma":"hormiguero","forms":["hormiguero","hormigueros"],"state":"unknown","pos":"s. m.","meaning_ja":"アリ塚、アリの巣／人が密集する場所","example":"las hormigas regresan al hormiguero","source_text_id":"text_06","tags":["cloze_distractor"]},
+    {"lemma":"proliferar","forms":["proliferan","prolifera","proliferando"],"state":"unknown","pos":"v. intr.","meaning_ja":"急増する、広く増える、繁殖する","example":"los huertos proliferan en las terrazas","source_text_id":"text_06","tags":["C1_key"]}
   ]
 }
