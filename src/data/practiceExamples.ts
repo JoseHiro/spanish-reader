@@ -709,4 +709,56 @@ export const PRACTICE_EXAMPLES: Record<string, [WordExample, WordExample]> = {
     { spanish: "Los huertos urbanos proliferan en muchas ciudades.", japanese: "都市菜園が多くの都市で急増している。" },
     { spanish: "Las algas proliferaron por el aumento de la temperatura.", japanese: "水温上昇によって藻類が大量に繁殖した。" },
   ],
+  "a pocas manzanas de": [
+    { spanish: "El museo está a pocas manzanas de la estación.", japanese: "美術館は駅から数ブロックのところにある。" },
+    { spanish: "Vivimos a pocas manzanas del parque central.", japanese: "私たちは中央公園から数ブロックの場所に住んでいる。" },
+  ],
+  "estar en pie": [
+    { spanish: "La antigua muralla todavía está en pie.", japanese: "古い城壁は今も残っている。" },
+    { spanish: "Pocos edificios quedaron en pie después del terremoto.", japanese: "地震後も残った建物はわずかだった。" },
+  ],
+  "desmantelar": [
+    { spanish: "El ayuntamiento decidió desmantelar la estructura.", japanese: "市役所はその構造物を解体することを決めた。" },
+    { spanish: "La policía desmanteló una red de contrabando.", japanese: "警察は密輸組織を壊滅させた。" },
+  ],
+  "localidad natal": [
+    { spanish: "Regresó a su localidad natal después de veinte años.", japanese: "彼は20年ぶりに故郷の町へ戻った。" },
+    { spanish: "La localidad natal del escritor conserva su casa.", japanese: "作家の故郷には生家が保存されている。" },
+  ],
+  "deleitar": [
+    { spanish: "El músico deleitó al público con una pieza inesperada.", japanese: "音楽家は思いがけない曲で観客を楽しませた。" },
+    { spanish: "El aroma del café deleita a los visitantes.", japanese: "コーヒーの香りが訪問客を喜ばせる。" },
+  ],
+  "uno": [
+    { spanish: "Uno nunca sabe qué puede ocurrir.", japanese: "何が起こるかは誰にも分からない。" },
+    { spanish: "Cuando uno viaja, aprende a mirar de otra manera.", japanese: "旅をすると、人は別の見方を学ぶ。" },
+  ],
+  "consagrado a": [
+    { spanish: "El templo está consagrado a la Virgen.", japanese: "その聖堂は聖母に捧げられている。" },
+    { spanish: "El museo tiene una sala consagrada al arte moderno.", japanese: "その美術館には現代美術専用の展示室がある。" },
+  ],
+  "altar": [
+    { spanish: "Colocaron flores delante del altar.", japanese: "彼らは祭壇の前に花を供えた。" },
+    { spanish: "El altar mayor está decorado con mármol.", japanese: "主祭壇は大理石で装飾されている。" },
+  ],
+  "peregrinación": [
+    { spanish: "Miles de personas participan cada año en la peregrinación.", japanese: "毎年何千人もの人が巡礼に参加する。" },
+    { spanish: "El santuario se convirtió en lugar de peregrinación.", japanese: "その聖域は巡礼地となった。" },
+  ],
+  "tropelía": [
+    { spanish: "La novela denuncia las tropelías cometidas durante la guerra.", japanese: "その小説は戦争中に行われた非道を告発している。" },
+    { spanish: "Calificó aquella obra extravagante de tropelía artística.", japanese: "彼はその奇抜な作品を芸術的な暴挙と評した。" },
+  ],
+  "tonelada": [
+    { spanish: "La escultura pesa más de una tonelada.", japanese: "その彫刻は1トン以上の重さがある。" },
+    { spanish: "El camión transporta diez toneladas de piedra.", japanese: "そのトラックは10トンの石を運ぶ。" },
+  ],
+  "lema": [
+    { spanish: "El lema de la campaña aparece en todos los carteles.", japanese: "キャンペーンの標語はすべてのポスターに載っている。" },
+    { spanish: "La organización adoptó un nuevo lema.", japanese: "その組織は新しいモットーを採用した。" },
+  ],
+  "afán de": [
+    { spanish: "En su afán de mejorar, olvidó descansar.", japanese: "向上しようとするあまり、彼は休むことを忘れた。" },
+    { spanish: "Actuó con afán de proteger a su familia.", japanese: "彼は家族を守ろうという強い思いで行動した。" },
+  ],
 }

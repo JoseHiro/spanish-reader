@@ -1072,6 +1072,44 @@
         {"n":12,"options":["huertos","campos","prados"],"answer":0,"explanation":"huerto = 果物・野菜を栽培する菜園。テラス上で増えている対象として自然。","option_meanings_ja":["菜園・果樹園","野原・畑","牧草地"]},
         {"n":13,"options":["ancho","estrecho","largo"],"answer":2,"explanation":"a largo plazo = 長期的に、という固定表現。","option_meanings_ja":["幅広い（a ancho plazo は不可）","狭い（a estrecho plazo は不可）","長い（長期的に）"]}
       ]
+    },
+    {
+      "id": "text_07",
+      "title": "«Fake» Madrid, un paseo por los hitos del simulacro (2ª parte)",
+      "author": "Enrique Piñuel",
+      "source": "SIELE C1 / DELE C1 - Texto Nº11",
+      "source_url": "https://www.elsaltodiario.com/madrid/fake-madrid-un-paseo-hitos-del-simulacro",
+      "type": "cloze",
+      "level": "C1",
+      "added_at": "2026-09-26",
+      "paragraphs": [
+        "A pocas {{1}} de la plaza del Callao, se levanta uno de los hitos de la simulación madrileña: el nuevo templete de acceso al metro de Gran Vía. Inaugurado en 2021, reproduce el original templete de la Red de San Luis, diseñado por Antonio Palacios en los años 20 del siglo pasado y que estuvo {{2}} hasta 1970, cuando la Compañía Metropolitana decidió {{3}} sin un motivo realmente justificado. Gracias a la rápida actuación de un vecino de O Porriño, {{4}} natal de Palacios, el templete se salvó, y ahora preside la entrada del cementerio del pueblo, mientras que en el centro de Madrid se nos {{5}} con otro escenario para disfrutar de la hiperrealidad.",
+        "En la calle Fortuny {{6}} puede llegar al sur de Francia, gracias a una de las réplicas más sorprendentes levantadas en la capital: el Oratorio de Nuestra Señora de Lourdes, un pequeño templo {{7}} a la Virgen María. Tiene la peculiaridad de que tras el {{8}}, en vez del tradicional retablo, se ha reproducido con rigurosa minuciosidad la Gruta de Massabielle, lugar en el que en 1858 a la pastora Bernadette Soubirous se le apareció, hasta dieciocho veces, la Virgen, convirtiendo la cueva en uno de los lugares de {{9}} por excelencia del cristianismo. Si queremos seguir recorriendo el mundo sin salir de Madrid, nos podemos acercar al Ensanche de Vallecas.",
+        "Allí, en la intersección entre las calles Puerto de Porzuna y La Granja de San Ildefonso, se alza una majestuosa copia de una cabeza olmeca ubicada en una rotonda, elemento urbanístico por excelencia, ideado para albergar todo tipo de {{10}} artísticas. La cabeza madrileña fue un regalo del estado mexicano de Veracruz en 2007. Tallada por el escultor mexicano Ignacio Pérez Solano, tiene exactamente las mismas dimensiones que la original, con un peso de cinco {{11}} y media. El artificio se completa con la construcción de una pirámide escalonada, de estilo precolombino, que a su vez hace las funciones de fuente en forma de cascada y sobre la que se eleva la cabeza; todo un espectáculo.",
+        "Una reciente campaña publicitaria del Ayuntamiento de Madrid para promocionar la hostelería y el comercio de la capital llevaba por {{12}} «Todo está en Madrid», frase que resume perfectamente el espíritu de la ciudad simulacro, y en {{13}} de acapararlo todo, los más de 7.000 árboles y plantas que pueblan el jardín tropical de la estación de Atocha son uno de los reyes del artificio madrileño. Desde 1992, año de su inauguración, sus 4.000 metros cuadrados de superficie se mantienen durante todo el año entre los 22 y 24 grados, con una humedad entre el 60 y el 70 por ciento, para que allí puedan sobrevivir fuera de su hábitat natural una variedad de 260 especies procedentes de los lugares más remotos: Polinesia, Madagascar, Filipinas, Cuba o Japón."
+      ],
+      "chunk_types": ["body", "body", "body", "body"],
+      "translation_ja": [
+        "カジャオ広場から数ブロックのところに、マドリードの模倣を象徴する建造物の一つ、グラン・ビア地下鉄駅入口の新しい小建築が立っている。2021年に完成したこれは、アントニオ・パラシオスが1920年代に設計したレッド・デ・サン・ルイスの元の建築を再現したものだ。元の建築は1970年まで残っていたが、地下鉄会社が十分な理由もなく解体を決めた。パラシオスの故郷オ・ポリーニョの住民が素早く行動したおかげで建築は救われ、現在は村の墓地入口を飾っている。一方、マドリード中心部では、超現実を楽しむ別の舞台が私たちを喜ばせている。",
+        "フォルトゥニー通りでは、首都に造られた最も驚くべき複製の一つ、ルルドの聖母礼拝堂のおかげで、誰でも南フランスへ行った気分になれる。これは聖母マリアに捧げられた小さな聖堂である。祭壇の奥には伝統的な祭壇画の代わりに、マッサビエルの洞窟が厳密かつ細部まで再現されている。そこは1858年、羊飼いの少女ベルナデット・スビルーの前に聖母が18回も現れ、洞窟がキリスト教を代表する巡礼地の一つとなった場所だ。マドリードを出ずにさらに世界を巡るなら、バジェカス拡張地区へ向かうことができる。",
+        "そこでは、プエルト・デ・ポルスナ通りとラ・グランハ・デ・サン・イルデフォンソ通りの交差点に、オルメカ人の巨大な頭部像の堂々たる複製が立っている。像が置かれた環状交差点は、あらゆる芸術的な突飛さを収容するために考案された、まさに都市計画の典型的要素である。このマドリードの頭部像は2007年、メキシコのベラクルス州から贈られた。メキシコ人彫刻家イグナシオ・ペレス・ソラノが彫ったもので、元の像とまったく同じ寸法を持ち、重さは5.5トンである。さらに、先コロンブス期様式の階段状ピラミッドが建設され、滝状の噴水としても機能し、その上に頭部像がそびえる。まさに壮観である。",
+        "マドリード市が首都の飲食業と商業を宣伝するために行った最近の広告キャンペーンは、「すべてはマドリードにある」を標語としていた。この言葉は模倣都市の精神を見事に要約している。そして、あらゆるものを独占しようとするこの熱意の中で、アトーチャ駅の熱帯庭園を満たす7,000本を超える木や植物もまた、マドリードの人工物の王者の一つである。開設された1992年以来、4,000平方メートルの空間は年間を通じて22～24度、湿度60～70％に保たれ、ポリネシア、マダガスカル、フィリピン、キューバ、日本など遠隔地から来た260種の植物が、本来の生息地の外で生き延びられるようになっている。"
+      ],
+      "clozes": [
+        {"n":1,"options":["peras","manzanas","naranjas"],"answer":1,"explanation":"a pocas manzanas de = 〜から数ブロックのところに。都市の距離を manzana（街区）で表す定型表現。","option_meanings_ja":["梨","街区・リンゴ","オレンジ"]},
+        {"n":2,"options":["a pie","en pie","de pie"],"answer":1,"explanation":"estar en pie = 建物などが立ったままである、現存する。a pie は徒歩で、de pie は立った姿勢で。","option_meanings_ja":["徒歩で","現存して・立ったまま","立って"]},
+        {"n":3,"options":["desabastecerlo","desmantelarlo","desarbolarlo"],"answer":1,"explanation":"desmantelar = 施設・建造物を解体する。目的語代名詞 lo が templete を受ける。","option_meanings_ja":["それへの供給を止める","それを解体する","それの帆柱・樹木を取り去る"]},
+        {"n":4,"options":["localidad","local","localización"],"answer":0,"explanation":"localidad natal = 出生地、故郷。人の生まれた町を表す自然な組み合わせ。","option_meanings_ja":["町・地域","場所／地元の","位置・所在地"]},
+        {"n":5,"options":["denota","delata","deleita"],"answer":2,"explanation":"deleitar a alguien con = 〜で人を楽しませる。se nos deleita con は「私たちを楽しませてくれる」。","option_meanings_ja":["示す・意味する","暴露する・正体を表す","喜ばせる"]},
+        {"n":6,"options":["uno","algún","ninguno"],"answer":0,"explanation":"uno は不特定の人を表し「人は・誰でも」。algún は後ろに名詞が必要。","option_meanings_ja":["人は・誰でも","何らかの","誰も〜ない"]},
+        {"n":7,"options":["sagrado","consagrado","sagrario"],"answer":1,"explanation":"consagrado a = 〜に捧げられた。聖堂が聖母マリアに奉献されていることを表す。","option_meanings_ja":["神聖な","〜に捧げられた","聖櫃・聖所"]},
+        {"n":8,"options":["altibajo","altar","alto"],"answer":1,"explanation":"tras el altar = 祭壇の後ろに。retablo（祭壇画）との位置関係から altar が適切。","option_meanings_ja":["浮き沈み","祭壇","高さ／高い"]},
+        {"n":9,"options":["norma","cultivo","peregrinación"],"answer":2,"explanation":"lugar de peregrinación = 巡礼地。聖母出現の地という宗教的文脈に合う。","option_meanings_ja":["規則・基準","栽培・作物","巡礼"]},
+        {"n":10,"options":["tropelías","atropellos","tropeles"],"answer":0,"explanation":"tropelía は本来「乱暴・無法」だが、ここでは奇抜な芸術作品を皮肉に表す。","option_meanings_ja":["乱暴・無法・突飛な行為","ひき逃げ・踏みにじり","群衆・殺到"]},
+        {"n":11,"options":["toneles","toneladas","tunas"],"answer":1,"explanation":"peso de cinco toneladas y media = 重さ5.5トン。重量の単位 toneladas が必要。","option_meanings_ja":["樽","トン","ウチワサボテンの実／学生楽団"]},
+        {"n":12,"options":["mote","letra","lema"],"answer":2,"explanation":"llevar por lema = 〜を標語とする。広告キャンペーンのスローガンを導く。","option_meanings_ja":["あだ名","文字・歌詞","標語・モットー"]},
+        {"n":13,"options":["este afán","esta desgana","esta vagancia"],"answer":0,"explanation":"afán de + 不定詞 = 〜しようとする熱意・強い欲求。acapararlo todo と意味がつながる。","option_meanings_ja":["この熱意・執着","この意欲のなさ","この怠惰"]}
+      ]
     }
   ]
 }
