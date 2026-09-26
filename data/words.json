@@ -2798,6 +2798,19 @@
     {"lemma":"prado","forms":["prado","prados"],"state":"unknown","pos":"s. m.","meaning_ja":"牧草地、草原","example":"el ganado pasta en los prados","source_text_id":"text_06","tags":["cloze_distractor"]},
     {"lemma":"arbusto","forms":["arbusto","arbustos"],"state":"unknown","pos":"s. m.","meaning_ja":"低木、灌木","example":"el tejado alberga árboles y arbustos","source_text_id":"text_06","tags":[]},
     {"lemma":"hormiguero","forms":["hormiguero","hormigueros"],"state":"unknown","pos":"s. m.","meaning_ja":"アリ塚、アリの巣／人が密集する場所","example":"las hormigas regresan al hormiguero","source_text_id":"text_06","tags":["cloze_distractor"]},
-    {"lemma":"proliferar","forms":["proliferan","prolifera","proliferando"],"state":"unknown","pos":"v. intr.","meaning_ja":"急増する、広く増える、繁殖する","example":"los huertos proliferan en las terrazas","source_text_id":"text_06","tags":["C1_key"]}
+    {"lemma":"proliferar","forms":["proliferan","prolifera","proliferando"],"state":"unknown","pos":"v. intr.","meaning_ja":"急増する、広く増える、繁殖する","example":"los huertos proliferan en las terrazas","source_text_id":"text_06","tags":["C1_key"]},
+    {"lemma":"a pocas manzanas de","forms":["manzanas"],"state":"unknown","pos":"loc. adv.","meaning_ja":"〜から数ブロックのところに","example":"a pocas manzanas de la plaza","source_text_id":"text_07","tags":["cloze_answer","expression"]},
+    {"lemma":"estar en pie","forms":["en pie"],"state":"unknown","pos":"loc. verb.","meaning_ja":"立ったままである、現存している","example":"el templete estuvo en pie hasta 1970","source_text_id":"text_07","tags":["cloze_answer","expression","C1_key"]},
+    {"lemma":"desmantelar","forms":["desmantelarlo"],"state":"unknown","pos":"v. tr.","meaning_ja":"解体する、撤去する、組織を解散させる","example":"decidió desmantelarlo","source_text_id":"text_07","tags":["cloze_answer","C1_key"]},
+    {"lemma":"localidad natal","forms":["localidad"],"state":"unknown","pos":"loc. sust.","meaning_ja":"出生地、故郷の町","example":"O Porriño, localidad natal de Palacios","source_text_id":"text_07","tags":["cloze_answer","expression"]},
+    {"lemma":"deleitar","forms":["deleita"],"state":"unknown","pos":"v. tr.","meaning_ja":"喜ばせる、楽しませる","example":"se nos deleita con otro escenario","source_text_id":"text_07","tags":["cloze_answer","C1_key"]},
+    {"lemma":"uno","forms":["uno"],"state":"unknown","pos":"pron.","meaning_ja":"人は、誰でも／一つ","example":"uno puede llegar al sur de Francia","source_text_id":"text_07","tags":["cloze_answer"]},
+    {"lemma":"consagrado a","forms":["consagrado"],"state":"unknown","pos":"adj.","meaning_ja":"〜に捧げられた、奉献された","example":"un templo consagrado a la Virgen María","source_text_id":"text_07","tags":["cloze_answer","expression","C1_key"]},
+    {"lemma":"altar","forms":["altar"],"state":"unknown","pos":"s. m.","meaning_ja":"祭壇","example":"tras el altar","source_text_id":"text_07","tags":["cloze_answer"]},
+    {"lemma":"peregrinación","forms":["peregrinación"],"state":"unknown","pos":"s. f.","meaning_ja":"巡礼","example":"un lugar de peregrinación","source_text_id":"text_07","tags":["cloze_answer","C1_key"]},
+    {"lemma":"tropelía","forms":["tropelías"],"state":"unknown","pos":"s. f.","meaning_ja":"乱暴、無法、突飛な行為","example":"todo tipo de tropelías artísticas","source_text_id":"text_07","tags":["cloze_answer","C1_key"]},
+    {"lemma":"tonelada","forms":["toneladas"],"state":"unknown","pos":"s. f.","meaning_ja":"トン（重量単位）","example":"un peso de cinco toneladas y media","source_text_id":"text_07","tags":["cloze_answer"]},
+    {"lemma":"lema","forms":["lema"],"state":"unknown","pos":"s. m.","meaning_ja":"標語、モットー、スローガン","example":"llevaba por lema Todo está en Madrid","source_text_id":"text_07","tags":["cloze_answer","C1_key"]},
+    {"lemma":"afán de","forms":["afán"],"state":"unknown","pos":"loc. sust.","meaning_ja":"〜しようとする熱意、強い欲求・執着","example":"en este afán de acapararlo todo","source_text_id":"text_07","tags":["cloze_answer","expression","C1_key"]}
   ]
 }
