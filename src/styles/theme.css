@@ -1331,6 +1331,28 @@ h2 {
   flex-wrap: wrap;
 }
 
+.collection-switch {
+  display: inline-flex;
+  gap: 3px;
+  margin-top: 22px;
+  padding: 3px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-mute);
+}
+
+.collection-switch button {
+  border: 0;
+  background: transparent;
+  color: var(--text-soft);
+}
+
+.collection-switch button.active {
+  background: var(--bg-elev);
+  color: var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+
 .vocab-scope label {
   display: flex;
   flex-direction: column;

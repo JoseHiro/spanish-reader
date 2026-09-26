@@ -7,15 +7,21 @@ import { IconCheck, IconCopy } from './Icons'
 
 type Filter = 'unknown' | 'probably_known' | 'mastered' | 'all'
 type VocabKind = 'all' | 'expression'
+type Collection = 'reader' | 'thematic'
 
 export function filterVocabWords(
   words: Word[],
   lessonId: string,
   kind: VocabKind,
+  collection: Collection = 'reader',
 ) {
   return words.filter(
     (word) =>
-      (lessonId === 'all' || word.source_text_id === lessonId) &&
+      (collection === 'reader'
+        ? !word.collection_id &&
+          (lessonId === 'all' || word.source_text_id === lessonId)
+        : word.collection_id === 'thematic_vocab' &&
+          (lessonId === 'all' || word.chapter_id === lessonId)) &&
       (kind === 'all' || word.tags?.includes('expression')),
   )
 }
@@ -32,6 +38,7 @@ export function VocabList({
   onWordUpdate: (w: Word) => void
 }) {
   const [filter, setFilter] = useState<Filter>('unknown')
+  const [collection, setCollection] = useState<Collection>('reader')
   const [lessonId, setLessonId] = useState('all')
   const [kind, setKind] = useState<VocabKind>('all')
   const [reviewing, setReviewing] = useState(false)
@@ -41,9 +48,18 @@ export function VocabList({
   const [copied, setCopied] = useState(false)
 
   const scopeWords = useMemo(
-    () => filterVocabWords(words, lessonId, kind),
-    [words, lessonId, kind],
+    () => filterVocabWords(words, lessonId, kind, collection),
+    [words, lessonId, kind, collection],
   )
+  const thematicChapters = useMemo(() => {
+    const chapters = new Map<string, string>()
+    words.forEach((word) => {
+      if (word.collection_id === 'thematic_vocab' && word.chapter_id) {
+        chapters.set(word.chapter_id, word.chapter_title ?? word.chapter_id)
+      }
+    })
+    return [...chapters.entries()]
+  }, [words])
 
   const dueWords = useMemo(() => {
     const now = Date.now()
@@ -137,14 +153,37 @@ export function VocabList({
       </div>
 
       {!reviewing && (
+        <div className="collection-switch" aria-label="Colección de vocabulario">
+          <button
+            className={collection === 'reader' ? 'active' : ''}
+            onClick={() => { setCollection('reader'); setLessonId('all') }}
+          >
+            Textos
+          </button>
+          <button
+            className={collection === 'thematic' ? 'active' : ''}
+            onClick={() => { setCollection('thematic'); setLessonId('all') }}
+          >
+            Vocabulario temático
+          </button>
+        </div>
+      )}
+
+      {!reviewing && (
         <div className="vocab-scope">
           <label>
-            <span>Lección</span>
+            <span>{collection === 'reader' ? 'Lección' : 'Capítulo'}</span>
             <select value={lessonId} onChange={(e) => setLessonId(e.target.value)}>
-              <option value="all">Todas las lecciones</option>
-              {texts.map((text) => (
-                <option key={text.id} value={text.id}>{text.title}</option>
-              ))}
+              <option value="all">
+                {collection === 'reader' ? 'Todas las lecciones' : 'Todos los capítulos'}
+              </option>
+              {collection === 'reader'
+                ? texts.map((text) => (
+                    <option key={text.id} value={text.id}>{text.title}</option>
+                  ))
+                : thematicChapters.map(([id, title]) => (
+                    <option key={id} value={id}>{title}</option>
+                  ))}
             </select>
           </label>
           <div className="vocab-kind" aria-label="Tipo de vocabulario">
@@ -276,10 +315,13 @@ export function VocabList({
             <div style={{ color: 'var(--text-mute)', fontSize: 12 }}>
               {w.pos}
             </div>
-            {lessonId === 'all' && w.source_text_id && (
+            {collection === 'reader' && lessonId === 'all' && w.source_text_id && (
               <div className="word-source">
                 {texts.find((text) => text.id === w.source_text_id)?.title}
               </div>
+            )}
+            {collection === 'thematic' && lessonId === 'all' && (
+              <div className="word-source">{w.chapter_title}</div>
             )}
           </div>
           <div>

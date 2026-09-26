@@ -14,6 +14,10 @@ export type Word = {
     ja: string
   }>
   source_text_id?: string
+  /** Optional independent vocabulary book and chapter grouping. */
+  collection_id?: string
+  chapter_id?: string
+  chapter_title?: string
   tags?: string[]
   srs?: {
     due: string
