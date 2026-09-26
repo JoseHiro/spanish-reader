@@ -157,7 +157,6 @@ export function App() {
     <div className={`shell${sidebarCollapsed ? ' sidebar-collapsed' : ''}`}>
       <aside className="sidebar">
         <div className="brand">
-          <div className="brand-mark">SR</div>
           <div>Spanish Reader</div>
           {view.name === 'quiz' && (
             <button

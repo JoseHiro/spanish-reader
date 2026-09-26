@@ -282,20 +282,6 @@ a {
   box-shadow: var(--shadow-md);
 }
 
-.sidebar .brand-mark {
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
-  background: var(--accent);
-  color: var(--accent-fg);
-  display: grid;
-  place-items: center;
-  font-weight: 700;
-  font-size: 12px;
-  letter-spacing: -0.03em;
-  box-shadow: var(--shadow-sm);
-}
-
 .nav {
   display: flex;
   flex-direction: column;
