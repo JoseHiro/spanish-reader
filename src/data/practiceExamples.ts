@@ -641,4 +641,72 @@ export const PRACTICE_EXAMPLES: Record<string, [WordExample, WordExample]> = {
     { spanish: "El país demostró su poderío económico.", japanese: "その国は経済力の強大さを示した。" },
     { spanish: "La flota simbolizaba el poderío militar del imperio.", japanese: "その艦隊は帝国の軍事力を象徴していた。" },
   ],
+  "realzar": [
+    { spanish: "La iluminación realza los detalles de la fachada.", japanese: "照明が建物正面の細部を引き立てている。" },
+    { spanish: "Ese color realza la belleza natural de la madera.", japanese: "その色は木材本来の美しさを際立たせる。" },
+  ],
+  "alzar": [
+    { spanish: "Alzó la mano para pedir la palabra.", japanese: "彼は発言を求めて手を挙げた。" },
+    { spanish: "Los vecinos alzaron una cerca alrededor del huerto.", japanese: "住民たちは菜園の周囲に柵を建てた。" },
+  ],
+  "adherido": [
+    { spanish: "Había un cartel adherido a la puerta.", japanese: "ドアにポスターが貼り付けられていた。" },
+    { spanish: "El barro quedó adherido a las botas.", japanese: "泥が長靴にこびりついた。" },
+  ],
+  "tejado": [
+    { spanish: "Instalaron paneles solares en el tejado.", japanese: "彼らは屋根にソーラーパネルを設置した。" },
+    { spanish: "La lluvia golpeaba con fuerza el tejado.", japanese: "雨が激しく屋根を打っていた。" },
+  ],
+  "emblemático": [
+    { spanish: "El teatro es uno de los edificios más emblemáticos de la ciudad.", japanese: "その劇場は街を代表する建物の一つだ。" },
+    { spanish: "La plaza se ha convertido en un lugar emblemático.", japanese: "その広場は象徴的な場所となった。" },
+  ],
+  "distar": [
+    { spanish: "La estación dista dos kilómetros del centro.", japanese: "駅は中心部から2キロ離れている。" },
+    { spanish: "El resultado dista mucho de lo que esperábamos.", japanese: "結果は私たちが期待したものとは大きくかけ離れている。" },
+  ],
+  "veto": [
+    { spanish: "El presidente ejerció su derecho de veto.", japanese: "大統領は拒否権を行使した。" },
+    { spanish: "La ciudad impuso un veto a nuevas construcciones.", japanese: "市は新規建設を禁止した。" },
+  ],
+  "colgante": [
+    { spanish: "Un puente colgante une las dos orillas.", japanese: "吊り橋が両岸を結んでいる。" },
+    { spanish: "Decoraron el balcón con plantas colgantes.", japanese: "彼らは垂れ下がる植物でバルコニーを飾った。" },
+  ],
+  "acoger": [
+    { spanish: "El centro puede acoger a quinientas personas.", japanese: "その施設は500人を収容できる。" },
+    { spanish: "La ciudad acogerá el festival el próximo año.", japanese: "その都市は来年フェスティバルを開催する。" },
+  ],
+  "prosperar": [
+    { spanish: "El negocio empezó a prosperar después de unos meses.", japanese: "その事業は数か月後に順調に発展し始めた。" },
+    { spanish: "Estas plantas prosperan en climas húmedos.", japanese: "これらの植物は湿潤な気候でよく育つ。" },
+  ],
+  "hormigonera": [
+    { spanish: "La hormigonera llegó temprano a la obra.", japanese: "コンクリートミキサー車は早朝に工事現場へ到着した。" },
+    { spanish: "Introdujeron la mezcla en una hormigonera.", japanese: "彼らは材料をコンクリートミキサーに入れた。" },
+  ],
+  "entorpecer": [
+    { spanish: "Las obras entorpecen la circulación en el centro.", japanese: "工事が中心部の交通を妨げている。" },
+    { spanish: "La falta de información entorpeció la investigación.", japanese: "情報不足が調査を遅らせた。" },
+  ],
+  "ahuyentar": [
+    { spanish: "Encendieron una hoguera para ahuyentar a los animales.", japanese: "彼らは動物を追い払うために焚き火をつけた。" },
+    { spanish: "Los precios elevados ahuyentan a muchos clientes.", japanese: "高い価格が多くの客を遠ざけている。" },
+  ],
+  "prado": [
+    { spanish: "Las vacas pastan en un prado verde.", japanese: "牛たちは緑の牧草地で草を食べている。" },
+    { spanish: "Cruzamos un prado cubierto de flores.", japanese: "私たちは花に覆われた草原を横切った。" },
+  ],
+  "arbusto": [
+    { spanish: "Plantaron arbustos alrededor del jardín.", japanese: "彼らは庭の周りに低木を植えた。" },
+    { spanish: "Un pequeño pájaro se escondía entre los arbustos.", japanese: "小鳥が低木の間に隠れていた。" },
+  ],
+  "hormiguero": [
+    { spanish: "Las hormigas transportan hojas hasta el hormiguero.", japanese: "アリは葉を巣まで運ぶ。" },
+    { spanish: "La estación parecía un hormiguero en hora punta.", japanese: "ラッシュ時の駅はまるで人がひしめくアリの巣のようだった。" },
+  ],
+  "proliferar": [
+    { spanish: "Los huertos urbanos proliferan en muchas ciudades.", japanese: "都市菜園が多くの都市で急増している。" },
+    { spanish: "Las algas proliferaron por el aumento de la temperatura.", japanese: "水温上昇によって藻類が大量に繁殖した。" },
+  ],
 }
