@@ -1110,6 +1110,70 @@
         {"n":12,"options":["mote","letra","lema"],"answer":2,"explanation":"llevar por lema = 〜を標語とする。広告キャンペーンのスローガンを導く。","option_meanings_ja":["あだ名","文字・歌詞","標語・モットー"]},
         {"n":13,"options":["este afán","esta desgana","esta vagancia"],"answer":0,"explanation":"afán de + 不定詞 = 〜しようとする熱意・強い欲求。acapararlo todo と意味がつながる。","option_meanings_ja":["この熱意・執着","この意欲のなさ","この怠惰"]}
       ]
+    },
+    {
+      "id":"text_08","title":"Trenes sin conductor, trabajadores sin respuesta","source":"SIELE C1 / DELE C1 - Texto Nº12","type":"cloze","level":"C1","added_at":"2026-09-26",
+      "paragraphs":[
+        "La Comunidad de Madrid pretende que las líneas 6 y 8 del Metro, al {{1}} las más frecuentadas, estén automatizadas. Esta medida de renovación íntimamente {{2}} con las nuevas tecnologías es imparable, incluso desde la perspectiva de los sindicatos. En cualquier caso, la representación de los trabajadores está intentando que la potencial pérdida de empleo en la empresa pública no se efectúe, bien con nuevas funciones o bien con funciones ahora externalizadas a empresas privadas que puedan ser asumidas por la propia {{3}}.",
+        "Los seis sindicatos presentes en el comité actualmente se encuentran negociando {{4}} que presumiblemente incluirá nuevas categorías laborales para encuadrar la nueva realidad de las líneas automatizadas del {{5}}. Todas las centrales sindicales tienen claro que poco se puede hacer ante el {{6}} de las nuevas tecnologías, «y más en Metro de Madrid, que {{7}} de ser uno de los mejores del mundo, pero sin líneas automáticas, como sí tienen otras ciudades», apunta Juan Carlos de la Cruz, secretario general de CC. OO. en la compañía. Por eso, ahora centran todos sus esfuerzos en minimizar esa potencial gran pérdida de empleo que, si no cambian las cosas, acompañará a la automatización progresiva de las líneas.",
+        "{{8}} Juan Carlos de la Cruz, existen actualmente muchas funciones externalizadas a empresas privadas que «las podrían asumir los propios trabajadores». De esta forma, los empleados actuales de Metro se podrían reciclar y {{9}} del mantenimiento de las nuevas mamparas que poblarán los andenes de la línea 6 una vez esté automatizada. «Hay cuestiones de las que nos podríamos hacer {{10}} nosotros, porque además sale más barato». Por otro lado, el sentir {{11}} de los trabajadores se alinea con los postulados de sus representantes legales.",
+        "Otro de los aspectos que defienden los sindicatos es la presencia de un jefe de sector en cada una de las estaciones. «En una estación donde llegue el tren sin maquinista quizá haya incidencias en las puertas, en las entradas o salidas, por eso pedimos que al menos haya una persona física en cada una de las estaciones que pueda atender cualquier situación {{12}}, algo tan simple como un problema a la hora de sacar un billete o {{13}} de un ascensor», desarrolla el secretario general."
+      ],
+      "chunk_types":["body","body","body","body"],
+      "translation_ja":[
+        "マドリード自治州は、地下鉄6号線と8号線を、最も利用者の多い路線であることから自動運転化しようとしている。新技術と密接に結びついたこの刷新策は、労働組合の立場から見ても止められない。いずれにせよ労働者側は、公営企業で生じ得る雇用喪失を、新しい職務や、現在民間企業へ外注されている職務を自社の職員が担うことで防ごうとしている。",
+        "委員会に参加する6組合は現在、地下鉄自動運転路線の新しい現実に合わせた職種を含むとみられる労働協約を交渉している。すべての労組は新技術の進展に対してできることは少ないと理解している。組合幹部フアン・カルロス・デ・ラ・クルスは「世界有数の地下鉄を自負しながら、他都市のような自動運転路線がない」と指摘する。そのため労組は、状況が変わらなければ自動化に伴う大規模な雇用喪失を最小限にすることへ力を注いでいる。",
+        "デ・ラ・クルスによれば、現在民間企業に外注されている多くの職務は職員自身が担えるという。現職員は再訓練を受け、自動化後の6号線ホームに設置される新しい防護柵の保守を担当できる。「私たち自身が引き受けられ、しかも安く済む仕事があります」。また、労働者の多数意見は法的代表者の主張と一致している。",
+        "労組が求めるもう一つの点は、各駅に地区責任者を置くことである。「運転士のいない列車が到着する駅では、扉や出入口で問題が起こるかもしれない。切符購入時の問題やエレベーターの故障のような不測の事態に対応できる人を、少なくとも各駅に一人置いてほしい」と組合幹部は説明する。"
+      ],
+      "clozes":[
+        {"n":1,"options":["ser","estar","---"],"answer":0,"explanation":"al ser = 〜であるため。原因を表す al + 不定詞。","option_meanings_ja":["〜であるため","〜の状態にあるため","語なし"]},
+        {"n":2,"options":["ligada","liada","limada"],"answer":0,"explanation":"estar ligado con = 〜と結びついている。medida に合わせて ligada。","option_meanings_ja":["結びついた","混乱した・巻き込まれた","削られた"]},
+        {"n":3,"options":["planta","plantilla","entreplanta"],"answer":1,"explanation":"plantilla = 企業の全職員・人員。職務を自社職員が担う文脈。","option_meanings_ja":["植物・階","職員・人員","中二階"]},
+        {"n":4,"options":["la convención","el convenio","la conveniencia"],"answer":1,"explanation":"convenio laboral = 労働協約。","option_meanings_ja":["大会・慣習","協約・労働協約","都合・利便性"]},
+        {"n":5,"options":["urbano","urbanismo","suburbano"],"answer":2,"explanation":"el suburbano は地下鉄を指す名詞。","option_meanings_ja":["都市の","都市計画","地下鉄／郊外の"]},
+        {"n":6,"options":["avance","destacamento","distanciamiento"],"answer":0,"explanation":"avance de las tecnologías = 技術の進歩・進展。","option_meanings_ja":["進歩・進展","派遣部隊","距離を置くこと"]},
+        {"n":7,"options":["consume","asume","presume"],"answer":2,"explanation":"presumir de = 〜を誇る・自慢する。","option_meanings_ja":["消費する","引き受ける","誇る・自慢する"]},
+        {"n":8,"options":["Según","Como","A pesar de"],"answer":0,"explanation":"Según + 人 = 〜によれば。","option_meanings_ja":["〜によれば","〜として／〜なので","〜にもかかわらず"]},
+        {"n":9,"options":["encargarse","cargarse","sobrecargarse"],"answer":0,"explanation":"encargarse de = 〜を担当する。","option_meanings_ja":["担当する","壊す・背負う","過負荷になる"]},
+        {"n":10,"options":["carga","cargo","encarga"],"answer":1,"explanation":"hacerse cargo de = 〜を引き受ける。","option_meanings_ja":["荷物・負担","責任・担当","依頼すること"]},
+        {"n":11,"options":["mayoritario","mayor","mejor"],"answer":0,"explanation":"sentir mayoritario = 多数派の意向。","option_meanings_ja":["多数派の","より大きい","より良い"]},
+        {"n":12,"options":["venida","sobrevenida","convenida"],"answer":1,"explanation":"situación sobrevenida = 突発的に生じた事態。","option_meanings_ja":["到来した","不意に生じた","合意された"]},
+        {"n":13,"options":["el prejuicio","el alcance","la avería"],"answer":2,"explanation":"avería de un ascensor = エレベーターの故障。","option_meanings_ja":["偏見","範囲・到達","故障"]}
+      ]
+    },
+    {
+      "id":"text_09","title":"Viajes en el tiempo e historias conmovedoras","author":"Hannah McGivern","source":"SIELE C1 / DELE C1 - Texto Nº13","source_url":"https://courier.unesco.org/es/articles/viajes-en-el-tiempo-e-historias-conmovedoras","type":"cloze","level":"C1","added_at":"2026-09-26",
+      "paragraphs":[
+        "Los museos son máquinas del tiempo que invitan al visitante a encontrarse {{1}} con los tesoros de la historia. Sin embargo, ¿qué pasaría si, además, ofrecieran a sus visitantes la posibilidad de rebuscar en sus reservas, interactuar con objetos que ya no existen o visitar lugares donde se efectuaron importantes {{2}}? Estas experiencias hoy son posibles gracias a una oleada de iniciativas digitales inmersivas que se {{3}} a cabo tanto en museos de todo el mundo como en internet.",
+        "Loot: 10 Stories, una exposición presentada primero en el Mauritshuis de La Haya en septiembre de 2023 y después en el Foro Humboldt de Berlín, recurre al poder de la realidad virtual para {{4}} al público en el complejo debate de los objetos robados expuestos en algunos museos. Con un {{5}} de realidad virtual, los visitantes pueden viajar a una mina de sal austriaca donde los nazis {{6}} un autorretrato de Rembrandt robado a una familia judía.",
+        "Los museos tienen como objetivo aprender del pasado para «cambiar el futuro que podríamos imaginar», comenta Seb Chan, director y consejero delegado del ACMI, el museo nacional australiano de la cultura de la pantalla, cuyas colecciones {{7}} el cine, la televisión, los videojuegos y el arte digital. El ACMI se define como un «museo multiplataforma» cuya misión es servir al público, tanto en internet como en sus propias instalaciones de Melbourne. Esta experiencia híbrida se resume en el «Lens», un disco de cartón con un microchip que se puede colocar sobre los objetos que {{8}} prefiera para explorarlos más tarde en casa.",
+        "Un proyecto de investigación de 5,6 millones de libras esterlinas de la Universidad de Glasgow, en Reino Unido, {{9}} llevar aún más lejos la noción de «ciudadanos comisarios». El proyecto Museums in the Metaverse (Museos en el Metaverso), financiado por el gobierno británico, desarrolla un prototipo de plataforma digital que albergará {{10}} de modelos en 3D de objetos escaneados de colecciones de museos escoceses. Los {{11}} podrán «manipular, gestionar y presentar» objetos históricos de los museos participantes en los entornos virtuales de su elección.",
+        "El único problema es que estas tecnologías son muy {{12}}. La realidad virtual está fuera del alcance de muchas instituciones, que no pueden permitirse su {{13}} ni su supervisión."
+      ],
+      "chunk_types":["body","body","body","body","body"],
+      "translation_ja":[
+        "博物館は、来館者を歴史の宝物と直接向き合わせるタイムマシンである。では収蔵庫を探し回り、もはや存在しない物と交流し、重要な発見がなされた場所を訪れることまでできたらどうだろう。世界中の博物館やインターネットで実施される没入型デジタル企画の波により、今ではこうした体験が可能になっている。",
+        "2023年9月にハーグのマウリッツハイス美術館、その後ベルリンのフンボルト・フォーラムで開催された展覧会『Loot: 10 Stories』は、仮想現実の力を使い、一部の博物館で展示される略奪品をめぐる複雑な議論へ観客を没入させる。VRヘッドセットを使えば、ナチスがユダヤ人家族から奪ったレンブラントの自画像を隠したオーストリアの岩塩坑へ旅することができる。",
+        "博物館の目的は過去から学び「想像し得る未来を変える」ことだと、オーストラリア国立映像文化博物館ACMIのセブ・チャン館長は語る。同館の収蔵品は映画、テレビ、ゲーム、デジタルアートを網羅する。ACMIはネットとメルボルンの施設双方で市民に奉仕する「マルチプラットフォーム博物館」を掲げる。厚紙製のマイクロチップ入り円盤「Lens」を好みの展示物にかざすと、後で自宅から詳しく調べられる。",
+        "英国グラスゴー大学の560万ポンド規模の研究計画は、「市民学芸員」という考えをさらに推し進めようとしている。政府支援の『メタバースの博物館』計画は、スコットランドの博物館収蔵品をスキャンした何百もの3Dモデルを収容するデジタル基盤を開発する。利用者は仮想空間で歴史資料を操作・管理・展示できる。",
+        "唯一の問題は、これらの技術が非常に高価なことだ。多くの施設にとってVRは手が届かず、その維持管理や監督の費用を負担できない。"
+      ],
+      "clozes":[
+        {"n":1,"options":["cara a cara","rostro a rostro","cabeza a cabeza"],"answer":0,"explanation":"cara a cara con = 〜と直接向き合って。固定表現。","option_meanings_ja":["面と向かって","顔と顔（不自然）","頭と頭（不自然）"]},
+        {"n":2,"options":["aciertos","hallazgos","novedades"],"answer":1,"explanation":"efectuar hallazgos = 発見をする。","option_meanings_ja":["正解・成功","発見・発掘物","新情報・新製品"]},
+        {"n":3,"options":["llevan","resultan","realizan"],"answer":0,"explanation":"llevar a cabo = 実施する、遂行する。","option_meanings_ja":["実施する（llevar a cabo）","結果となる","実現する"]},
+        {"n":4,"options":["surcar","sumergir","ahogar"],"answer":1,"explanation":"sumergir a alguien en = 人を〜へ没入させる。","option_meanings_ja":["横切る・航行する","没入させる","溺れさせる"]},
+        {"n":5,"options":["casquete","coscorrón","casco"],"answer":2,"explanation":"casco de realidad virtual = VRヘッドセット。","option_meanings_ja":["小帽・球冠","こぶ・頭への一撃","ヘルメット・ヘッドセット"]},
+        {"n":6,"options":["encubrieron","desaparecieron","escondieron"],"answer":2,"explanation":"esconder un objeto = 物を隠す。","option_meanings_ja":["隠蔽した・かばった","姿を消した","隠した"]},
+        {"n":7,"options":["abarcan","rodean","excluyen"],"answer":0,"explanation":"abarcar = 広い範囲を含む・網羅する。","option_meanings_ja":["網羅する","取り囲む","除外する"]},
+        {"n":8,"options":["el visitador","el visitante","la visitación"],"answer":1,"explanation":"visitante = 来館者・訪問者。","option_meanings_ja":["監察官・巡回者","来館者・訪問者","訪問・聖母訪問"]},
+        {"n":9,"options":["prosigue","persigue","sigue"],"answer":1,"explanation":"perseguir un objetivo = 目的として追求する。","option_meanings_ja":["続行する","追求する・目指す","続く"]},
+        {"n":10,"options":["centenar","ciento","cientos"],"answer":2,"explanation":"cientos de + 複数名詞 = 何百もの。","option_meanings_ja":["約百・百個","百","何百もの"]},
+        {"n":11,"options":["usuarios","usos","usados"],"answer":0,"explanation":"usuarios = プラットフォームを利用する人々。","option_meanings_ja":["利用者","用途・使用","使用済みの"]},
+        {"n":12,"options":["obsoletas","agotadas","costosas"],"answer":2,"explanation":"costoso = 高価な、費用がかかる。","option_meanings_ja":["時代遅れの","消耗した・売り切れた","高価な"]},
+        {"n":13,"options":["alimento","mantenida","mantenimiento"],"answer":2,"explanation":"mantenimiento = 維持・保守。所有形容詞 su の後には名詞が必要。","option_meanings_ja":["食物","維持された","維持・保守"]}
+      ]
     }
   ]
 }
