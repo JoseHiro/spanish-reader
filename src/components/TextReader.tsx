@@ -4,7 +4,13 @@ import type { Text, Word, WordState, Encounter } from '../types'
 import { tokenize } from '../lib/tokenize'
 import { findWordBySurface } from '../lib/words'
 import { WordPopup } from './WordPopup'
-import { IconArrowLeft, IconEye, IconEyeOff, IconCheck } from './Icons'
+import {
+  IconArrowLeft,
+  IconEye,
+  IconEyeOff,
+  IconCheck,
+  IconListPlus,
+} from './Icons'
 
 export function TextReader({
   text,
@@ -26,6 +32,8 @@ export function TextReader({
   onToggleCompleted: () => void
 }) {
   const [revealed, setRevealed] = useState(false)
+  const [collectMode, setCollectMode] = useState(false)
+  const [collected, setCollected] = useState(() => new Set<string>())
   const [popup, setPopup] = useState<{
     surface: string
     anchor: DOMRect
@@ -41,8 +49,35 @@ export function TextReader({
     sentence: string,
     ev: React.MouseEvent<HTMLSpanElement>,
   ) {
+    if (collectMode) {
+      collectWord(surface, sentence)
+      return
+    }
     const rect = (ev.currentTarget as HTMLElement).getBoundingClientRect()
     setPopup({ surface, sentence, anchor: rect })
+  }
+
+  function collectWord(surface: string, sentence: string) {
+    const existing = findWord(surface)
+    if (existing?.state === 'unknown') return
+    const lemma = existing?.lemma ?? surface.toLowerCase()
+    onWordUpdate(
+      existing
+        ? { ...existing, state: 'unknown' }
+        : {
+            lemma,
+            state: 'unknown',
+            source_text_id: text.id,
+            tags: ['tapped'],
+          },
+    )
+    onEncounter({
+      word_lemma: lemma,
+      text_id: text.id,
+      sentence,
+      tapped_at: new Date().toISOString(),
+    })
+    setCollected((current) => new Set(current).add(lemma))
   }
 
   function handleSetState(state: WordState) {
@@ -118,6 +153,23 @@ export function TextReader({
             {completed ? 'Completado' : 'Marcar completado'}
           </span>
         </button>
+        <button
+          className={collectMode ? 'collect-toggle active' : 'collect-toggle'}
+          aria-pressed={collectMode}
+          onClick={() => {
+            setCollectMode((active) => !active)
+            setPopup(null)
+          }}
+          title="Añadir palabras desconocidas con un solo clic"
+        >
+          <IconListPlus size={15} strokeWidth={2} />
+          <span style={{ marginLeft: 6 }}>
+            {collectMode ? 'Añadiendo palabras' : 'Añadir palabras'}
+          </span>
+          {collected.size > 0 && (
+            <span className="collect-count">{collected.size}</span>
+          )}
+        </button>
         <div className="spacer" />
         {text.type === 'cloze' && (
           <button className="primary" onClick={onOpenQuiz}>
@@ -126,12 +178,19 @@ export function TextReader({
         )}
       </div>
 
-      <div className="reader">
+      {collectMode && (
+        <div className="collect-hint" role="status">
+          Toca las palabras que no conoces. Se añadirán a «Por repasar».
+        </div>
+      )}
+
+      <div className={`reader${collectMode ? ' collect-mode' : ''}`}>
         {text.paragraphs.map((para, pi) => (
           <p key={pi}>
             {renderParagraph(para, {
               revealed,
               text,
+              collectMode,
               findWord,
               onWordClick,
             })}
@@ -157,6 +216,7 @@ function renderParagraph(
   ctx: {
     revealed: boolean
     text: Text
+    collectMode: boolean
     findWord: (s: string) => Word | null
     onWordClick: (
       surface: string,
@@ -195,11 +255,11 @@ function renderParagraph(
       )
     }
     const word = ctx.findWord(tok.text)
-    if (!word) return <span key={i}>{tok.text}</span>
+    if (!word && !ctx.collectMode) return <span key={i}>{tok.text}</span>
     return (
       <span
         key={i}
-        className={`tok-word st-${word.state}`}
+        className={`tok-word st-${word?.state ?? 'untracked'}`}
         onClick={(ev) => ctx.onWordClick(tok.text, sentence, ev)}
       >
         {tok.text}

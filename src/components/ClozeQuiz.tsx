@@ -3,7 +3,7 @@ import type * as React from 'react'
 import type { Text, Word, WordState, QuizResult, Encounter } from '../types'
 import { normalize, tokenize } from '../lib/tokenize'
 import { findWordBySurface } from '../lib/words'
-import { IconArrowLeft, IconCheck, IconX } from './Icons'
+import { IconArrowLeft, IconCheck, IconX, IconListPlus } from './Icons'
 import { WordPopup } from './WordPopup'
 import { ArticleChunk } from './ArticleChunk'
 import { QuizOption } from './QuizOption'
@@ -33,6 +33,8 @@ export function ClozeQuiz({
     clozes.map(() => null),
   )
   const [submitted, setSubmitted] = useState(false)
+  const [collectMode, setCollectMode] = useState(false)
+  const [collected, setCollected] = useState(() => new Set<string>())
   const [popup, setPopup] = useState<{
     surface: string
     anchor: DOMRect
@@ -48,11 +50,38 @@ export function ClozeQuiz({
     sentence: string,
     ev: React.MouseEvent<HTMLSpanElement>,
   ) {
+    if (collectMode) {
+      collectWord(surface, sentence)
+      return
+    }
     setPopup({
       surface,
       sentence,
       anchor: ev.currentTarget.getBoundingClientRect(),
     })
+  }
+
+  function collectWord(surface: string, sentence: string) {
+    const existing = findWord(surface)
+    if (existing?.state === 'unknown') return
+    const lemma = existing?.lemma ?? surface.toLowerCase()
+    onWordUpdate(
+      existing
+        ? { ...existing, state: 'unknown' }
+        : {
+            lemma,
+            state: 'unknown',
+            source_text_id: text.id,
+            tags: ['tapped'],
+          },
+    )
+    onEncounter({
+      word_lemma: lemma,
+      text_id: text.id,
+      sentence,
+      tapped_at: new Date().toISOString(),
+    })
+    setCollected((current) => new Set(current).add(lemma))
   }
 
   function handleSetState(state: WordState) {
@@ -134,7 +163,31 @@ export function ClozeQuiz({
         Elige una opción para cada hueco · Toca cualquier palabra para ver su significado
       </div>
 
-      <div className="reader">
+      <div className="quiz-tools">
+        <button
+          className={collectMode ? 'collect-toggle active' : 'collect-toggle'}
+          aria-pressed={collectMode}
+          onClick={() => {
+            setCollectMode((active) => !active)
+            setPopup(null)
+          }}
+        >
+          <IconListPlus size={15} strokeWidth={2} />
+          <span style={{ marginLeft: 6 }}>
+            {collectMode ? 'Añadiendo palabras' : 'Añadir palabras'}
+          </span>
+          {collected.size > 0 && (
+            <span className="collect-count">{collected.size}</span>
+          )}
+        </button>
+        {collectMode && (
+          <span className="collect-hint compact">
+            Toca las palabras que no conoces.
+          </span>
+        )}
+      </div>
+
+      <div className={`reader${collectMode ? ' collect-mode' : ''}`}>
         {text.paragraphs.map((para, pi) => {
           const type = text.chunk_types?.[pi] ?? 'body'
           const sourceSegments =
@@ -147,6 +200,7 @@ export function ClozeQuiz({
             content={renderQuizParagraph(para, text, {
                 answers,
                 submitted,
+                collectMode,
                 findWord,
                 onWordClick,
                 setAnswer: (n, i) => {
@@ -160,6 +214,7 @@ export function ClozeQuiz({
               renderQuizParagraph(segment, text, {
                 answers,
                 submitted,
+                collectMode,
                 findWord,
                 onWordClick,
                 setAnswer: (n, i) => {
@@ -303,6 +358,7 @@ function renderQuizParagraph(
   ctx: {
     answers: (number | null)[]
     submitted: boolean
+    collectMode: boolean
     findWord: (s: string) => Word | null
     onWordClick: (
       surface: string,
@@ -327,11 +383,13 @@ function renderQuizParagraph(
               return <span key={tokenIndex}>{'text' in tok ? tok.text : ''}</span>
             }
             const word = ctx.findWord(tok.text)
-            if (!word) return <span key={tokenIndex}>{tok.text}</span>
+            if (!word && !ctx.collectMode) {
+              return <span key={tokenIndex}>{tok.text}</span>
+            }
             return (
               <span
                 key={tokenIndex}
-                className={`tok-word st-${word.state}`}
+                className={`tok-word st-${word?.state ?? 'untracked'}`}
                 onClick={(ev) => ctx.onWordClick(tok.text, sentence, ev)}
               >
                 {tok.text}

@@ -16,4 +16,5 @@ export {
   ChevronRight as IconChevronRight,
   PanelLeftClose as IconPanelLeftClose,
   PanelLeftOpen as IconPanelLeftOpen,
+  ListPlus as IconListPlus,
 } from 'lucide-react'

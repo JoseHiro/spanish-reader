@@ -749,6 +749,24 @@ h2 {
   color: var(--yellow-fg);
 }
 
+.reader.collect-mode .tok-word.st-untracked {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--blue-fg) 35%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.reader.collect-mode .tok-word:hover {
+  background: var(--blue-bg);
+  color: var(--blue-fg);
+}
+
+.reader.collect-mode .tok-word.st-unknown,
+.reader.collect-mode .tok-word.st-unknown:hover {
+  background: var(--yellow-bg);
+  color: var(--yellow-fg);
+}
+
 .tok-cloze {
   display: inline-block;
   min-width: 96px;
@@ -804,6 +822,49 @@ h2 {
 
 .reader-head .spacer {
   flex: 1;
+}
+
+.collect-toggle.active {
+  background: var(--yellow-bg);
+  border-color: color-mix(in srgb, var(--yellow-fg) 28%, var(--border));
+  color: var(--yellow-fg);
+}
+
+.collect-count {
+  display: inline-flex;
+  min-width: 19px;
+  height: 19px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 7px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--yellow-fg);
+  color: var(--bg-elev);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.collect-hint {
+  margin: -20px 0 24px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--yellow-fg);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: var(--yellow-bg);
+  color: var(--yellow-fg);
+  font-size: 13px;
+}
+
+.quiz-tools {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0 28px;
+}
+
+.collect-hint.compact {
+  margin: 0;
+  padding: 7px 10px;
 }
 
 /* ==========================================================================
