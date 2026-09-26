@@ -1,8 +1,9 @@
 import { useMemo, useState } from 'react'
-import type { Text, Word, WordState } from '../types'
+import type { Encounter, Text, Word, WordState } from '../types'
 import { createEmptyCard, fsrs, Rating, type Card, type Grade } from 'ts-fsrs'
 import { getWordExamples } from '../lib/examples'
 import { buildReviewQueue, requeueAfterAgain } from '../lib/reviewQueue'
+import { IconCheck, IconCopy } from './Icons'
 
 type Filter = 'unknown' | 'probably_known' | 'mastered' | 'all'
 type VocabKind = 'all' | 'expression'
@@ -22,10 +23,12 @@ export function filterVocabWords(
 export function VocabList({
   words,
   texts,
+  encounters,
   onWordUpdate,
 }: {
   words: Word[]
   texts: Text[]
+  encounters: Encounter[]
   onWordUpdate: (w: Word) => void
 }) {
   const [filter, setFilter] = useState<Filter>('unknown')
@@ -35,6 +38,7 @@ export function VocabList({
   const [revealed, setRevealed] = useState(false)
   const [reviewed, setReviewed] = useState(0)
   const [reviewQueue, setReviewQueue] = useState<string[]>([])
+  const [copied, setCopied] = useState(false)
 
   const scopeWords = useMemo(
     () => filterVocabWords(words, lessonId, kind),
@@ -49,6 +53,10 @@ export function VocabList({
         (!word.srs || new Date(word.srs.due).getTime() <= now),
     )
   }, [scopeWords])
+  const unknownWords = useMemo(
+    () => scopeWords.filter((word) => word.state === 'unknown'),
+    [scopeWords],
+  )
   const current = words.find((word) => word.lemma === reviewQueue[0])
   const currentExamples = useMemo(
     () => (current ? getWordExamples(current, texts) : []),
@@ -113,6 +121,13 @@ export function VocabList({
     }
   }, [scopeWords])
 
+  async function copyForAi() {
+    const prompt = buildAiVocabularyPrompt(unknownWords, texts, encounters)
+    await navigator.clipboard.writeText(prompt)
+    setCopied(true)
+    window.setTimeout(() => setCopied(false), 1800)
+  }
+
   return (
     <>
       <h1>Vocabulario</h1>
@@ -149,15 +164,29 @@ export function VocabList({
         </div>
       )}
 
-      {!reviewing && dueWords.length > 0 && (
-        <button className="primary review-start" onClick={() => {
-          setReviewed(0)
-          setRevealed(false)
-          setReviewQueue(buildReviewQueue(dueWords))
-          setReviewing(true)
-        }}>
-          Repasar ahora ({dueWords.length})
-        </button>
+      {!reviewing && (dueWords.length > 0 || unknownWords.length > 0) && (
+        <div className="vocab-actions">
+          {dueWords.length > 0 && (
+            <button className="primary review-start" onClick={() => {
+              setReviewed(0)
+              setRevealed(false)
+              setReviewQueue(buildReviewQueue(dueWords))
+              setReviewing(true)
+            }}>
+              Repasar ahora ({dueWords.length})
+            </button>
+          )}
+          {unknownWords.length > 0 && (
+            <button className="copy-ai" onClick={copyForAi}>
+              {copied ? (
+                <IconCheck size={15} strokeWidth={2.2} />
+              ) : (
+                <IconCopy size={15} strokeWidth={1.9} />
+              )}
+              <span>{copied ? 'Copiado' : `Copiar para IA (${unknownWords.length})`}</span>
+            </button>
+          )}
+        </div>
       )}
 
       {reviewing && current && (
@@ -278,6 +307,40 @@ export function VocabList({
       ))}
     </>
   )
+}
+
+export function buildAiVocabularyPrompt(
+  words: Word[],
+  texts: Text[],
+  encounters: Encounter[],
+): string {
+  const lessonTitles = new Map(texts.map((text) => [text.id, text.title]))
+  const lines = words.map((word, index) => {
+    const contexts = Array.from(
+      new Set(
+        encounters
+          .filter((encounter) => encounter.word_lemma === word.lemma)
+          .map((encounter) => encounter.sentence.trim())
+          .filter(Boolean),
+      ),
+    )
+    const details = [
+      `${index + 1}. ${word.lemma}${word.pos ? `（${word.pos}）` : ''}`,
+      word.meaning_ja ? `   現在の意味: ${word.meaning_ja}` : null,
+      word.source_text_id && lessonTitles.get(word.source_text_id)
+        ? `   出典: ${lessonTitles.get(word.source_text_id)}`
+        : null,
+      ...contexts.slice(0, 2).map((sentence) => `   文脈: ${sentence}`),
+    ]
+    return details.filter(Boolean).join('\n')
+  })
+
+  return [
+    '以下はスペイン語学習中に分からなかった単語です。',
+    '各語について、見出し語・品詞・自然な日本語の意味・文脈での意味やニュアンスを確認し、自然なスペイン語の例文を2つと各日本語訳を作ってください。誤った見出し語や意味があれば訂正してください。',
+    '',
+    ...lines,
+  ].join('\n')
 }
 
 function StatePicker({

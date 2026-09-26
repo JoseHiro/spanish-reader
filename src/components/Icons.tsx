@@ -17,4 +17,5 @@ export {
   PanelLeftClose as IconPanelLeftClose,
   PanelLeftOpen as IconPanelLeftOpen,
   ListPlus as IconListPlus,
+  Copy as IconCopy,
 } from 'lucide-react'
