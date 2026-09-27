@@ -3,7 +3,7 @@ import type * as React from 'react'
 import type { Text, Word, WordState, QuizResult, Encounter } from '../types'
 import { normalize, tokenize } from '../lib/tokenize'
 import { findWordBySurface } from '../lib/words'
-import { IconArrowLeft, IconCheck, IconX, IconListPlus } from './Icons'
+import { IconArrowLeft, IconCheck, IconX, IconListPlus, IconCopy } from './Icons'
 import { WordPopup } from './WordPopup'
 import { ArticleChunk } from './ArticleChunk'
 import { QuizOption } from './QuizOption'
@@ -15,6 +15,7 @@ export function ClozeQuiz({
   onBack,
   onSaveResult,
   onWordUpdate,
+  onWordDelete,
   onEncounter,
   onMarkCompleted,
   words,
@@ -24,6 +25,7 @@ export function ClozeQuiz({
   onBack: () => void
   onSaveResult: (r: QuizResult) => void
   onWordUpdate: (w: Word) => void
+  onWordDelete: (lemma: string) => void
   onEncounter: (e: Encounter) => void
   onMarkCompleted: () => void
   words: Word[]
@@ -34,7 +36,10 @@ export function ClozeQuiz({
   )
   const [submitted, setSubmitted] = useState(false)
   const [collectMode, setCollectMode] = useState(false)
-  const [collected, setCollected] = useState(() => new Set<string>())
+  const [collected, setCollected] = useState(
+    () => new Map<string, { surface: string; sentence: string; previous: Word | null }>(),
+  )
+  const [copied, setCopied] = useState(false)
   const [popup, setPopup] = useState<{
     surface: string
     anchor: DOMRect
@@ -63,8 +68,18 @@ export function ClozeQuiz({
 
   function collectWord(surface: string, sentence: string) {
     const existing = findWord(surface)
-    if (existing?.state === 'unknown') return
     const lemma = existing?.lemma ?? surface.toLowerCase()
+    const selected = collected.get(lemma)
+    if (selected) {
+      if (selected.previous) onWordUpdate(selected.previous)
+      else onWordDelete(lemma)
+      setCollected((current) => {
+        const next = new Map(current)
+        next.delete(lemma)
+        return next
+      })
+      return
+    }
     onWordUpdate(
       existing
         ? { ...existing, state: 'unknown' }
@@ -81,7 +96,20 @@ export function ClozeQuiz({
       sentence,
       tapped_at: new Date().toISOString(),
     })
-    setCollected((current) => new Set(current).add(lemma))
+    setCollected((current) =>
+      new Map(current).set(lemma, { surface, sentence, previous: existing }),
+    )
+  }
+
+  async function copySelection() {
+    const lines = [...collected.values()].map(
+      ({ surface, sentence }, index) => `${index + 1}. ${surface}\n   文脈: ${sentence}`,
+    )
+    await navigator.clipboard.writeText(
+      ['以下はスペイン語の記事で分からなかった単語です。日本語の意味、見出し語、品詞、文脈でのニュアンスを説明してください。', '', ...lines].join('\n'),
+    )
+    setCopied(true)
+    window.setTimeout(() => setCopied(false), 1800)
   }
 
   function handleSetState(state: WordState) {
@@ -180,6 +208,12 @@ export function ClozeQuiz({
             <span className="collect-count">{collected.size}</span>
           )}
         </button>
+        {collectMode && collected.size > 0 && (
+          <button onClick={copySelection} className="copy-selection">
+            <IconCopy size={14} strokeWidth={1.9} />
+            <span>{copied ? 'Copiado' : `Copiar selección (${collected.size})`}</span>
+          </button>
+        )}
         {collectMode && (
           <span className="collect-hint compact">
             Toca las palabras que no conoces.

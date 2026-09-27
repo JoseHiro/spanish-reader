@@ -880,6 +880,12 @@ h2 {
   gap: 7px;
 }
 
+.copy-selection {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .collect-hint.compact {
   margin: 0;
   padding: 7px 10px;

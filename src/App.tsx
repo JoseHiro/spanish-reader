@@ -93,6 +93,12 @@ export function App() {
     await api.putWords({ words: next })
   }
 
+  async function deleteWord(lemma: string) {
+    const next = words.filter((word) => word.lemma !== lemma)
+    setWords(next)
+    await api.putWords({ words: next })
+  }
+
   async function addEncounter(e: Encounter) {
     const next = [...encounters, e]
     setEncounters(next)
@@ -241,6 +247,7 @@ export function App() {
                     navigate({ name: 'quiz', textId: currentText.id })
                   }
                   onWordUpdate={updateWord}
+                  onWordDelete={deleteWord}
                   onEncounter={addEncounter}
                   onToggleCompleted={() => toggleCompleted(currentText.id)}
                 />
@@ -252,6 +259,7 @@ export function App() {
                   onBack={() => navigate({ name: 'home' })}
                   onSaveResult={saveQuizResult}
                   onWordUpdate={updateWord}
+                  onWordDelete={deleteWord}
                   onEncounter={addEncounter}
                   onMarkCompleted={() => toggleCompleted(currentText.id)}
                   words={visibleWords}

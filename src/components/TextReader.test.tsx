@@ -13,6 +13,7 @@ const text: Text = {
 describe('TextReader word collection mode', () => {
   it('adds an unregistered word to review with its source sentence', () => {
     const onWordUpdate = vi.fn()
+    const onWordDelete = vi.fn()
     const onEncounter = vi.fn()
 
     render(
@@ -23,6 +24,7 @@ describe('TextReader word collection mode', () => {
         onBack={vi.fn()}
         onOpenQuiz={vi.fn()}
         onWordUpdate={onWordUpdate}
+        onWordDelete={onWordDelete}
         onEncounter={onEncounter}
         onToggleCompleted={vi.fn()}
       />,
@@ -45,6 +47,10 @@ describe('TextReader word collection mode', () => {
       }),
     )
     expect(screen.getByText('1')).toHaveClass('collect-count')
+
+    fireEvent.click(screen.getByText('desconocida'))
+    expect(onWordDelete).toHaveBeenCalledWith('desconocida')
+    expect(screen.queryByText('1')).not.toBeInTheDocument()
   })
 
   it('leaves unregistered words as plain text outside collection mode', () => {
@@ -56,6 +62,7 @@ describe('TextReader word collection mode', () => {
         onBack={vi.fn()}
         onOpenQuiz={vi.fn()}
         onWordUpdate={vi.fn()}
+        onWordDelete={vi.fn()}
         onEncounter={vi.fn()}
         onToggleCompleted={vi.fn()}
       />,
