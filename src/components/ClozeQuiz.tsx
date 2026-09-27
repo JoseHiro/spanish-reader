@@ -103,10 +103,10 @@ export function ClozeQuiz({
 
   async function copySelection() {
     const lines = [...collected.values()].map(
-      ({ surface, sentence }, index) => `${index + 1}. ${surface}\n   文脈: ${sentence}`,
+      ({ surface }, index) => `${index + 1}. ${surface}`,
     )
     await navigator.clipboard.writeText(
-      ['以下はスペイン語の記事で分からなかった単語です。日本語の意味、見出し語、品詞、文脈でのニュアンスを説明してください。', '', ...lines].join('\n'),
+      ['以下はスペイン語の記事で分からなかった単語です。各語の見出し語、品詞、自然な日本語の意味、スペイン語の例文2つと各日本語訳を作ってください。', '', ...lines].join('\n'),
     )
     setCopied(true)
     window.setTimeout(() => setCopied(false), 1800)
