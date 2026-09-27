@@ -7,7 +7,7 @@ import { IconArrowLeft, IconCheck, IconX, IconListPlus, IconCopy } from './Icons
 import { WordPopup } from './WordPopup'
 import { ArticleChunk } from './ArticleChunk'
 import { QuizOption } from './QuizOption'
-import { alignJapaneseTranslation, splitSpanishSentences } from '../lib/alignment'
+import { alignBilingualSegments } from '../lib/alignment'
 
 export function ClozeQuiz({
   text,
@@ -224,9 +224,11 @@ export function ClozeQuiz({
       <div className={`reader${collectMode ? ' collect-mode' : ''}`}>
         {text.paragraphs.map((para, pi) => {
           const type = text.chunk_types?.[pi] ?? 'body'
-          const sourceSegments =
-            type === 'body' ? splitSpanishSentences(para) : [para]
           const translation = text.translation_ja?.[pi]
+          const alignment =
+            type === 'body' && translation
+              ? alignBilingualSegments(para, translation)
+              : [{ source: para, translation: translation ?? '' }]
           return <ArticleChunk
             key={pi}
             type={type}
@@ -244,8 +246,8 @@ export function ClozeQuiz({
                   setAnswers(next)
                 },
               })}
-            contentSegments={sourceSegments.map((segment) =>
-              renderQuizParagraph(segment, text, {
+            contentSegments={alignment.map((segment) =>
+              renderQuizParagraph(segment.source, text, {
                 answers,
                 submitted,
                 collectMode,
@@ -267,11 +269,7 @@ export function ClozeQuiz({
               />
             }
             translation={translation}
-            translationSegments={
-              translation
-                ? alignJapaneseTranslation(translation, sourceSegments.length)
-                : undefined
-            }
+            translationSegments={translation ? alignment.map((segment) => segment.translation) : undefined}
           />
         })}
       </div>

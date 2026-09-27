@@ -64,7 +64,7 @@ export function ArticleChunk({
                   onMouseEnter={() => setActiveSegment(index)}
                   onMouseLeave={() => setActiveSegment(null)}
                 >
-                  {segment}{index < translationSegments.length - 1 ? ' ' : ''}
+                  {segment}
                 </span>
               ))
             : translation}
