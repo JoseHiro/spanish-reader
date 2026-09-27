@@ -874,12 +874,6 @@ h2 {
   margin-bottom: 0;
 }
 
-.copy-ai {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-}
-
 .copy-selection {
   display: inline-flex;
   align-items: center;

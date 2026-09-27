@@ -269,7 +269,6 @@ export function App() {
                 <VocabList
                   words={visibleWords}
                   texts={texts}
-                  encounters={encounters}
                   onWordUpdate={updateWord}
                 />
               )}
