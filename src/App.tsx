@@ -121,6 +121,7 @@ export function App() {
     view.name === 'read' || view.name === 'quiz'
       ? texts.find((t) => t.id === view.textId)
       : undefined
+  const visibleWords = words.filter((word) => !word.hidden)
 
   const navItems: {
     key: View['name']
@@ -205,7 +206,7 @@ export function App() {
 
       <main className="main">
         {!loading && !err && (
-          <Header crumbs={buildCrumbs(view, currentText, navigate)} words={words} />
+          <Header crumbs={buildCrumbs(view, currentText, navigate)} words={visibleWords} />
         )}
         <div className={`container${view.name === 'quiz' ? ' quiz-container' : ''}`}>
           {err && (
@@ -233,7 +234,7 @@ export function App() {
               {view.name === 'read' && currentText && (
                 <TextReader
                   text={currentText}
-                  words={words}
+                  words={visibleWords}
                   completed={!!progress[currentText.id]?.completed}
                   onBack={() => navigate({ name: 'home' })}
                   onOpenQuiz={() =>
@@ -253,12 +254,12 @@ export function App() {
                   onWordUpdate={updateWord}
                   onEncounter={addEncounter}
                   onMarkCompleted={() => toggleCompleted(currentText.id)}
-                  words={words}
+                  words={visibleWords}
                 />
               )}
               {view.name === 'vocab' && (
                 <VocabList
-                  words={words}
+                  words={visibleWords}
                   texts={texts}
                   encounters={encounters}
                   onWordUpdate={updateWord}
@@ -267,7 +268,7 @@ export function App() {
               {view.name === 'dashboard' && (
                 <Dashboard
                   texts={texts}
-                  words={words}
+                  words={visibleWords}
                   encounters={encounters}
                   quizResults={quizResults}
                 />

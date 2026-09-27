@@ -23,4 +23,20 @@ describe('mergeSeedWords', () => {
       { ...seed, state: 'mastered' },
     ])
   })
+
+  it('applies a seed tombstone while preserving the saved learning state', () => {
+    const seed: Word = {
+      lemma: 'uno',
+      state: 'mastered',
+      hidden: true,
+    }
+    const stored: Word = {
+      lemma: 'uno',
+      state: 'unknown',
+    }
+
+    expect(mergeSeedWords([seed], [stored])).toEqual([
+      { ...seed, state: 'unknown' },
+    ])
+  })
 })

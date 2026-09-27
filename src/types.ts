@@ -18,6 +18,8 @@ export type Word = {
   collection_id?: string
   chapter_id?: string
   chapter_title?: string
+  /** Seed entry kept only as a migration tombstone; excluded from the UI. */
+  hidden?: boolean
   tags?: string[]
   srs?: {
     due: string
