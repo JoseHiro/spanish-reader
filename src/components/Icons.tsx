@@ -18,4 +18,5 @@ export {
   PanelLeftOpen as IconPanelLeftOpen,
   ListPlus as IconListPlus,
   Copy as IconCopy,
+  Download as IconDownload,
 } from 'lucide-react'

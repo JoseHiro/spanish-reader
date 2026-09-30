@@ -874,6 +874,13 @@ h2 {
   margin-bottom: 0;
 }
 
+.anki-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
 .copy-selection {
   display: inline-flex;
   align-items: center;

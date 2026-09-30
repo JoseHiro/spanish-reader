@@ -3,6 +3,8 @@ import type { Text, Word, WordState } from '../types'
 import { createEmptyCard, fsrs, Rating, type Card, type Grade } from 'ts-fsrs'
 import { getWordExamples } from '../lib/examples'
 import { buildReviewQueue, requeueAfterAgain } from '../lib/reviewQueue'
+import { ankiFileName, buildAnkiImportFile } from '../lib/ankiExport'
+import { IconDownload } from './Icons'
 
 type Filter = 'unknown' | 'probably_known' | 'mastered' | 'all'
 type VocabKind = 'all' | 'expression'
@@ -129,6 +131,36 @@ export function VocabList({
     }
   }, [scopeWords])
 
+  const exportableWords = useMemo(
+    () => filtered.filter((word) => word.meaning_ja),
+    [filtered],
+  )
+  const scopeName = useMemo(() => {
+    if (lessonId !== 'all') {
+      if (collection === 'reader') {
+        return texts.find((text) => text.id === lessonId)?.title ?? lessonId
+      }
+      return thematicChapters.find(([id]) => id === lessonId)?.[1] ?? lessonId
+    }
+    return collection === 'reader' ? 'Textos' : 'Vocabulario temático'
+  }, [collection, lessonId, texts, thematicChapters])
+
+  function downloadForAnki() {
+    const content = buildAnkiImportFile(
+      exportableWords,
+      texts,
+      `Spanish Reader::${scopeName}`,
+    )
+    const url = URL.createObjectURL(
+      new Blob([content], { type: 'text/plain;charset=utf-8' }),
+    )
+    const link = document.createElement('a')
+    link.href = url
+    link.download = ankiFileName(scopeName)
+    link.click()
+    URL.revokeObjectURL(url)
+  }
+
   return (
     <>
       <h1>Vocabulario</h1>
@@ -188,16 +220,24 @@ export function VocabList({
         </div>
       )}
 
-      {!reviewing && dueWords.length > 0 && (
+      {!reviewing && (dueWords.length > 0 || exportableWords.length > 0) && (
         <div className="vocab-actions">
-          <button className="primary review-start" onClick={() => {
-            setReviewed(0)
-            setRevealed(false)
-            setReviewQueue(buildReviewQueue(dueWords))
-            setReviewing(true)
-          }}>
-            Repasar ahora ({dueWords.length})
-          </button>
+          {dueWords.length > 0 && (
+            <button className="primary review-start" onClick={() => {
+              setReviewed(0)
+              setRevealed(false)
+              setReviewQueue(buildReviewQueue(dueWords))
+              setReviewing(true)
+            }}>
+              Repasar ahora ({dueWords.length})
+            </button>
+          )}
+          {exportableWords.length > 0 && (
+            <button className="anki-download" onClick={downloadForAnki}>
+              <IconDownload size={17} aria-hidden="true" />
+              Descargar para Anki ({exportableWords.length})
+            </button>
+          )}
         </div>
       )}
 
